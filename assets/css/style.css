@@ -117,7 +117,6 @@ header {
 }
 .sidebar {
     background-color: var(--sidebar-color);
-    height: 4000px;
 }
 
 .wrapper {
