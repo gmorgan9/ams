@@ -30,7 +30,7 @@ session_start();
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
 
-<?php //include(ROOT_PATH . "/includes/sidebar.php") ?>
+<?php include(ROOT_PATH . "/includes/sidebar.php") ?>
         
 <!-- Admin Content -->
 <div class="admin-content">
