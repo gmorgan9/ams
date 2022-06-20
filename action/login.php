@@ -20,6 +20,8 @@
     <title>Login - AMS</title>
 </head>
 <body>
+
+LOGIN
     
 </body>
 </html>

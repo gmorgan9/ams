@@ -19,7 +19,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link me-3 me-lg-0" href="action/logout.php">
+      <a class="nav-link me-3 me-lg-0" href="/action/logout.php">
       <i class="fa-solid fa-arrow-right-from-bracket"></i>
       </a>
     </li>
