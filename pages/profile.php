@@ -1,2 +1,2 @@
 profile
-<a href="index.php">Back</a>
+<a href="/">Back</a>
