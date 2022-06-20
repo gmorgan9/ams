@@ -20,7 +20,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include(ROOT_PATH . "/includes/header.php") ?>
+    
 </body>
 </html>
 
