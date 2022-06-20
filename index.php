@@ -1,5 +1,6 @@
 <?php 
 include("path.php");
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +21,10 @@ include("path.php");
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Dashboard - AMS</title>
 </head>
 <body>
+
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 
 <!-- Admin Page Wrapper -->
@@ -38,8 +40,7 @@ include("path.php");
     <h2 class="page-title">Dashboard</h2>
 
     <?php 
-    // include(ROOT_PATH . '/includes/messages.php'); 
-    ?>
+    //include(ROOT_PATH . '/app/includes/messages.php'); ?>
 
 </div>
 
@@ -48,6 +49,10 @@ include("path.php");
 
 </div>
 <!-- // Page Wrapper -->
+
+<!-- Custom Script -->
+<script src="../assets/js/scripts.js"></script>
+
 </body>
 </html>
 
