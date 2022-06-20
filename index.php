@@ -1,3 +1,6 @@
+<?php 
+include("path.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +23,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include(ROOT_PATH . "/includes/header.php") ?>
+    <?php include(ROOT_PATH . "/includes/header.php"); ?>
 </body>
 </html>
 
