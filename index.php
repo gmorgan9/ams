@@ -23,16 +23,31 @@ include("path.php");
     <title>Document</title>
 </head>
 <body>
-    <?php include(ROOT_PATH . "/includes/header.php"); ?>
-    
-    <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
-    <div class="wrapper">
+<?php include(ROOT_PATH . "/includes/adminHeader.php"); ?>
 
-        <div class="content">
-        <h2 class="page-title">Dashboard</h2>
+<!-- Admin Page Wrapper -->
+<div class="admin-wrapper">
 
-        </div>
-    </div>
+<?php include(ROOT_PATH . "/includes/adminSidebar.php") ?>
+        
+<!-- Admin Content -->
+<div class="admin-content">
+
+<div class="content">
+
+    <h2 class="page-title">Dashboard</h2>
+
+    <?php 
+    // include(ROOT_PATH . '/includes/messages.php'); 
+    ?>
+
+</div>
+
+</div>
+<!-- // Admin Content -->
+
+</div>
+<!-- // Page Wrapper -->
 </body>
 </html>
 
