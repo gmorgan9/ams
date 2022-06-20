@@ -16,7 +16,7 @@ session_start();
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/bell-regular.svg"> -->
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/style.css?v=0.21">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.5">
 
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,6 +27,10 @@ session_start();
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
+
+<div class="main">
+    <h3 class="page_title">Dashboard</h3>
+</div>
 
 </body>
 </html>
