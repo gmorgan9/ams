@@ -13,8 +13,7 @@
 
 <!-- Brand -->
 <a class="navbar-brand" href="#">
-  <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="25" alt="MDB Logo"
-    loading="lazy" />
+  <h3>Assignment Management System</h3>
 </a>
 <!-- Search form -->
 <form class="d-none d-md-flex input-group w-auto my-auto">
