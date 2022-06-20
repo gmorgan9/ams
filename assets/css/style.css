@@ -13,7 +13,7 @@
 
 /* sidebar.php */
 .logo {
-    height: 85px;
+    height: 125px;
 }
 .sidebar {
     background-color: var(--sidebar-color);
