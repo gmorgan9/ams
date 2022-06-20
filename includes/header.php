@@ -35,6 +35,7 @@
              id="navbarDropdownMenuLink"
              role="button"
              data-mdb-toggle="dropdown"
+             aria-expanded="false"
              >
             <img
                  src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg"
@@ -43,6 +44,7 @@
                  alt=""
                  loading="lazy"
                  />
+                 <i class="fas fa-user"></i>
           </a>
           <ul
               class="dropdown-menu dropdown-menu-end"
