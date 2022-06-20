@@ -1,6 +1,6 @@
 <header>
-<h2>
+<h1>
     Assignment Management System
-</h2>
+</h1>
 
 </header>
