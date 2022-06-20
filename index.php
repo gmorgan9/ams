@@ -24,8 +24,9 @@ include("path.php");
 </head>
 <body>
     <?php include(ROOT_PATH . "/includes/header.php"); ?>
-    <div class="wrapper">
+    
     <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
+    <div class="wrapper">
 
         <div class="content">
         <h2 class="page-title">Dashboard</h2>
