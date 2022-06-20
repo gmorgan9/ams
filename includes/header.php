@@ -1,10 +1,12 @@
 <!--Main Navigation-->
 <header>
   <!-- Navbar -->
-  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-    <ul class="navbar-nav">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">Link 1</a>
     </li>
@@ -24,9 +26,7 @@
       </div>
     </li>
   </ul>
-    </div>
-    <!-- Container wrapper -->
-  </nav>
+</nav>
   <!-- Navbar -->
 </header>
 <main style="margin-top: 58px;">
