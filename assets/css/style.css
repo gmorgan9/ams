@@ -1,4 +1,20 @@
-/* header.php */
+:root {
+    --primary-color: #002E5D;
+    --sidebar-color: #96b0ca;
+    --secondary-color: #0087a8;
+    --hover-color: #002f5da6;
+    --backgroud: #F8F8FF;
+    --light-text: #fff;
+    --red-background: #f2dede;
+	--red-text: #a94442;
+	--green-text: #3c763d;
+	--green-background: #dff0d8;
+}
+
+/* sidebar.php */
 .logo img {
     height: 75px;
+}
+.sidebar {
+    background-color: var(--sidebar-color);
 }
