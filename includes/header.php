@@ -1,3 +1,4 @@
+<!--Main Navigation-->
 <header>
             <!-- Sidebar -->
             <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
@@ -92,7 +93,6 @@
 
                   <!-- Icon dropdown -->
                   <li class="nav-item dropdown">
-<<<<<<< HEAD
                     <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdown"
                       role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                       <i class="united kingdom flag m-0"></i>
@@ -104,24 +104,6 @@
                       </li>
                       <li>
                         <hr class="dropdown-divider" />
-=======
-                    <a
-                      class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="flag-united-kingdom flag m-0"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          ><i class="flag-united-kingdom flag"></i>English
-                          <i class="fa fa-check text-success ms-2"></i
-                        ></a>
->>>>>>> 3b97d278bdf4e983a24310547faa334680f356f5
                       </li>
                       <li>
                         <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
