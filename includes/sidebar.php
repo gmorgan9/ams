@@ -7,7 +7,7 @@
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
                   <i class="fa-solid fa-landmark"></i><span>  Classes</span>
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fa-solid fa-landmark"></i><span>  Assignments</span></a>
+                  <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fa-solid fa-clipboard-list"></i><span>  Assignments</span></a>
                 </div>
               </div>
             </nav>
