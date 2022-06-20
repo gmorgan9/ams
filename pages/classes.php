@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font Awesome -->
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
 
     <!-- Favicon -->
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/bell-regular.svg"> -->
