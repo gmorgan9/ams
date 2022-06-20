@@ -12,7 +12,7 @@
 }
 
 /* Custom */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -21,7 +21,7 @@ h6 {
     font-family: "Candal", serif;
     color: #5c5b5b;
     margin: 5px;
-}
+} */
 a {
     text-decoration: none;
     color: inherit;
@@ -29,12 +29,12 @@ a {
 
 /* Sidebar */
 .sidebar {
-    position:sticky;
+    position:fixed;
+    background-color: #a94442;
     top: 0;
     bottom: 0;
     left: 0;
-    /* padding: 58px 0 0; Height of navbar */
-    height: 100%;
+    padding: 58px 0 0; /* Height of navbar */
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
     width: 240px;
     z-index: 600;
