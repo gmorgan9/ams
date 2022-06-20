@@ -22,7 +22,7 @@
           alt="MDB Logo"
           loading="lazy"
         /> -->
-        Assignment Management System
+        <h1>Assignment Management System</h1>
       </a>
 
       <!-- Right links -->
