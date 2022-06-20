@@ -30,7 +30,6 @@ a {
 /* Sidebar */
 .sidebar {
     position:fixed;
-    background-color: #a94442;
     top: 0;
     bottom: 0;
     left: 0;
@@ -39,4 +38,9 @@ a {
     width: 240px;
     z-index: 600;
     }   
+
+
+.main {
+    margin-left: 160px;
+}
     
