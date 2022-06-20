@@ -18,6 +18,11 @@
         <i class="fas fa-user"></i>
       </a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link me-3 me-lg-0" href="pages/profile.php">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </a>
+    </li>
   </ul>
 </div>
 <!-- Container wrapper -->
