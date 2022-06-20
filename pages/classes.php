@@ -29,7 +29,7 @@ session_start();
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-    <h3>Classes</h3>
+    <h3 class="page_title">Classes</h3>
 </div>
 
 
