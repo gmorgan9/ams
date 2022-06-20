@@ -7,7 +7,7 @@
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
                     <i class="fas fa-chart-area fa-fw me-3"></i><span>Classes</span>
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fa-solid fa-screen-users"></i><span>Assignments</span></a>
+                  <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fa-solid fa-landmark"></i><span>Assignments</span></a>
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                       class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a>
                 </div>
