@@ -23,19 +23,13 @@
 </form>
 
 <!-- Right links -->
-<ul class="navbar-nav ms-auto d-flex flex-row">
-<li class="nav-item">
-  <a class="nav-link me-3 me-lg-0" href="#">
-    <i class="fas fa-fill-drip"></i>
-  </a>
-</li>
-<!-- Icon -->
-<li class="nav-item me-3 me-lg-0">
-  <a class="nav-link" href="#">
-    <i class="fab fa-github"></i>
-  </a>
-</li>
-</ul>
+  <ul class="navbar-nav ms-auto d-flex flex-row">
+    <li class="nav-item">
+      <a class="nav-link me-3 me-lg-0" href="#">
+        <i class="fas fa-user"> Profile</i>
+      </a>
+    </li>
+  </ul>
 </div>
 <!-- Container wrapper -->
 </nav>
