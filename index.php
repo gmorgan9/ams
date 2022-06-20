@@ -23,12 +23,12 @@ include("path.php");
     <title>Document</title>
 </head>
 <body>
-<?php include(ROOT_PATH . "/includes/adminHeader.php"); ?>
+<?php include(ROOT_PATH . "/includes/header.php"); ?>
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
 
-<?php include(ROOT_PATH . "/includes/adminSidebar.php") ?>
+<?php include(ROOT_PATH . "/includes/sidebar.php") ?>
         
 <!-- Admin Content -->
 <div class="admin-content">
