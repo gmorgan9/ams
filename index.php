@@ -16,7 +16,7 @@ session_start();
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/bell-regular.svg"> -->
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/style.css?v=0.20">
+    <link rel="stylesheet" href="assets/css/style.css?v=0.21">
 
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,32 +26,7 @@ session_start();
 <body>
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
-
-<!-- Admin Page Wrapper -->
-<div class="admin-wrapper">
-
-<?php include(ROOT_PATH . "/includes/sidebar.php") ?>
-        
-<!-- Admin Content -->
-<div class="admin-content">
-
-<div class="content">
-
-    <h2 class="page-title">Dashboard</h2>
-
-    <?php 
-    //include(ROOT_PATH . '/app/includes/messages.php'); ?>
-
-</div>
-
-</div>
-<!-- // Admin Content -->
-
-</div>
-<!-- // Page Wrapper -->
-
-<!-- Custom Script -->
-<script src="../assets/js/scripts.js"></script>
+<?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 </body>
 </html>
