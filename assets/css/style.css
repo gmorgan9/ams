@@ -28,91 +28,17 @@ a {
   }
 
 /* Header */
-header {
-    background: var(--primary-color);
-    height: 66px;
-  }
-  
-  header * {
-    color: white;
-  }
-  
-  header .logo {
-    float: left;
-    height: inherit;
-    margin-left: 2em;
-  }
-  
-  header .logo-text {
-    margin: 9px;
-    font-family: "Candal", serif;
-  }
-  
-  header .logo-text span {
-    color: var(--secondary-color);
-  }
-  
-  header ul {
-    float: right;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-  }
-  
-  header ul li {
-    float: left;
-    position: relative;
-  }
-  
-  header ul li ul {
-    position: absolute;
-    top: 66px;
-    right: 0px;
-    width: 180px;
-    display: none;
-    z-index: 88888;
-  }
-  
-  header ul li:hover ul {
-    display: block;
-  }
-  
-  header ul li ul li {
-    width: 100%;
-  }
-  
-  header ul li ul li a {
-    padding: 10px;
-    background: white;
-    color: #444;
-  }
-  
-  header ul li ul li a.logout {
-    color: red;
-  }
-  /* header dropdown */
-  header ul li ul li a:hover {
-    background: lightgray;
-  }
-  
-  header ul li a {
-    display: block;
-    padding: 21px;
-    font-size: 1.1em;
-    text-decoration: none;
-  }
-  /* header buttons */
-  header ul li a:hover {
-    background: var(--secondary-color);
-    transition: 0.5s;
-  }
-  
-  header .menu-toggle {
-    display: none;
-  }
-
-/* sidebar.php */
-.sidebar {
+body {
+    background-color: #fbfbfb;
+    }
+    @media (min-width: 991.98px) {
+    main {
+    padding-left: 240px;
+    }
+    }
+    
+    /* Sidebar */
+    .sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -121,4 +47,25 @@ header {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
     width: 240px;
     z-index: 600;
-  }
+    }
+    
+    @media (max-width: 991.98px) {
+    .sidebar {
+    width: 100%;
+    }
+    }
+    .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    }
+    
+    .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+    
+    
