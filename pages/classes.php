@@ -28,10 +28,10 @@ session_start();
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
-<div class="content">
+
     <h3>Classes</h3>
 
-</div>
+
 
 </body>
 </html>
