@@ -16,12 +16,13 @@
 
       <!-- Brand -->
       <a class="navbar-brand" href="#">
-        <img
+        <!-- <img
           src="assets/images/logo1.png"
           height="25"
           alt="MDB Logo"
           loading="lazy"
-        />
+        /> -->
+        Assignment Management System
       </a>
 
       <!-- Right links -->
