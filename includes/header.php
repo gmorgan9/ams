@@ -26,7 +26,7 @@
   <ul class="navbar-nav ms-auto d-flex flex-row">
     <li class="nav-item">
       <a class="nav-link me-3 me-lg-0" href="#">
-        <i class="fas fa-user"> Profile</i>
+        <i class="fas fa-user"></i><p>Profile</p>
       </a>
     </li>
   </ul>
