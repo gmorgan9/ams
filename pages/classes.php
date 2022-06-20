@@ -29,7 +29,7 @@ session_start();
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <br><br><br><br><br>
-<h3 style="margin-left: 25px;">help</h3>
+<h3 style="margin-left: 225px;">help</h3>
 
 
 
