@@ -4,7 +4,7 @@
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>  Dashboard</span>
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
+                  <a href="#" class="list-group-item list-group-item-action py-2 ripple">
                   <i class="fa-solid fa-landmark"></i><span>  Classes</span>
                   </a>
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fa-solid fa-clipboard-list"></i><span>  Assignments</span></a>
