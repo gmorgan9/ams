@@ -5,7 +5,7 @@
                     <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
                   </a>
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
-                    <i class="fas fa-chart-area fa-fw me-3"></i><span>Classes</span>
+                  <i class="fa-solid fa-landmark"></i><span>Classes</span>
                   </a>
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fa-solid fa-landmark"></i><span>Assignments</span></a>
                   <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
