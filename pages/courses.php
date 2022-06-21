@@ -113,7 +113,38 @@ if(isset($_POST['fall22'])) {
 
 }
 if(isset($_POST['winter23'])) {
-  echo "This is Button2 that is selected";
+?>
+    <h5 class="page_subtitle text-center">Fall 2022</h5>
+    
+    
+
+
+    <div class="d-flex justify-content-center flex-row"> 
+      <?php
+        $sql = "SELECT * FROM course WHERE taken = 'winter23'";
+        $result = mysqli_query($conn, $sql);
+          if($result) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              $course_id=$row['course_id'];
+              $course=$row['course'];
+              $title = $row['title'];
+            ?>
+            
+              <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
+                  <p class="card-text text-center"><?php echo $course; ?></p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary btn-sm">See Course</a>
+                  </div>
+                </div>
+              </div>
+              <p class="ml-3"></p>
+    <?php }
+        } ?>
+    </div>
+
+<?php
 }
 
     ?>
