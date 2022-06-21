@@ -27,7 +27,7 @@ session_start();
     <title>Add Course - AMS</title>
     <style>
         .log-form {
-            margin-top: -20px;
+            margin-top: -25px;
         }
         .back-btn {
         float: right; 
