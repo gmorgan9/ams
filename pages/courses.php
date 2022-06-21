@@ -56,6 +56,8 @@ if(!isset($_SESSION['username'])){
       .sem-btn p {
         font-family: "Candal", serif;
         color: #5c5b5b;
+        font-size: 18px; 
+        margin-bottom: 0px;
       }
       .page_subtitle {
         margin-left: -10px;
@@ -70,7 +72,7 @@ if(!isset($_SESSION['username'])){
 <div class="main">
   <div class="sem-btn">
     <form method="post">
-      <p style="font-size: 12px; margin-bottom: 0px;">Select a Semester</p>
+      <p>Select a Semester</p>
     <button type="submit" name="fall22" type="button" class="btn btn-outline-secondary btn-sm">Fall '22</button>
     <button type="submit" name="winter23" type="button" class="btn btn-outline-secondary btn-sm">Winter '23</button>
     </form>
