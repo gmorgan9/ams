@@ -16,49 +16,12 @@ session_start();
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/bell-regular.svg"> -->
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=2.0">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2.1">
 
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Login - AMS</title>
-
-    <style>
-    .log-form {
-    background-color: white;
-    border-radius: 15px;
-    width: 500px;
-    height: 450px;
-}
-.input-group {
-    width: 300px;
-}
-.bg-circle {
-    background-color: #E5E5E5;
-    border-radius: 100px;
-    height: 130px;
-    width: 130px;
-    position:relative;
-}
-.sm-circle {
-    background-color: #005382;
-    border-radius: 100px;
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 3px solid #FFFFFF;
-}
-.form-header {
-    margin-top: 20px;
-    margin-bottom: -10px;
-}
-.user-header {
-    margin-top: 25px;
-    color: white;
-}
-    </style>
 </head>
 <body>
 
