@@ -7,14 +7,14 @@ session_start();
 <?php
 
    // Define variables and initialize with empty values
-   $course = $title = $taken = $day = $time = $lab_day = $lab_time = $location = $lab_location = $section = $instructor = $credits = $mode = "";
+   $course = $title = $taken = $day = $time = $location = $section = $instructor = $credits = $mode = "";
 
-   $course_err = $title_err = $taken_err = $day_err = $time_err = $lab_day_err = $lab_time_err = $location_err = $lab_location_err = $section_err = $instructor_err = $credits_err = $mode_err = "";
+   $course_err = $title_err = $taken_err = $day_err = $time_err = $location_err = $section_err = $instructor_err = $credits_err = $mode_err = "";
  
 // Processing form data when form is submitted
 if(isset($_POST["update_course"])){
     // Get hidden input value
-    $course_id = $_POST["course_id"];
+    $courseid = $_POST["course_id"];
     //$status = isset($_POST['status']) ? 1 : 0;
     
     // Validate course address
@@ -58,20 +58,20 @@ if(isset($_POST["update_course"])){
     }
 
     // Validate address address
-    $input_lab_day = trim($_POST["lab_day"]);
-    if(empty($input_lab_day)){
-        $lab_day_err = "Please enter a lab day.";     
-    } else{
-        $lab_day = $input_lab_day;
-    }
+    // $input_lab_day = trim($_POST["lab_day"]);
+    // if(empty($input_lab_day)){
+    //     $lab_day_err = "Please enter a lab day.";     
+    // } else{
+    //     $lab_day = $input_lab_day;
+    // }
 
     // Validate address address
-    $input_lab_time = trim($_POST["lab_time"]);
-    if(empty($input_lab_time)){
-        $lab_time_err = "Please enter a lab time.";     
-    } else{
-        $lab_time = $input_lab_time;
-    }
+    // $input_lab_time = trim($_POST["lab_time"]);
+    // if(empty($input_lab_time)){
+    //     $lab_time_err = "Please enter a lab time.";     
+    // } else{
+    //     $lab_time = $input_lab_time;
+    // }
 
     // Validate address address
     $input_location = trim($_POST["location"]);
@@ -82,12 +82,12 @@ if(isset($_POST["update_course"])){
     }
 
     // Validate course address
-    $input_lab_location = trim($_POST["lab_location"]);
-    if(empty($input_lab_location)){
-        $lab_location_err = "Please enter a lab location.";     
-    } else{
-        $lab_location = $input_lab_location;
-    }
+    // $input_lab_location = trim($_POST["lab_location"]);
+    // if(empty($input_lab_location)){
+    //     $lab_location_err = "Please enter a lab location.";     
+    // } else{
+    //     $lab_location = $input_lab_location;
+    // }
 
     // Validate address address
     $input_section = trim($_POST["section"]);
@@ -123,13 +123,14 @@ if(isset($_POST["update_course"])){
     
     
     // Check input errors before inserting in database
-    if(empty($course_err) && empty($title_err) && empty($taken_err) && empty($day_err) && empty($time_err) && empty($lab_day_err) && empty($lab_time_err) && empty($location_err) && empty($lab_location_err) && empty($section_err) && empty($instructor_err) && empty($credits_err) && empty($mode_err)){
+    if(empty($course_err) && empty($title_err) && empty($taken_err) && empty($day_err) && empty($time_err) && empty($location_err) && empty($section_err) && empty($instructor_err) && empty($credits_err) && empty($mode_err)){
         // Prepare an update statement
-        $sql = "UPDATE course SET course=?, title=?, taken=?, section=?, day=?, time=?, lab_day=?, lab_time=?, location=?, lab_location=?, mode=?, instructor=?, credits=? WHERE course_id=?";
+        $sql = "UPDATE course SET course=? WHERE course_id=?";
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sssssssssisisi", $param_course, $param_title, $param_taken, $param_day, $param_time, $param_lab_day, $param_lab_time, $param_location, $param_lab_location, $param_section, $param_instructor, $param_credits, $param_mode, $param_course_id);
+            mysqli_stmt_bind_param($stmt, "s", $param_course); 
+            #$param_title, $param_taken, $param_day, $param_time, $param_lab_day, $param_lab_time, $param_location, $param_lab_location, $param_section, $param_instructor, $param_credits, $param_mode, $param_course_id);
             
             // Set parameters
             $param_course = $course;
