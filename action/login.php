@@ -50,6 +50,10 @@
     margin-top: 20px;
     margin-bottom: -10px;
 }
+.user-header {
+    margin-top: 25px;
+    color: white;
+}
     </style>
 </head>
 <body>
