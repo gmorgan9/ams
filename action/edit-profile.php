@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
 
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
-    <button type="submit" name="update_user" class="btn btn-primary text-center reg-log">Update</button>  
+    <button type="submit" name="update_btn" class="btn btn-primary text-center reg-log">Update</button>  
 </div>   
 <br>
     <p class="d-flex justify-content-center">

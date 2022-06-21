@@ -88,11 +88,11 @@ if (isset($_POST['login_user'])) {
 
 
 // call the register() function if register_btn is clicked
-if (isset($_POST['reset_btn'])) {
-	resetPass();
+if (isset($_POST['update_btn'])) {
+	updateAcc();
 }
 
-function resetPass(){
+function updateAcc(){
 	// call these variables with the global keyword to make them available in function
 	global $db, $username, $errors;
 
@@ -110,11 +110,13 @@ function resetPass(){
 	}
 	// register user if there are no errors in the form
 	if (count($errors) == 0) {
-		$password = md5($password);//encrypt the password before saving in the database
-		$username = $_SESSION['user']['username'];
+		//$password = md5($password);//encrypt the password before saving in the database
+		//$username = $_SESSION['user']['username'];
 
-			$sql = "UPDATE user SET password = '$password' WHERE username = '$username'";
+			$sql = "UPDATE user SET name = '$name', username = '$username', password = '$password' WHERE username = '$username'";
 			mysqli_query($conn, $sql);
+      $_SESSION['name'] = $name;
+      $_SESSION['username'] = $username;
 			$_SESSION['success']  = "Password successfully updated";
 			header('location: profile.php');		
 		}
@@ -122,40 +124,3 @@ function resetPass(){
 
 
 
-
-  // UPDATE
-
-  if (isset($_POST['update_user'])) {
-    // receive all input values from the form
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $password = mysqli_real_escape_string($conn, $_POST['password']);
-    $confpassword = mysqli_real_escape_string($conn, $_POST['confpassword']);
-  
-    // form validation: ensure that the form is correctly filled ...
-    // by adding (array_push()) corresponding error unto $errors array
-    if (empty($name)) { 
-      array_push($errors, "Name is required"); 
-  }
-    if (empty($username)) { 
-        array_push($errors, "Username is required"); 
-    }
-    if (empty($password)) { 
-        array_push($errors, "Password is required"); 
-    }
-    if ($password != $confpassword) {
-      array_push($errors, "The two passwords do not match");
-    }
-  
-    // Finally, register user if there are no errors in the form
-    if (count($errors) == 0) {
-        $password = md5($password);//encrypt the password before saving in the database
-  
-        $query = "UPDATE user SET name = '$name', username = '$username', password = '$password' WHERE username='$username'";
-        mysqli_query($conn, $query);
-        $_SESSION['name'] = $name;
-        $_SESSION['username'] = $username;
-        $_SESSION['success'] = "You account is updated";
-        header('location: '. BASE_URL . '/action/edit-profile.php');
-    }
-  }
