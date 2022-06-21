@@ -1,3 +1,7 @@
+<?php 
+include("../path.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +64,7 @@
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
+
 
 <div class="d-flex justify-content-center">
 <form action="login.php" class="log-form" method="post">
