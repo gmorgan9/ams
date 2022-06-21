@@ -57,31 +57,27 @@ if(!isset($_SESSION['username'])){
 
 
     <div class="d-flex justify-content-center flex-row"> 
-    <?php
-
-      $sql = "SELECT * FROM course WHERE taken = 'fall22'";
-      $result = mysqli_query($conn, $sql);
-      if($result) {
-          while ($row = mysqli_fetch_assoc($result)) {
-            $course_id=$row['course_id'];
-            $course=$row['course'];
-            $title = $row['title'];
+      <?php
+        $sql = "SELECT * FROM course WHERE taken = 'fall22'";
+        $result = mysqli_query($conn, $sql);
+          if($result) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              $course_id=$row['course_id'];
+              $course=$row['course'];
+              $title = $row['title'];
             ?>
             
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
                   <h5 class="card-title" style=><?php echo $title; ?></h5>
                   <p class="card-text"><?php echo $course; ?></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-secondary">See Course</a>
                 </div>
               </div>
-              <p class="ml-2"></p>
-              
-         <?php }
-      }
-?>
-
-          </div>
+              <p class="ml-3"></p>
+    <?php }
+        } ?>
+    </div>
 
 </div> <!-- end main -->
 
