@@ -26,7 +26,6 @@
   </ul>
 
   <?php }else { ?>
-    <p>Gotta Login</p>
   <?php } ?>
 </div>
 <!-- Container wrapper -->
