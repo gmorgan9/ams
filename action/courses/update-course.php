@@ -320,7 +320,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-list-ul"></i> </span>
 		    </div>
-            <input name="section" class="form-control" placeholder="Section" type="text">
+            <input name="section" class="form-control" placeholder="Section" type="text" value="<?php echo $section; ?>">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -331,7 +331,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
-            <input name="day" class="form-control" placeholder="Days" type="text">
+            <input name="day" class="form-control" placeholder="Days" type="text" value="<?php echo $day; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -339,7 +339,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
-            <input name="time" class="form-control" placeholder="Time" type="text">
+            <input name="time" class="form-control" placeholder="Time" type="text" value="<?php echo $time; ?>">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -350,7 +350,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
-            <input name="lab_day" class="form-control" placeholder="Lab Days" type="text">
+            <input name="lab_day" class="form-control" placeholder="Lab Days" type="text" value="<?php echo $lab_day; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -358,7 +358,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
-            <input name="lab_time" class="form-control" placeholder="Lab Time" type="text">
+            <input name="lab_time" class="form-control" placeholder="Lab Time" type="text" value="<?php echo $lab_time; ?>">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -369,7 +369,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-location-dot"></i> </span>
 		    </div>
-            <input name="location" class="form-control" placeholder="Location" type="text">
+            <input name="location" class="form-control" placeholder="Location" type="text" value="<?php echo $location; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -377,7 +377,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-location-dot"></i> </span>
 		    </div>
-            <input name="lab_location" class="form-control" placeholder="Lab Location" type="text">
+            <input name="lab_location" class="form-control" placeholder="Lab Location" type="text" value="<?php echo $lab_location; ?>">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -387,7 +387,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user-tie"></i> </span>
 		    </div>
-            <input name="instructor" class="form-control" placeholder="Instructor" type="text">
+            <input name="instructor" class="form-control" placeholder="Instructor" type="text" value="<?php echo $instructor; ?>">
         </div>
     </div> <!-- form-group// -->
 
@@ -397,7 +397,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-arrow-up-9-1"></i> </span>
 		    </div>
-            <input name="credits" class="form-control" placeholder="Credits" type="text">
+            <input name="credits" class="form-control" placeholder="Credits" type="text"value="<?php echo $credits; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -405,7 +405,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-compress"></i> </span>
 		    </div>
-            <input name="mode" class="form-control" placeholder="Mode" type="text">
+            <input name="mode" class="form-control" placeholder="Mode" type="text" value="<?php echo $mode; ?>">
         </div>
     </div> <!-- form-group// -->
 </div>
