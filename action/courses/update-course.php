@@ -57,16 +57,16 @@ if(isset($_POST['update_course'])){
     // Check existence of id parameter before processing further
     if(isset($_GET["cid"]) && !empty(trim($_GET["cid"]))){
         // Get URL parameter
-        $courseid =  trim($_GET["cid"]);
+        $course_id =  trim($_GET["cid"]);
         
         // Prepare a select statement
         $sql = "SELECT * FROM course WHERE course_id = ?";
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "i", $param_id);
+            mysqli_stmt_bind_param($stmt, "i", $param_course_id);
             
             // Set parameters
-            $param_id = $courseid;
+            $param_course_id = $course_id;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
