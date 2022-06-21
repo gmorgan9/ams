@@ -36,7 +36,7 @@ session_start();
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
-
+<a class="add-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-back"></i> Back</a>
 <div class="d-flex justify-content-center">
 <form action="add-course.php" class="log-form" method="post">
 <?php //include('errors.php'); ?>
@@ -52,9 +52,6 @@ session_start();
 </div>
 <br>
 <h2 class="text-center">Add Course</h2>
-<p class="d-flex justify-content-center">
-		<span>Change your mind? <a href="../../pages/courses.php">Back</a></span>
-	</p> 
 
 
     <div class="d-flex justify-content-center">
