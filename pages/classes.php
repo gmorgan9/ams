@@ -36,6 +36,7 @@ if(!isset($_SESSION['username'])){
 <div class="main">
     <h3 class="page_title">Classes</h3>
 
+<div class="d-flex flex-row"> 
 
 <!-- class1 -->
 <div class="card" style="width: 18rem;">
@@ -82,6 +83,8 @@ if(!isset($_SESSION['username'])){
   </div>
 </div>
 <!-- end -->
+
+</div> <!-- end class div -->
 
 </div> <!-- end main -->
 
