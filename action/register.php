@@ -80,7 +80,7 @@ session_start();
 </div>   
 <br>
     <p class="d-flex justify-content-center">
-		<span>Not yet a member? <a href="register.php">Sign up</a></span>
+		<span>Already a member? <a href="login.php">Login</a></span>
 	</p>                                                              
 </form>
 
