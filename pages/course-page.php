@@ -57,7 +57,8 @@ if(!isset($_SESSION['username'])){
 
 <div class="main">
 <a class="edit-btn me-3 me-lg-0"href="..."><i class="fas fa-pencil"></i> Edit Course</a>
-    <h3 class="page_title">Courses</h3>
+    <h3 class="page_title"><?php echo $title; ?></h3>
+    <h5 class="page_title"><?php echo $course; ?></h5>
 
     <?php
       if(isset($_POST['fall22'])) {
