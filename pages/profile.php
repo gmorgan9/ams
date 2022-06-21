@@ -43,7 +43,7 @@ if(!isset($_SESSION['username'])){
     <h3 class="page_title">Profile</h3>
 </div>
 <div class="d-flex justify-content-center">
-
+<!-- card start -->
     <div class="card" style="width: 35rem;">
         <div class="form-header d-flex justify-content-center">
             <div class="bg-circle">
