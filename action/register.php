@@ -1,16 +1,7 @@
 <?php 
 include("../path.php");
-session_start();
-?>
-
-<?php 
 include("../database/functions.php");
-
-// if (isset($_SESSION['username'])) {
-//     $_SESSION['msg'] = "You are already logged in";
-//     header('location: /');
-// }
-
+session_start();
 ?>
 
 
