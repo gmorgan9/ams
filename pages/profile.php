@@ -58,8 +58,8 @@ if(!isset($_SESSION['username'])){
 
 
       <div class="card-body">
-        <h5 class="card-title text-center">Username</h5>
-        <p class="text-center"><?php echo $_SESSION['username']; ?></p>
+        <h5 class="card-title text-center">Username: <?php echo $_SESSION['username']; ?></h5>
+        <p class="card-text text-center"></p>
         <div class="d-flex justify-content-center">
             <a href="#" class="btn btn-primary ">Edit Profile</a>
         </div>
