@@ -100,17 +100,18 @@ if(isset($_POST['login_user'])) {
 		</div>
         <input name="password" class="form-control" placeholder="Enter password" type="password" id="password">
         
-    </div>
-    </div> <!-- form-group// -->
+</div>
+
+
+    </div> 
+    <div class="d-flex justify-content-center">
     <div class="form-group input-group w-75">
     	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		</div>
-        <input name="confpassword" class="form-control" placeholder="Enter password" type="password" id="confpassword">
+		    <span class="input-group-text"> <i class="fa fa-at"></i> </span>
+		 </div>
+        <input name="username" class="form-control" placeholder="User Name" type="text">
 </div>
-</div>
-    </div>
-
+    </div> <!-- form-group// -->
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
     <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>  
