@@ -523,8 +523,9 @@ if(isset($_POST["update_course"])){
 
 
   
-    <div class="d-flex justify-content-center">                                
-        <button type="submit" name="update_course" class="btn btn-primary text-center reg-log">Update Course</button>  
+    <div class="d-flex justify-content-center">   
+    <input type="submit" class="btn btn-primary" value="Submit">                             
+        <!-- <button type="submit" name="update_course" class="btn btn-primary text-center reg-log">Update Course</button>   -->
     </div>                                                             
 </form>
     
