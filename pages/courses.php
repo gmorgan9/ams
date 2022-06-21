@@ -42,6 +42,11 @@ if(!isset($_SESSION['username'])){
         color: #5C5B5B; 
         text-decoration: none;
       }
+      .card-text {
+        font-family: "Candal", serif;
+        color: #5c5b5b;
+        margin: 5px;
+      }
     </style>
 </head>
 <body>
