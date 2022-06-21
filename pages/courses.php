@@ -8,17 +8,6 @@ if(!isset($_SESSION['username'])){
  }
 
 ?>
-
-<?php 
-
-if(array_key_exists('fall22', $_POST)) {
-  fall22();
-}
-else if(array_key_exists('winter23', $_POST)) {
-  winter23();
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +77,7 @@ else if(array_key_exists('winter23', $_POST)) {
 
     <?php
 
-function fall22() {
+if(isset($_POST['fall22'])) {
 ?>
     <h5 class="page_subtitle text-center">Fall 2022</h5>
     
@@ -123,7 +112,7 @@ function fall22() {
     <?php 
 
 }
-function winter23() {
+if(isset($_POST['winter23'])) {
   echo "This is Button2 that is selected";
 }
 
