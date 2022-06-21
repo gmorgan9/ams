@@ -125,6 +125,7 @@ if(!isset($_SESSION['username'])){
               $course=$row['course'];
               $title = $row['title'];
         ?>
+        <?php echo $id; ?>
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
