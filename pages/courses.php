@@ -1,6 +1,6 @@
 <?php 
-include("../path.php");
-include("../database/connection.php");
+include("../../path.php");
+include("../../database/connection.php");
 session_start();
 
 if(!isset($_SESSION['username'])){
