@@ -66,7 +66,7 @@ if(isset($_POST['update_course'])){
             mysqli_stmt_bind_param($stmt, "i", $param_id);
             
             // Set parameters
-            $param_id = $ccourseid;
+            $param_id = $courseid;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
