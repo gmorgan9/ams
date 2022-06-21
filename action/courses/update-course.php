@@ -14,7 +14,7 @@ $course_err = "";
 // Processing form data when form is submitted
 if(isset($_POST["update_course"])){
  // Get hidden input value
- $id = $_POST["course_id"];
+ $cid = $_POST["course_id"];
  //$status = isset($_POST['status']) ? 1 : 0;
  
  // Validate address address
@@ -37,7 +37,7 @@ if(isset($_POST["update_course"])){
          
          // Set parameters
          $param_course = $course;
-         $param_id = $id;
+         $param_id = $cid;
          
          // Attempt to execute the prepared statement
          if(mysqli_stmt_execute($stmt)){
