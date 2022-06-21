@@ -75,6 +75,7 @@ session_start();
 <br>
     <p class="d-flex justify-content-center">
         Forgot Password? <button type="submit" name="reset_btn">Reset</button>
+        <br>
 		Not yet a member? <a href="register.php">Sign up</a>
 	</p>                                                          
 </form>
