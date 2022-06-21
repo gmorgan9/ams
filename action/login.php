@@ -8,7 +8,7 @@ session_start();
 
     if (!isset($_SESSION['username'])) {
         $_SESSION['msg'] = "You are not logged in";
-        header('location: action/login.php');
+        header('location: /action/login.php');
     }
 
 ?>
