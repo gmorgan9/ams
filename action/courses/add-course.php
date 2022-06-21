@@ -51,7 +51,7 @@ session_start();
 
 
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-25">
+        <div class="form-group input-group w-50">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		    </div>
@@ -105,6 +105,7 @@ session_start();
     </div> <!-- form-group// -->
 </div>
 
+<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -121,6 +122,9 @@ session_start();
             <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
     </div> <!-- form-group// -->
+</div>
+
+<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -137,6 +141,7 @@ session_start();
             <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
     </div> <!-- form-group// -->
+</div>
 
 
 
