@@ -45,17 +45,16 @@ if(!isset($_SESSION['username'])){
 <div class="d-flex justify-content-center">
 
     <div class="card" style="width: 35rem;">
-      
-    <div class="form-header d-flex justify-content-center">
-        <div class="bg-circle">
-            <div class="sm-circle">
-                <div class="d-flex justify-content-center">
-                    <img class="user-header" src="../assets/images/image.jpg" alt="">
-                    <!-- <i class="user-header fa-solid fa-user fa-3x"></i> -->
+        <div class="form-header d-flex justify-content-center">
+            <div class="bg-circle">
+                <div class="sm-circle">
+                    <div class="d-flex justify-content-center">
+                        <img class="user-header" src="../assets/images/image.jpg" alt="">
+                        <!-- <i class="user-header fa-solid fa-user fa-3x"></i> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     
 
 
