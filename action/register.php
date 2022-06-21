@@ -33,7 +33,7 @@ session_start();
 
 
 <div class="d-flex justify-content-center">
-<form action="login.php" class="log-form" method="post">
+<form action="register.php" class="log-form" method="post">
 <?php //include('errors.php'); ?>
 
 <div class="form-header d-flex justify-content-center">
