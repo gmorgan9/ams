@@ -73,7 +73,7 @@ session_start();
     
 </div>  
     <p class="d-flex justify-content-center">
-    <button type="submit" name="reset_btn" class="btn btn-primary text-center reg-log">Reset Password</button>    <br>
+    <button type="submit" name="reset_btn" class="btn btn-primary text-center reg-log btn-sm">Reset Password</button>    <br>
 		Not yet a member? <a href="register.php">Sign up</a>
 	</p>                                                          
 </form>
