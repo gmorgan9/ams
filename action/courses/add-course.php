@@ -47,7 +47,6 @@ session_start();
 </div>
 <br>
 <h2 class="text-center">Add Course</h2>
-    <br>
 
 
     <div class="d-flex justify-content-center">
