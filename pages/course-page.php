@@ -77,19 +77,6 @@ if(!isset($_SESSION['username'])){
     <h3 class="page_title"><?php echo $title; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
 
-<br>
-<div class="record_incident">
-    <a href="incident-notes.php"><button class="btn btn-primary rec">Back</button></a>
-</div>
-
-<br><br>
-
-            <h1 class="text-center"><?php echo $title; ?></h1>
-            <p class="text-center text-muted"><?php echo $fullDate; ?></p>
-            <div class="mx-auto" style="width:1200px;">
-            <p><?php echo html_entity_decode($note); ?></p>
-            </div>
-
 
 
 </body>
