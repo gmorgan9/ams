@@ -60,7 +60,9 @@ if(!isset($_SESSION['username'])){
       <div class="card-body">
         <h5 class="card-title text-center"><?php echo $_SESSION['name']; ?></h5>
         <div class="d-flex justify-content-center">
-        <h6>GPA <span class="badge badge-secondary">3.53</span></h6>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="3.53">
+            Grade Point Average
+        </button>
       </div>
     </div>
 
