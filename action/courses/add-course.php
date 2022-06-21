@@ -57,15 +57,86 @@ session_start();
             <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
     </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        </div>
+    </div> <!-- form-group// -->
 
 
 
-
-    <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
+  
     <div class="d-flex justify-content-center">                                
-    <button type="submit" name="add_course" class="btn btn-primary text-center reg-log">Add Course</button>  
-</div>   
-<br>
+        <button type="submit" name="add_course" class="btn btn-primary text-center reg-log">Add Course</button>  
+    </div> 
+    <br>
     <p class="d-flex justify-content-center">
 		<span>Change your mind? <a href="../../pages/courses.php">Back</a></span>
 	</p>                                                              
