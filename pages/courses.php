@@ -130,7 +130,7 @@ if(!isset($_SESSION['username'])){
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
                   <p class="card-text text-center"><?php echo $course; ?></p>
                   <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-secondary btn-sm">See Course</a>
+                    <a href="course-page.php?course_id=<?php echo $course_id; ?>" class="btn btn-secondary btn-sm">See Course</a>
                   </div>
                 </div>
               </div>
