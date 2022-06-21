@@ -14,7 +14,7 @@ $course_err = "";
 // Processing form data when form is submitted
 if(isset($_POST["update_course"])){
  // Get hidden input value
- $id = $_POST["course_id"];
+ $id = $_POST["id"];
  //$status = isset($_POST['status']) ? 1 : 0;
  
  // Validate address address
@@ -29,7 +29,7 @@ if(isset($_POST["update_course"])){
  // Check input errors before inserting in database
  if(empty($course_err)){
      // Prepare an update statement
-     $sql = "UPDATE course SET course=? WHERE course_id=?";
+     $sql = "UPDATE course SET course=? WHERE id=?";
       
      if($stmt = mysqli_prepare($conn, $sql)){
          // Bind variables to the prepared statement as parameters
@@ -62,7 +62,7 @@ if(isset($_POST["update_course"])){
      $id =  trim($_GET['cid']);
      
      // Prepare a select statement
-     $sql = "SELECT * FROM course WHERE course_id = ?";
+     $sql = "SELECT * FROM course WHERE id = ?";
      if($stmt = mysqli_prepare($conn, $sql)){
          // Bind variables to the prepared statement as parameters
          mysqli_stmt_bind_param($stmt, "i", $param_id);
