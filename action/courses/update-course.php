@@ -125,12 +125,11 @@ if(isset($_POST["update_course"])){
     // Check input errors before inserting in database
     if(empty($course_err) && empty($title_err) && empty($taken_err) && empty($day_err) && empty($time_err) && empty($location_err) && empty($section_err) && empty($instructor_err) && empty($credits_err) && empty($mode_err)){
         // Prepare an update statement
-        $sql = "UPDATE course SET course=? WHERE course_id=?";
+        $sql = "UPDATE course SET course=?, title=?, taken=?, section=?, day=?, time=?, lab_day=?, lab_time=?, location=?, lab_location=?, mode=?, instructor=?, credits=? WHERE course_id=?";
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_course); 
-            #$param_title, $param_taken, $param_day, $param_time, $param_lab_day, $param_lab_time, $param_location, $param_lab_location, $param_section, $param_instructor, $param_credits, $param_mode, $param_course_id);
+            mysqli_stmt_bind_param($stmt, "s", $param_course, $param_title, $param_taken, $param_day, $param_time, $param_lab_day, $param_lab_time, $param_location, $param_lab_location, $param_section, $param_instructor, $param_credits, $param_mode, $param_course_id);
             
             // Set parameters
             $param_course = $course;
