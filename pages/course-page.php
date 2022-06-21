@@ -71,7 +71,7 @@ if(!isset($_SESSION['username'])){
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
-<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?courseid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
+<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
     <h3 class="page_title"><?php echo $title; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
 
