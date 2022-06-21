@@ -150,7 +150,7 @@ if(isset($_POST["update_course"])){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records updated successfully. Redirect to landing page
-                header("location: ". BASE_URL ."/pages/courses.php");
+                header('location: '. BASE_URL .'/pages/courses.php');
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
