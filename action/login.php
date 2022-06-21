@@ -63,7 +63,7 @@ session_start();
 <body>
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
-<?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
+<?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 
 <div class="d-flex justify-content-center">
