@@ -40,6 +40,7 @@ function login(){
 			$logged_in_user = mysqli_fetch_assoc($results);
             $_SESSION['user'] = $logged_in_user;
 			$_SESSION['success']  = "You are now logged in";
+            header('location: /');
 		}else {
 			array_push($errors, "Wrong username/password combination");
 		}
