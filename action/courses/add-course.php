@@ -45,6 +45,7 @@ session_start();
         </div>
     </div>
 </div>
+<br>
 <h2 class="text-center">Add Course</h2>
 
 
