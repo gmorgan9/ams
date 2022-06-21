@@ -36,7 +36,7 @@ if(!isset($_SESSION['username'])){
 
 <div class="main">
     <h3 class="page_title">Courses</h3>
-    <a href="../action/courses/add-course.php"><button type="button" class="btn btn-secondary">Secondary</button></a> 
+    <a style="float: right;" href="../action/courses/add-course.php"><button type="button" class="btn btn-secondary">Secondary</button></a> 
 
 
 
