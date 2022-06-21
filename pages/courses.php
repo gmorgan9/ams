@@ -114,7 +114,7 @@ if(isset($_POST['fall22'])) {
 }
 if(isset($_POST['winter23'])) {
 ?>
-    <h5 class="page_subtitle text-center">Fall 2022</h5>
+    <h5 class="page_subtitle text-center">Winter 2023</h5>
     
     
 
