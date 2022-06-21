@@ -66,7 +66,7 @@ if(!isset($_SESSION['username'])){
 <div class="main">
   <div class="sem-btn">
     <form method="post">
-      <p style="font-size: 12px; margin-bottom: -15px;">Select a Semester</p>
+      <p style="font-size: 12px; margin-bottom: -10px;">Select a Semester</p>
     <button type="submit" name="fall22" type="button" class="btn btn-outline-secondary btn-sm">Fall '22</button>
     <button type="submit" name="winter23" type="button" class="btn btn-outline-secondary btn-sm">Winter '23</button>
     </form>
