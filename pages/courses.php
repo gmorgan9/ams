@@ -46,6 +46,7 @@ if(!isset($_SESSION['username'])){
         font-family: "Candal", serif;
         color: #5c5b5b;
         margin: 5px;
+        margin-bottom: 10px;
       }
     </style>
 </head>
