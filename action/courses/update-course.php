@@ -31,11 +31,11 @@ if(isset($_POST["update_course"])){
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "si", $param_course, $param_course_id);
+            mysqli_stmt_bind_param($stmt, "si", $param_course, $param_id);
             
             // Set parameters
             $param_course = $course;
-            $param_course_id = $course_id;
+            $param_id = $course_id;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
