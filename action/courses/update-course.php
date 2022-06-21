@@ -66,7 +66,7 @@ if(isset($_POST["course_id"]) && !empty($_POST["course_id"])){
             mysqli_stmt_bind_param($stmt, "i", $param_course_id);
             
             // Set parameters
-            $param_course_id = $cid;
+            $param_course_id = $course_id;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
