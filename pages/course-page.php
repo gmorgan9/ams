@@ -48,9 +48,6 @@ if(!isset($_SESSION['username'])){
         margin: 5px;
         margin-bottom: 10px;
       }
-      .page_subtitle {
-        margin-left: -10px;
-      }
     </style>
 </head>
 <body>
