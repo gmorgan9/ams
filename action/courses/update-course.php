@@ -145,7 +145,7 @@ if(isset($_POST["update_course"])){
             $param_instructor = $instructor;
             $param_credits = $credits;
             $param_mode = $mode;
-            $param_course_id = $course_id;
+            $param_course_id = $courseid;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
