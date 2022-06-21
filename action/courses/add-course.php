@@ -140,12 +140,21 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-location-dot"></i> </span>
+		    </div>
+            <input name="lab_location" class="form-control" placeholder="Lab Location" type="text">
+        </div>
+    </div> <!-- form-group// -->
+</div>
+
+<div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user-tie"></i> </span>
 		    </div>
             <input name="instructor" class="form-control" placeholder="Instructor" type="text">
         </div>
     </div> <!-- form-group// -->
-</div>
 
 <div class="row">
     <div class="d-flex justify-content-center">
