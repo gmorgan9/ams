@@ -66,67 +66,6 @@ if(!isset($_SESSION['username'])){
 
 ?>
 
-
-
-
-
-
-
-
-<div class="d-flex justify-content-center flex-row"> 
-
-<!-- class1 -->
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!-- end -->
-<p class="ml-2"></p>
-<!-- class2 -->
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!-- end -->
-<p class="ml-2"></p>
-<!-- class3 -->
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!-- end -->
-<p class="ml-2"></p>
-<!-- class4 -->
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!-- end -->
-<p class="ml-2"></p>
-<!-- class5 -->
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!-- end -->
-
-</div> <!-- end class div -->
-
 </div> <!-- end main -->
 
 
