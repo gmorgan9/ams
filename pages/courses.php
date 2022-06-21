@@ -43,7 +43,7 @@ if(!isset($_SESSION['username'])){
     <?php
 
       $sql = "SELECT * FROM course WHERE taken='fall22'";
-      $result = mysqli_query($con, $sql);
+      $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
             $course_id=$row['course_id'];
