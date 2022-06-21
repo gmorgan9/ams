@@ -49,15 +49,16 @@ session_start();
 <h2 class="text-center">Add Course</h2>
     <br>
 
-<div class="row">
+
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-75">
+        <div class="form-group input-group w-25">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		    </div>
             <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
     </div> <!-- form-group// -->
+    <div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
