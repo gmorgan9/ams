@@ -71,7 +71,12 @@ if(!isset($_SESSION['username'])){
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
     <h3 class="page_title">Courses</h3>
 
+<?php
+if (isset($_POST['fall22'])) {
 
+
+    
+?>
     <h5 class="page_subtitle text-center">Fall 2022</h5>
     
     
@@ -101,6 +106,9 @@ if(!isset($_SESSION['username'])){
     <?php }
         } ?>
     </div>
+    <?php 
+}
+?>
 
 </div> <!-- end main -->
 
