@@ -56,12 +56,12 @@ if(!isset($_SESSION['username'])){
    
 
     <?php
-      $viewid = $_GET['viewid'];
-      $sql = "SELECT * FROM course where course_id=$viewid";
+      $cid = $_GET['cid'];
+      $sql = "SELECT * FROM course where id=$cid";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $course_id = $row['course_id'];
+            $id = $row['id'];
             $title = $row['title'];
             $course = $row['course'];
           }
@@ -71,7 +71,7 @@ if(!isset($_SESSION['username'])){
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
-<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
+<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?cid=<?php echo $id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
     <h3 class="page_title"><?php echo $title; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
 
