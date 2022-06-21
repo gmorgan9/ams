@@ -52,6 +52,9 @@ session_start();
 </div>
 <br>
 <h2 class="text-center">Add Course</h2>
+<p class="d-flex justify-content-center">
+		<span>Change your mind? <a href="../../pages/courses.php">Back</a></span>
+	</p> 
 
 
     <div class="d-flex justify-content-center">
@@ -180,11 +183,7 @@ session_start();
   
     <div class="d-flex justify-content-center">                                
         <button type="submit" name="add_course" class="btn btn-primary text-center reg-log">Add Course</button>  
-    </div> 
-    <br>
-    <p class="d-flex justify-content-center">
-		<span>Change your mind? <a href="../../pages/courses.php">Back</a></span>
-	</p>                                                              
+    </div>                                                             
 </form>
     
 </body>
