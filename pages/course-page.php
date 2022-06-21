@@ -52,12 +52,28 @@ if(!isset($_SESSION['username'])){
 </head>
 <body>
 
+<?php
+      $courseid = $_GET['id'];
+      $sql = "SELECT * FROM course where id=$courseid";
+      $result = mysqli_query($conn, $sql);
+      if($result) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $course_id = $row['course_id'];
+          }
+          $fullDate = date("M d, Y", strtotime($date));
+        }
+            ?>
+
+
+
+
+
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
 <a class="edit-btn me-3 me-lg-0"href="..."><i class="fas fa-pencil"></i> Edit Course</a>
-    <h3 class="page_title"><?php echo $title; ?></h3>
+    <h3 class="page_title"><?php echo $id; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
 
     <?php
