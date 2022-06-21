@@ -72,7 +72,7 @@ if(!isset($_SESSION['username'])){
     <h3 class="page_title">Courses</h3>
 
 
-    <h5 class="page_subtitle">Fall 2022</h5>
+    <h5 class="page_subtitle text-center">Fall 2022</h5>
     
     
 
