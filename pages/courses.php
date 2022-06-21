@@ -50,7 +50,7 @@ if(!isset($_SESSION['username'])){
       }
       .sem-btn {
         float: left;
-        margin-right: -175px;
+        margin-right: -180px;
         margin-left: 15px;
       }
     </style>
