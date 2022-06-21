@@ -118,7 +118,7 @@ function updateAcc(){
       $_SESSION['name'] = $name;
       $_SESSION['username'] = $username;
 			$_SESSION['success']  = "Password successfully updated";
-			header('location: profile.php');		
+			header('location: '. BASE_URL . '/pages/profile.php');		
 		}
 	}
 
