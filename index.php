@@ -1,6 +1,13 @@
 <?php 
 include("path.php");
+include("../database/functions.php");
 session_start();
+
+usersOnly();
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
