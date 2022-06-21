@@ -36,7 +36,7 @@ if(!isset($_SESSION['username'])){
 <div class="main">
     <h3 class="page_title">Classes</h3>
 
-<div class="d-flex flex-row"> 
+<div class="d-flex justify-content-center flex-row"> 
 
 <!-- class1 -->
 <div class="card" style="width: 12rem;">
@@ -47,6 +47,7 @@ if(!isset($_SESSION['username'])){
   </div>
 </div>
 <!-- end -->
+<p class="ml-2"></p>
 <!-- class2 -->
 <div class="card" style="width: 12rem;">
   <div class="card-body">
@@ -56,6 +57,7 @@ if(!isset($_SESSION['username'])){
   </div>
 </div>
 <!-- end -->
+<p class="ml-2"></p>
 <!-- class3 -->
 <div class="card" style="width: 12rem;">
   <div class="card-body">
@@ -65,6 +67,7 @@ if(!isset($_SESSION['username'])){
   </div>
 </div>
 <!-- end -->
+<p class="ml-2"></p>
 <!-- class4 -->
 <div class="card" style="width: 12rem;">
   <div class="card-body">
@@ -74,6 +77,7 @@ if(!isset($_SESSION['username'])){
   </div>
 </div>
 <!-- end -->
+<p class="ml-2"></p>
 <!-- class5 -->
 <div class="card" style="width: 12rem;">
   <div class="card-body">
