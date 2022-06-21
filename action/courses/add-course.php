@@ -50,80 +50,16 @@ session_start();
     <br>
 
     <div class="d-flex justify-content-center">
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    
-    <div class="d-flex justify-content-center">
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-at"></i> </span>
-		 </div>
-        <input name="username" class="form-control" placeholder="User Name" type="text">
-</div>
-    </div> <!-- form-group// -->
-    <div class="d-flex justify-content-center">
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		</div>
-        <input name="password" class="form-control" placeholder="Enter password" type="password" id="password">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		    </div>
+            <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
-    </div> 
-    <div class="d-flex justify-content-center">
-    <div class="form-group input-group w-75">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-		 </div>
-        <input name="confpassword" class="form-control" placeholder="Confirm Password" type="password" id="confpassword">
-    </div>
     </div> <!-- form-group// -->
+
+
+
 
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
