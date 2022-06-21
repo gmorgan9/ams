@@ -63,6 +63,7 @@ if(!isset($_SESSION['username'])){
         <button type="button" class="btn btn-secondary">
             GPA <span class="badge badge-light">3.53</span>
         </button>
+        <p class="ml-3"></p>
         <button type="button" class="btn btn-secondary">
             GPA <span class="badge badge-light">3.53</span>
         </button>
