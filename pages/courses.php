@@ -53,6 +53,9 @@ if(!isset($_SESSION['username'])){
         margin-right: -180px;
         margin-left: 15px;
       }
+      .page_subtitle {
+        margin-left: -15px;
+      }
     </style>
 </head>
 <body>
@@ -69,7 +72,7 @@ if(!isset($_SESSION['username'])){
     <h3 class="page_title">Courses</h3>
 
 
-    <h5 class="text-center">Fall 2022</h5>
+    <h5 class="page_subtitle">Fall 2022</h5>
     
     
 
