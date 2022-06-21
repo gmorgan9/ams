@@ -219,7 +219,7 @@ if(isset($_POST["update_course"])){
         mysqli_close($conn);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
-        header("location: die-page2.php");
+        header("location: die-page1.php");
         exit();
     }
 }
