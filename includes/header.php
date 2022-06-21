@@ -7,7 +7,7 @@
   <div class="container-fluid">
 
 <!-- Brand -->
-<a class="navbar-brand" href="#">
+<a class="navbar-brand" href="/">
   <h3>Assignment Management System</h3>
 </a>
 <?php if (isset($_SESSION['username'])) { ?>
