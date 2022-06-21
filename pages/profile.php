@@ -50,7 +50,8 @@ if(!isset($_SESSION['username'])){
         <div class="bg-circle">
             <div class="sm-circle">
                 <div class="d-flex justify-content-center">
-                    <i class="user-header fa-solid fa-user fa-3x"></i>
+                    <img src="../assets/images/image.jpg" alt="">
+                    <!-- <i class="user-header fa-solid fa-user fa-3x"></i> -->
                 </div>
             </div>
         </div>
