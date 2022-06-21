@@ -10,7 +10,7 @@
 <a class="navbar-brand" href="#">
   <h3>Assignment Management System</h3>
 </a>
-
+<?php echo $_SESSION['username']; ?>
 <!-- Right links -->
   <ul class="navbar-nav ms-auto d-flex flex-row">
     <li class="nav-item">
@@ -24,6 +24,10 @@
       </a>
     </li>
   </ul>
+
+  <?php else: ?>
+    Gotta Login
+  <?php endif; ?>
 </div>
 <!-- Container wrapper -->
 </nav>
