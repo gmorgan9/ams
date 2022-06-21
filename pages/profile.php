@@ -49,7 +49,7 @@ if(!isset($_SESSION['username'])){
             <div class="bg-circle">
                 <div class="sm-circle">
                     <div class="d-flex justify-content-center">
-                        <img class="user-header" style="height:100px; border-radius:100px;" src="../assets/images/image.JPG" alt="">
+                        <img class="user-header" style="height:100px; border-radius:150px;" src="../assets/images/image.JPG" alt="">
                         <!-- <i class="user-header fa-solid fa-user fa-3x"></i> -->
                     </div>
                 </div>
