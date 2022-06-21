@@ -38,6 +38,10 @@ if(!isset($_SESSION['username'])){
         font-size: 12px; 
         text-decoration: none;
       }
+      .add-btn:hover {
+        color: #5C5B5B; 
+        text-decoration: none;
+      }
     </style>
 </head>
 <body>
