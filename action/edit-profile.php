@@ -61,7 +61,7 @@ if(!isset($_SESSION['username'])){
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
 		 </div>
-        <input name="name" class="form-control" placeholder="Enter Name" type="text">
+        <input name="name" class="form-control" placeholder="Enter Name" type="text" value="<?php echo $_SESSION['name']; ?>">
 </div>
     </div> <!-- form-group// -->
     
@@ -70,7 +70,7 @@ if(!isset($_SESSION['username'])){
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-at"></i> </span>
 		 </div>
-        <input name="username" class="form-control" placeholder="User Name" type="text">
+        <input name="username" class="form-control" placeholder="User Name" type="text" value="<?php echo $_SESSION['username']; ?>">
 </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -78,7 +78,7 @@ if(!isset($_SESSION['username'])){
     	<div class="input-group-prepend">
 		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
 		</div>
-        <input name="password" class="form-control" placeholder="Enter password" type="password" id="password" value="<?php echo $SESSION['$password'];">
+        <input name="password" class="form-control" placeholder="Enter password" type="password" id="password" value="<?php echo $SESSION['password']; ?>">
         </div>
     </div> 
     <div class="d-flex justify-content-center">
