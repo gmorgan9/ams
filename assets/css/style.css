@@ -89,4 +89,9 @@ a {
     margin-top: 25px;
     color: white;
 }
+.reg-log {
+    color: white !important;
+    background-color: #4e575c !important;
+    border-color: #4e575c !important;
+}
     
