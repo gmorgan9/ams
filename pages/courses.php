@@ -42,37 +42,21 @@ if(!isset($_SESSION['username'])){
 
     <?php
 
-      $sql = "SELECT * FROM course";
+      $sql = "SELECT * FROM course WHERE taken='fall22'";
       $result = mysqli_query($con, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $id=$row['id'];
-            $status=$row['status'];
-            $inc_num = $row['inc_num'];
-            $priority = $row['priority'];
-            $description = $row['description'];
-            //$assign_group = $row['assign_group'];
-            //$kb_article = $row['kb_article'];
-            $date = $row['date'];
-            $time = $row['time'];
+            $course_id=$row['course_id'];
+            $course=$row['course'];
+            $title = $row['title'];
             ?>
-            <tr>
-            <th scope="row"><?php echo $id; ?></th>
-            <?php if($status == 0) { ?>
-                <td>open</td>
-            <?php } else { ?>
-            <td>closed</td>
-            <?php } ?>
-            <td><?php echo $inc_num; ?></td>
-            <td><?php echo $priority; ?></td>
-            <td style="max-width: 40em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100px;"><?php echo $description ?></td>
-            <!-- <td><?php #echo $assign_group; ?></td> -->
-            <!-- <td><?php #echo $kb_article; ?></td> -->
-            <td><?php echo $date; ?></td>
-            <td><?php echo $time; ?></td>
-            <td><a href="update-incident.php?updateid=<?php echo $id; ?>"><i class="fa-solid fa-pen-to-square" style="color:#005382;"></a></i></td>
-            <td><a href="all-incidents.php?id=<?php echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
-            </tr>
+              <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $course; ?></h5>
+                  <p class="card-text">text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
          <?php }
       }
 
