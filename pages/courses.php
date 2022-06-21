@@ -75,11 +75,12 @@ if(!isset($_SESSION['username'])){
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
+              <p class="ml-2"></p>
               
          <?php }
       }
 ?>
-<p class="ml-2"></p>
+
           </div>
 
 </div> <!-- end main -->
