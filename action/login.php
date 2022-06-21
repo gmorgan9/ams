@@ -12,7 +12,7 @@
     <!-- <link rel="icon" type="image/x-icon" href="assets/img/bell-regular.svg"> -->
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/style.css?v=1.7">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.9">
 
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,7 +21,20 @@
 </head>
 <body>
 
-LOGIN
+<section class="login" id="login">
+  <div class="head">
+  <h1 class="title">Universe Explorer</h1>
+  </div>
+  <p class="msg">Welcome back</p>
+  <div class="form">
+    <form action="login.php" method="post">
+  <input type="text" placeholder="Enter Username..." class="text" id="username" required><br>
+  <input type="password" placeholder="Enter Password..." class="password"><br>
+  <a href="#" class="btn-login" id="do-login">Login</a>
+  <a href="#" class="forgot">Forgot?</a>
+    </form>
+  </div>
+</section>
     
 </body>
 </html>
