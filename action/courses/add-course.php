@@ -127,7 +127,7 @@ session_start();
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
-            <input name="lab-day" class="form-control" placeholder="Lab Days" type="text">
+            <input name="lab_day" class="form-control" placeholder="Lab Days" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
