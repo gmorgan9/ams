@@ -82,7 +82,7 @@ if (isset($_POST['login_user'])) {
 
   function usersOnly($redirect = '/login.php')
   {
-      if (empty($_SESSION['username'])) {
+      if (empty($_SESSION['id'])) {
           $_SESSION['message'] = 'You need to login first';
           header('location: ' . BASE_URL . $redirect);
           exit(0);
