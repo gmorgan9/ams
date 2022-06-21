@@ -92,7 +92,7 @@ session_start();
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
-            <input name="time" class="form-control" placeholder="time" type="text">
+            <input name="time" class="form-control" placeholder="Time" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -117,9 +117,9 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-arrow-down-1-9"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-arrow-up-9-1"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="credits" class="form-control" placeholder="Credits" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -128,17 +128,17 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-compress"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="mode" class="form-control" placeholder="Mode" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-list-ul"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="section" class="form-control" placeholder="Section" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
