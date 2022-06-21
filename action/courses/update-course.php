@@ -14,7 +14,7 @@ $course_err = "";
 // Processing form data when form is submitted
 if(isset($_POST["update_course"])){
  // Get hidden input value
- $cid = $_POST["course_id"];
+ $id = $_POST["course_id"];
  //$status = isset($_POST['status']) ? 1 : 0;
  
  // Validate address address
@@ -37,7 +37,7 @@ if(isset($_POST["update_course"])){
          
          // Set parameters
          $param_course = $course;
-         $param_id = $cid;
+         $param_id = $id;
          
          // Attempt to execute the prepared statement
          if(mysqli_stmt_execute($stmt)){
@@ -59,7 +59,7 @@ if(isset($_POST["update_course"])){
  // Check existence of id parameter before processing further
  if(isset($_GET["cid"]) && !empty(trim($_GET["cid"]))){
      // Get URL parameter
-     $cid =  trim($_GET['cid']);
+     $id =  trim($_GET['cid']);
      
      // Prepare a select statement
      $sql = "SELECT * FROM course WHERE course_id = ?";
@@ -68,7 +68,7 @@ if(isset($_POST["update_course"])){
          mysqli_stmt_bind_param($stmt, "i", $param_id);
          
          // Set parameters
-         $param_id = $cid;
+         $param_id = $id;
          
          // Attempt to execute the prepared statement
          if(mysqli_stmt_execute($stmt)){
