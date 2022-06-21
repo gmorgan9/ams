@@ -50,6 +50,7 @@ session_start();
     <br>
 
     <div class="d-flex justify-content-center">
+        <div class="row">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -65,6 +66,9 @@ session_start();
             <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
     </div> <!-- form-group// -->
+    </div>
+
+
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
