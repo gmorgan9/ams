@@ -7,7 +7,7 @@ session_start();
 <?php 
 include('../database/connection.php');
 
-if(isset($_POST['login_user'])) {
+if(isset($_POST['reg_user'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     $confpassword = $_POST['confpassword'];
@@ -22,18 +22,27 @@ if(isset($_POST['login_user'])) {
         array_push($errors, "The two passwords do not match");
       }
 
-    if (count($errors) == 0) {
-        $query = "SELECT * FROM user WHERE username='$username' AND password='$password' LIMIT 1";
-        $results = mysqli_query($conn, $query);
-
-        if (mysqli_num_rows($results) == 1) {
-            $_SESSION['username'] = $username;
-            $_SESSION['success'] = "You are logged in!";
-            header('location: /');
-        } else {
-            array_push($errors, "Wrong username/password combination!");
+      $user_check_query = "SELECT * FROM user WHERE username='$username' LIMIT 1";
+      $result = mysqli_query($conn, $user_check_query);
+      $user = mysqli_fetch_assoc($result);
+      
+      if ($user) { // if user exists
+        if ($user['username'] === $username) {
+          array_push($errors, "Username already exists");
         }
-    }
+      }
+    
+      // Finally, register user if there are no errors in the form
+      if (count($errors) == 0) {
+          $password = md5($password);//encrypt the password before saving in the database
+    
+          $query = "INSERT INTO user (username, password) 
+                    VALUES('$username', '$password')";
+          mysqli_query($conn, $query);
+          $_SESSION['username'] = $username;
+          $_SESSION['success'] = "You are now logged in";
+          header('location: /');
+      }
 }
 
 
@@ -82,7 +91,7 @@ if(isset($_POST['login_user'])) {
     </div>
 </div>
 <br>
-<h2 class="text-center">Member Login</h2>
+<h2 class="text-center">Registration</h2>
     <br>
     
     <div class="d-flex justify-content-center">
@@ -112,7 +121,7 @@ if(isset($_POST['login_user'])) {
 
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
-    <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>  
+    <button type="submit" name="reg_user" class="btn btn-primary text-center reg-log">Register</button>  
 </div>                                                                
 </form>
 
