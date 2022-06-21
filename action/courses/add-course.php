@@ -79,14 +79,22 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-list-ul"></i> </span>
 		    </div>
-            <input name="day" class="form-control" placeholder="Days" type="text">
+            <input name="section" class="form-control" placeholder="Section" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
 
 <div class="row">
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
+		    </div>
+            <input name="day" class="form-control" placeholder="Days" type="text">
+        </div>
+    </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -95,6 +103,28 @@ session_start();
             <input name="time" class="form-control" placeholder="Time" type="text">
         </div>
     </div> <!-- form-group// -->
+</div>
+
+<div class="row">
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
+		    </div>
+            <input name="lab-day" class="form-control" placeholder="Lab Days" type="text">
+        </div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
+		    </div>
+            <input name="lab_time" class="form-control" placeholder="Lab Time" type="text">
+        </div>
+    </div> <!-- form-group// -->
+</div>
+
+<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -103,9 +133,6 @@ session_start();
             <input name="location" class="form-control" placeholder="Location" type="text">
         </div>
     </div> <!-- form-group// -->
-</div>
-
-<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -114,6 +141,9 @@ session_start();
             <input name="instructor" class="form-control" placeholder="Instructor" type="text">
         </div>
     </div> <!-- form-group// -->
+</div>
+
+<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -122,23 +152,12 @@ session_start();
             <input name="credits" class="form-control" placeholder="Credits" type="text">
         </div>
     </div> <!-- form-group// -->
-</div>
-
-<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-compress"></i> </span>
 		    </div>
             <input name="mode" class="form-control" placeholder="Mode" type="text">
-        </div>
-    </div> <!-- form-group// -->
-    <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-75">
-    	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-list-ul"></i> </span>
-		    </div>
-            <input name="section" class="form-control" placeholder="Section" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
