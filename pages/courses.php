@@ -51,6 +51,7 @@ if(!isset($_SESSION['username'])){
             $course=$row['course'];
             $title = $row['title'];
             ?>
+            <div class="d-flex justify-content-center flex-row"> 
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $course; ?></h5>
@@ -58,6 +59,8 @@ if(!isset($_SESSION['username'])){
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
+              <p class="ml-2"></p>
+          </div>
          <?php }
       }
 
