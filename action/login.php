@@ -102,7 +102,7 @@ if(isset($_POST['login_user'])) {
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
     <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>
-    <br> <a href="register.php">Register</a>  
+    <br><br><br> <a href="register.php">Register</a>  
 </div>  
                                                                 
 </form>
