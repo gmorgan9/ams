@@ -14,7 +14,7 @@
 <!-- Right links -->
   <ul class="navbar-nav ms-auto d-flex flex-row">
     <li class="nav-item">
-      <a class="nav-link me-3 me-lg-0" href="pages/profile.php">
+      <a class="nav-link me-3 me-lg-0" href="<?php BASE_URL ?>/pages/profile.php">
         <i class="fas fa-user"></i>
       </a>
     </li>
