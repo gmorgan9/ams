@@ -72,7 +72,7 @@ if(!isset($_SESSION['username'])){
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
                   <p class="card-text text-center"><?php echo $course; ?></p>
                   <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-secondary">See Course</a>
+                    <a href="#" class="btn btn-secondary btn-sm">See Course</a>
                   </div>
                 </div>
               </div>
@@ -82,65 +82,6 @@ if(!isset($_SESSION['username'])){
     </div>
 
 </div> <!-- end main -->
-
-<!-- <div class="d-flex justify-content-center flex-row"> 
-
-
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<p class="ml-2"></p>
-
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<p class="ml-2"></p>
-
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<p class="ml-2"></p>
-
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<p class="ml-2"></p>
-
-<div class="card" style="width: 12rem;">
-  <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-</div>  -->
-
-
-
-
-
-
 
 </body>
 </html>
