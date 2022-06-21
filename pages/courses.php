@@ -59,7 +59,8 @@ if(!isset($_SESSION['username'])){
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
     <h3 class="page_title">Courses</h3>
     
-
+    <button name="fall22" type="button" class="btn btn-outline-secondary">Fall '22</button>
+    <button name="winter23" type="button" class="btn btn-outline-secondary">Winter '23</button>
 
 
     <div class="d-flex justify-content-center flex-row"> 
