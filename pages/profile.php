@@ -40,7 +40,7 @@ if(!isset($_SESSION['username'])){
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-<button style="float: right; margin-Left:0;" type="button" class="btn btn-secondary">Secondary</button>
+<button style="float: right; margin-Left:-15px;" type="button" class="btn btn-secondary">Secondary</button>
     <h3 class="page_title">Profile</h3>
 </div>
 <div class="d-flex justify-content-center">
