@@ -8,6 +8,17 @@ if(!isset($_SESSION['username'])){
  }
 
 ?>
+
+<?php 
+
+if(array_key_exists('fall22', $_POST)) {
+  fall22();
+}
+else if(array_key_exists('winter23', $_POST)) {
+  winter23();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +81,13 @@ if(!isset($_SESSION['username'])){
   </div>
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
     <h3 class="page_title">Courses</h3>
+
+
+
+    <?php
+
+function fall22() {
+?>
     <h5 class="page_subtitle text-center">Fall 2022</h5>
     
     
@@ -99,6 +117,15 @@ if(!isset($_SESSION['username'])){
     <?php }
         } ?>
     </div>
+
+    <?php 
+
+}
+function winter23() {
+  echo "This is Button2 that is selected";
+}
+
+    ?>
 
 </div> <!-- end main -->
 
