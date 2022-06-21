@@ -73,17 +73,10 @@ if(!isset($_SESSION['username'])){
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
     <h3 class="page_title">Courses</h3>
 
-
-
     <?php
-
-if(isset($_POST['fall22'])) {
-?>
+      if(isset($_POST['fall22'])) {
+    ?>
     <h5 class="page_subtitle text-center">Fall 2022</h5>
-    
-    
-
-
     <div class="d-flex justify-content-center flex-row"> 
       <?php
         $sql = "SELECT * FROM course WHERE taken = 'fall22'";
@@ -110,15 +103,10 @@ if(isset($_POST['fall22'])) {
     </div>
 
     <?php 
-
-}
-if(isset($_POST['winter23'])) {
-?>
+      }
+      if(isset($_POST['winter23'])) {
+    ?>
     <h5 class="page_subtitle text-center">Winter 2023</h5>
-    
-    
-
-
     <div class="d-flex justify-content-center flex-row"> 
       <?php
         $sql = "SELECT * FROM course WHERE taken = 'winter23'";
@@ -128,8 +116,7 @@ if(isset($_POST['winter23'])) {
               $course_id=$row['course_id'];
               $course=$row['course'];
               $title = $row['title'];
-            ?>
-            
+        ?>
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
@@ -140,14 +127,13 @@ if(isset($_POST['winter23'])) {
                 </div>
               </div>
               <p class="ml-3"></p>
-    <?php }
-        } ?>
-    </div>
-
-<?php
-}
-
-    ?>
+        <?php 
+            }
+          } ?>
+        </div>
+      <?php
+        }
+      ?>
 
 </div> <!-- end main -->
 
