@@ -33,7 +33,7 @@ if(!isset($_SESSION['username'])){
       .add-btn {
         float: right; 
         margin-right: 10px; 
-        margin-left: -20px; 
+        margin-left: -50px; 
         color: #5C5B5B; 
         font-size: 12px; 
         text-decoration: none;
