@@ -1,4 +1,3 @@
-// LOGIN USER
 <?php
 
 function isLoggedIn()
@@ -14,7 +13,7 @@ function isLoggedIn()
 if (isset($_POST['login_user'])) {
 	login();
 }
-
+// LOGIN USER
 function login(){
 	global $db, $username, $errors;
 
