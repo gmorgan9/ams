@@ -13,12 +13,16 @@ require_once('connection.php');
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
     // receive all input values from the form
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     $confpassword = mysqli_real_escape_string($conn, $_POST['confpassword']);
   
     // form validation: ensure that the form is correctly filled ...
     // by adding (array_push()) corresponding error unto $errors array
+    if (empty($name)) { 
+      array_push($errors, "Name is required"); 
+  }
     if (empty($username)) { 
         array_push($errors, "Username is required"); 
     }
@@ -45,8 +49,8 @@ if (isset($_POST['reg_user'])) {
     if (count($errors) == 0) {
         $password = md5($password);//encrypt the password before saving in the database
   
-        $query = "INSERT INTO user (username, password) 
-                  VALUES('$username', '$password')";
+        $query = "INSERT INTO user (name, username, password) 
+                  VALUES('$name', '$username', '$password')";
         mysqli_query($conn, $query);
         $_SESSION['name'] = $name;
         $_SESSION['username'] = $username;
