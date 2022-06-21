@@ -36,7 +36,7 @@ if(!isset($_SESSION['username'])){
 
 <div class="main">
     <h3 class="page_title">Courses</h3>
-
+    <a href="../action/courses/add-course.php"><button type="button" class="btn btn-secondary">Secondary</button></a> 
 
 
 
@@ -54,7 +54,7 @@ if(!isset($_SESSION['username'])){
             <div class="d-flex justify-content-center flex-row"> 
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
-                  <h5 class="card-title"><?php echo $title; ?></h5>
+                  <h5 class="card-title" style=><?php echo $title; ?></h5>
                   <p class="card-text"><?php echo $course; ?></p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
