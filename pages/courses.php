@@ -69,9 +69,11 @@ if(!isset($_SESSION['username'])){
             
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
-                  <h5 class="card-title" style=><?php echo $title; ?></h5>
-                  <p class="card-text"><?php echo $course; ?></p>
-                  <a href="#" class="btn btn-secondary">See Course</a>
+                  <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
+                  <p class="card-text text-center"><?php echo $course; ?></p>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-secondary">See Course</a>
+                  </div>
                 </div>
               </div>
               <p class="ml-3"></p>
