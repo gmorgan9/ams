@@ -54,8 +54,8 @@ if(!isset($_SESSION['username'])){
             <div class="d-flex justify-content-center flex-row"> 
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
-                  <h5 class="card-title"><?php echo $course; ?></h5>
-                  <p class="card-text">text</p>
+                  <h5 class="card-title"><?php echo $title; ?></h5>
+                  <p class="card-text"><?php echo $course; ?></p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
