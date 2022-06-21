@@ -109,7 +109,6 @@ if(isset($_POST['login_user'])) {
         <input name="confpassword" class="form-control" placeholder="Enter password" type="password" id="confpassword">
         
     </div>
-    </div> <!-- form-group// -->
 
     </div> 
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
