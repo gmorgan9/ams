@@ -53,6 +53,10 @@ if(!isset($_SESSION['username'])){
         margin-right: -200px;
         margin-left: 15px;
       }
+      .sem-btn p {
+        font-family: "Candal", serif;
+        color: #5c5b5b;
+      }
       .page_subtitle {
         margin-left: -10px;
       }
