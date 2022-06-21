@@ -150,7 +150,7 @@ if(isset($_POST["update_course"])){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records updated successfully. Redirect to landing page
-                header("location: /pages/courses.php");
+                header("location: ". BASE_URL ."/pages/courses.php");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -203,7 +203,7 @@ if(isset($_POST["update_course"])){
                     $mode = $row['mode'];
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
-                    header("location: die-page.php");
+                    header("location: ". BASE_URL ."/die-page.php");
                     exit();
                 }
                 
@@ -219,7 +219,7 @@ if(isset($_POST["update_course"])){
         mysqli_close($conn);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
-        header("location: die-page1.php");
+        header("location: ". BASE_URL ."/die-page1.php");
         exit();
     }
 }
