@@ -12,9 +12,9 @@ $course = "";
 $course_err = "";
  
 // Processing form data when form is submitted
-if(isset($_POST["update_course"])){
+if(isset($_POST["update"])){
     // Get hidden input value
-    $course_id = $_POST["course_id"];
+    $id = $_POST["course_id"];
     
     // Validate address address
     $input_course = trim($_POST["course"]);
@@ -27,7 +27,7 @@ if(isset($_POST["update_course"])){
     // Check input errors before inserting in database
     if(empty($course_err)){
         // Prepare an update statement
-        $sql = "UPDATE course SET course=? WHERE course_id=?";
+        $sql = "UPDATE notes SET course=? WHERE course_id=?";
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -55,9 +55,9 @@ if(isset($_POST["update_course"])){
     mysqli_close($conn);
 } else{
     // Check existence of id parameter before processing further
-    if(isset($_GET["cid"]) && !empty(trim($_GET["cid"]))){
+    if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
         // Get URL parameter
-        $id =  trim($_GET["cid"]);
+        $id =  trim($_GET["id"]);
         
         // Prepare a select statement
         $sql = "SELECT * FROM course WHERE course_id = ?";
@@ -524,7 +524,7 @@ if(isset($_POST["update_course"])){
 
   
     <div class="d-flex justify-content-center">                            
-        <button type="submit" name="update_course" class="btn btn-primary text-center reg-log">Update Course</button>  
+        <button type="submit" name="update" class="btn btn-primary text-center reg-log">Update Course</button>  
     </div>                                                             
 </form>
     
