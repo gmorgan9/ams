@@ -97,13 +97,12 @@ if(isset($_POST['login_user'])) {
         <input name="password" class="form-control" placeholder="Enter password" type="password" id="password">
         
 </div>
-</div> <!-- form-group// -->
 
     </div> 
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
     <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>
-    <a href="register.php">Register</a>  
+    <br> <a href="register.php">Register</a>  
 </div>  
                                                                 
 </form>
