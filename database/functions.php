@@ -176,7 +176,7 @@ if (empty($section)) {
   $result = mysqli_query($conn, $course_check_query);
   $course_data = mysqli_fetch_assoc($result);
   
-  if ($user) { // if course exists
+  if ($course_data) { // if course exists
     if ($course_data['course'] === $course) {
       array_push($errors, "Course already exists");
     }
