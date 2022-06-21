@@ -20,7 +20,36 @@
     <title>Login - AMS</title>
 
     <style>
-    
+    .log-form {
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    height: 450px;
+}
+.input-group {
+    width: 300px;
+}
+.bg-circle {
+    background-color: #E5E5E5;
+    border-radius: 100px;
+    height: 130px;
+    width: 130px;
+    position:relative;
+}
+.sm-circle {
+    background-color: #005382;
+    border-radius: 100px;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid #FFFFFF;
+}
+.form-header {
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
     </style>
 </head>
 <body>
@@ -66,6 +95,17 @@
 </div> 
     <p class="text-center">Don't have an account? <a href="/register.php" style="color: black;">Register</a> </p>                                                                 
 </form>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
     
 </body>
 </html>
