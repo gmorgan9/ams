@@ -8,7 +8,7 @@ session_start();
 
     if (isset($_SESSION['username'])) {
         $_SESSION['msg'] = "You are already logged in";
-        header('location: index.php');
+        header('location: /');
     }
 
 ?>
