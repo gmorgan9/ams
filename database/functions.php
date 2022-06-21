@@ -9,7 +9,6 @@ $errors = array();
 
 // connect to the database
 require_once('connection.php');
-require_once('../path');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -79,4 +78,4 @@ if (isset($_POST['login_user'])) {
             array_push($errors, "Wrong username/password combination");
         }
     }
-}
+  }
