@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $password = mysqli_real_escape_string($conn,$_POST['password']); 
     
-    $sql = "SELECT id FROM user WHERE username = '$username' and password = '$password'";
+    $sql = "SELECT * FROM user WHERE username = $username and password = $password";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $active = $row['active'];
