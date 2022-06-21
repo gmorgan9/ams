@@ -28,6 +28,17 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Courses - AMS</title>
+
+    <style>
+      .add-btn {
+        float: right; 
+        margin-right: 10px; 
+        margin-left: -20px; 
+        color: #5C5B5B; 
+        font-size: 12px; 
+        text-decoration: none;
+      }
+    </style>
 </head>
 <body>
 
@@ -35,7 +46,7 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-<p style="float: right; margin-right: 10px; margin-left: -20px; color: #5C5B5B; font-size: 12px; text-decorations: none;"><a class="me-3 me-lg-0" style="color: #5C5B5B; font-size: 12px;" href="../action/courses/add-course.php"><i class="fas fa-plus"></i></a>Add Course</p>
+<p class="add-btn"><a class="me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i></a>Add Course</p>
     <h3 class="page_title">Courses</h3>
     
 
