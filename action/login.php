@@ -28,7 +28,7 @@ session_start();
 </head>
 <body>
 
-<?php include(ROOT_PATH . "includes/header.php"); ?>
+<?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 
