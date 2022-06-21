@@ -126,52 +126,68 @@ function updateAcc(){
 // Add Course
 if (isset($_POST['add_course'])) {
   // receive all input values from the form
-  $name = mysqli_real_escape_string($conn, $_POST['name']);
-  $username = mysqli_real_escape_string($conn, $_POST['username']);
-  $password = mysqli_real_escape_string($conn, $_POST['password']);
-  $confpassword = mysqli_real_escape_string($conn, $_POST['confpassword']);
-  $name = mysqli_real_escape_string($conn, $_POST['name']);
-  $username = mysqli_real_escape_string($conn, $_POST['username']);
-  $password = mysqli_real_escape_string($conn, $_POST['password']);
-  $confpassword = mysqli_real_escape_string($conn, $_POST['confpassword']);
+  $course = mysqli_real_escape_string($conn, $_POST['course']);
+  $title = mysqli_real_escape_string($conn, $_POST['title']);
+  $taken = mysqli_real_escape_string($conn, $_POST['taken']);
+  $date = mysqli_real_escape_string($conn, $_POST['date']);
+  $time = mysqli_real_escape_string($conn, $_POST['time']);
+  $location = mysqli_real_escape_string($conn, $_POST['location']);
+  $instructor = mysqli_real_escape_string($conn, $_POST['instructor']);
+  $credits = mysqli_real_escape_string($conn, $_POST['credits']);
+  $mode = mysqli_real_escape_string($conn, $_POST['mode']);
+  $section = mysqli_real_escape_string($conn, $_POST['section']);
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($name)) { 
-    array_push($errors, "Name is required"); 
+  if (empty($course)) { 
+    array_push($errors, "Course is required"); 
+  }
+  if (empty($title)) { 
+      array_push($errors, "Title is required"); 
+  }
+  if (empty($taken)) { 
+      array_push($errors, "Taken is required"); 
+  }
+  if (empty($date)) {
+      array_push($errors, "Date is required");
+  }
+  if (empty($time)) { 
+      array_push($errors, "Time is required"); 
+  }
+  if (empty($location)) { 
+      array_push($errors, "Location is required"); 
+  }
+  if (empty($instructor)) { 
+      array_push($errors, "Instructor is required"); 
+  }
+  if (empty($credits)) {
+    array_push($errors, "Credits is required");
+  }
+  if (empty($mode)) { 
+    array_push($errors, "Mode is required"); 
 }
-  if (empty($username)) { 
-      array_push($errors, "Username is required"); 
-  }
-  if (empty($password)) { 
-      array_push($errors, "Password is required"); 
-  }
-  if ($password != $confpassword) {
-    array_push($errors, "The two passwords do not match");
-  }
+if (empty($section)) {
+    array_push($errors, "Section is required");
+}
 
   // first check the database to make sure 
-  // a user does not already exist with the same username and/or email
-  $user_check_query = "SELECT * FROM user WHERE username='$username' LIMIT 1";
-  $result = mysqli_query($conn, $user_check_query);
-  $user = mysqli_fetch_assoc($result);
+  // a course does not already exist with the same course_id
+  $course_check_query = "SELECT * FROM course WHERE course_id='$course_id' LIMIT 1";
+  $result = mysqli_query($conn, $course_check_query);
+  $course_data = mysqli_fetch_assoc($result);
   
-  if ($user) { // if user exists
-    if ($user['username'] === $username) {
-      array_push($errors, "Username already exists");
+  if ($user) { // if course exists
+    if ($course_data['course'] === $course) {
+      array_push($errors, "Course already exists");
     }
   }
 
-  // Finally, register user if there are no errors in the form
+  // Finally, add course if there are no errors in the form
   if (count($errors) == 0) {
-      $password = md5($password);//encrypt the password before saving in the database
 
-      $query = "INSERT INTO user (name, username, password) 
-                VALUES('$name', '$username', '$password')";
+      $query = "INSERT INTO course (course, title, taken, date, time, location, instructor, credits, mode, section) 
+                VALUES('$course', '$title', '$taken', '$date', '$time', '$location', '$instructor', '$credits', '$mode', '$section')";
       mysqli_query($conn, $query);
-      $_SESSION['name'] = $name;
-      $_SESSION['username'] = $username;
-      $_SESSION['success'] = "You are now logged in";
-      header('location: /');
+      header('location: '. BASE_URL .'/pages/courses.php');
   }
 }
