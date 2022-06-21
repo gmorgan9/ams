@@ -4,15 +4,6 @@ include("../database/functions.php");
 session_start();
 ?>
 
-<?php 
-
-    // if (isset($_SESSION['username'])) {
-    //     $_SESSION['msg'] = "You are already logged in";
-    //     header('location: index.php');
-    // }
-
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +28,7 @@ session_start();
 </head>
 <body>
 
-<?php include(ROOT_PATH . "/includes/header.php"); ?>
+<?php include(ROOT_PATH . "includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 
