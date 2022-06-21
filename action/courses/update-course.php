@@ -8,6 +8,7 @@ session_start();
 
    // Define variables and initialize with empty values
    $course = $title = $taken = $day = $time = $lab_day = $lab_time = $location = $lab_location = $section = $instructor = $credits = $mode = "";
+
    $course_err = $title_err = $taken_err = $day_err = $time_err = $lab_day_err = $lab_time_err = $location_err = $lab_location_err = $section_err = $instructor_err = $credits_err = $mode_err = "";
  
 // Processing form data when form is submitted
@@ -164,9 +165,9 @@ if(isset($_POST["update_course"])){
     mysqli_close($conn);
 } else{
     // Check existence of id parameter before processing further
-    if(isset($_GET["course_id"]) && !empty(trim($_GET["course_id"]))){
+    if(isset($_GET["updateid"]) && !empty(trim($_GET["updateid"]))){
         // Get URL parameter
-        $course_id =  trim($_GET["course_id"]);
+        $course_id =  trim($_GET["updateid"]);
         
         // Prepare a select statement
         $sql = "SELECT * FROM course WHERE course_id = ?";
