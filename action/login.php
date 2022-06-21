@@ -20,122 +20,52 @@
     <title>Login - AMS</title>
 
     <style>
-        * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-}
-
-body, html {
-	height: 100%;
-	font-family: Raleway-Regular, sans-serif;
-}
-
-/*---------------------------------------------*/
-a {
-	font-family: Raleway-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-}
-
-a:focus {
-	outline: none !important;
-}
-
-a:hover {
-	text-decoration: none;
-  color: #57b846;
-}
-
-/*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
-}
-
-p {
-	font-family: Raleway-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-}
-
-ul, li {
-	margin: 0px;
-	list-style-type: none;
-}
-
-
-/*---------------------------------------------*/
-input {
-	outline: none;
-	border: none;
-}
-
-textarea {
-  outline: none;
-  border: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
+    
     </style>
 </head>
 <body>
 
-<div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
-                <form class="login100-form validate-form flex-sb flex-w">
-                    <span class="login100-form-title p-b-32">
-                    Account Login
-                    </span>
-                    <span class="txt1 p-b-11">
-                    Username
-                    </span>
-                    <div class="wrap-input100 validate-input m-b-36" data-validate="Username is required">
-                        <input class="input100" type="text" name="username">
-                        <span class="focus-input100"></span>
-                    </div>
-                    <span class="txt1 p-b-11">
-                    Password
-                    </span>
-                    <div class="wrap-input100 validate-input m-b-12" data-validate="Password is required">
-                        <span class="btn-show-pass">
-                            <i class="fa fa-eye"></i>
-                        </span>
-                        <input class="input100" type="password" name="pass">
-                        <span class="focus-input100"></span>
-                    </div>
-                    <div class="flex-sb-m w-full p-b-48">
-                        <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                            <label class="label-checkbox100" for="ckb1">
-                            Remember me
-                            </label>
-                        </div>
-                        <div>
-                            <a href="#" class="txt3">
-                            Forgot Password?
-                            </a>
-                        </div>
-                    </div>
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                        Login
-                        </button>
-                    </div>
-                </form>
-            </div>
+<div class="d-flex justify-content-center">
+<form action="login.php" class="log-form" method="post">
+<?php //include('errors.php'); ?>
+
+<div class="form-header d-flex justify-content-center">
+    <div class="bg-circle">
+        <div class="sm-circle">
+        <div class="d-flex justify-content-center">
+        <i class="user-header fa-solid fa-user fa-3x"></i>
+</div>
         </div>
     </div>
+</div>
+<br>
+<h2 class="text-center">Member Login</h2>
+    <br>
+    
+    <div class="d-flex justify-content-center">
+    <div class="form-group input-group w-75">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-at"></i> </span>
+		 </div>
+        <input name="username" class="form-control" placeholder="User Name" type="text">
+</div>
+    </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+    <div class="form-group input-group w-75">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input name="password" class="form-control" placeholder="Enter password" type="password" id="password">
+        
+</div>
+
+    </div> 
+    <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
+    <div class="d-flex justify-content-center">                                
+    <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>  
+</div> 
+    <p class="text-center">Don't have an account? <a href="/register.php" style="color: black;">Register</a> </p>                                                                 
+</form>
     
 </body>
 </html>
