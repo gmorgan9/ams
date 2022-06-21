@@ -56,7 +56,7 @@ if(!isset($_SESSION['username'])){
 <body>
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
-<?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
+<?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
 <a class="edit-btn me-3 me-lg-0"href="..."><i class="fas fa-pencil"></i> Edit Course</a>
