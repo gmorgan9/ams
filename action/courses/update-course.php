@@ -81,7 +81,7 @@ if(isset($_POST["course_id"]) && !empty($_POST["course_id"])){
                     $course = $row["course"];
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
-                    header("location: die-page1.php");
+                    header("location: die-page.php");
                     exit();
                 }
                 
@@ -97,7 +97,7 @@ if(isset($_POST["course_id"]) && !empty($_POST["course_id"])){
         mysqli_close($conn);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
-        header("location: die-page1.php");
+        header("location: die-page2.php");
         exit();
     }
 }
