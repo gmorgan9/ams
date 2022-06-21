@@ -61,8 +61,8 @@ if(!isset($_SESSION['username'])){
 
 <div class="main">
   <div class="sem-btn">
-    <button name="fall22" type="button" class="btn btn-outline-secondary">Fall '22</button>
-    <button name="winter23" type="button" class="btn btn-outline-secondary">Winter '23</button>
+    <button name="fall22" type="button" class="btn btn-outline-secondary btn-sm">Fall '22</button>
+    <button name="winter23" type="button" class="btn btn-outline-secondary btn-sm">Winter '23</button>
   </div>
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
     <h3 class="page_title">Courses</h3>
