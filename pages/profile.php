@@ -60,7 +60,7 @@ if(!isset($_SESSION['username'])){
       <div class="card-body">
         <h5 class="card-title text-center"><?php echo $_SESSION['username']; ?></h5>
         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary d-flex justify-content-center">Go somewhere</a>
       </div>
     </div>
 
