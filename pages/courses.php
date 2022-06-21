@@ -56,7 +56,7 @@ if(!isset($_SESSION['username'])){
       .sem-btn p {
         font-family: "Candal", serif;
         color: #5c5b5b;
-        font-size: 18px; 
+        font-size: 14px; 
         margin-bottom: 0px;
       }
       .page_subtitle {
