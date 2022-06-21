@@ -35,8 +35,9 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
+<a style="float: right;" href="../action/courses/add-course.php"><button type="button" class="btn btn-secondary">Secondary</button></a> 
     <h3 class="page_title">Courses</h3>
-    <a style="float: right;" href="../action/courses/add-course.php"><button type="button" class="btn btn-secondary">Secondary</button></a> 
+    
 
 
 
