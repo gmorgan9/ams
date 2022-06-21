@@ -1,10 +1,10 @@
 <?php 
 include("../path.php");
+include("../database/functions.php");
 session_start();
 ?>
 
 <?php 
-    include("../database/functions.php");
 
     // if (isset($_SESSION['username'])) {
     //     $_SESSION['msg'] = "You are already logged in";

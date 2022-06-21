@@ -4,7 +4,7 @@ include("../database/functions.php");
 session_start();
 
 if(!isset($_SESSION['username'])){
-    header("Location: /action/login.php");
+    header("Location: ". BASE_URL . "action/login.php");
  }
 
 
