@@ -48,6 +48,9 @@ if(!isset($_SESSION['username'])){
         margin: 5px;
         margin-bottom: 10px;
       }
+      .sem-btn {
+        float: left;
+      }
     </style>
 </head>
 <body>
@@ -56,11 +59,14 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
+  <div class="sem-btn">
+    <button name="fall22" type="button" class="btn btn-outline-secondary">Fall '22</button>
+    <button name="winter23" type="button" class="btn btn-outline-secondary">Winter '23</button>
+  </div>
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
     <h3 class="page_title">Courses</h3>
     
-    <button name="fall22" type="button" class="btn btn-outline-secondary">Fall '22</button>
-    <button name="winter23" type="button" class="btn btn-outline-secondary">Winter '23</button>
+    
 
 
     <div class="d-flex justify-content-center flex-row"> 
