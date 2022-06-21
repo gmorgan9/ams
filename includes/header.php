@@ -13,6 +13,11 @@
 <?php if (isset($_SESSION['username'])) { ?>
 <!-- Right links -->
   <ul class="navbar-nav ms-auto d-flex flex-row">
+  <li class="nav-item">
+      <a class="nav-link me-3 me-lg-0" href="<?php BASE_URL ?>">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
     <li class="nav-item">
       <a class="nav-link me-3 me-lg-0" href="<?php BASE_URL ?>/pages/profile.php">
         <i class="fas fa-user"></i>
