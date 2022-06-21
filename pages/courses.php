@@ -26,7 +26,7 @@ if(!isset($_SESSION['username'])){
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Classes - AMS</title>
+    <title>Courses - AMS</title>
 </head>
 <body>
 
@@ -34,7 +34,56 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-    <h3 class="page_title">Classes</h3>
+    <h3 class="page_title">Courses</h3>
+
+
+
+
+
+    <?php
+
+      $sql = "SELECT * FROM course";
+      $result = mysqli_query($con, $sql);
+      if($result) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $id=$row['id'];
+            $status=$row['status'];
+            $inc_num = $row['inc_num'];
+            $priority = $row['priority'];
+            $description = $row['description'];
+            //$assign_group = $row['assign_group'];
+            //$kb_article = $row['kb_article'];
+            $date = $row['date'];
+            $time = $row['time'];
+            ?>
+            <tr>
+            <th scope="row"><?php echo $id; ?></th>
+            <?php if($status == 0) { ?>
+                <td>open</td>
+            <?php } else { ?>
+            <td>closed</td>
+            <?php } ?>
+            <td><?php echo $inc_num; ?></td>
+            <td><?php echo $priority; ?></td>
+            <td style="max-width: 40em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100px;"><?php echo $description ?></td>
+            <!-- <td><?php #echo $assign_group; ?></td> -->
+            <!-- <td><?php #echo $kb_article; ?></td> -->
+            <td><?php echo $date; ?></td>
+            <td><?php echo $time; ?></td>
+            <td><a href="update-incident.php?updateid=<?php echo $id; ?>"><i class="fa-solid fa-pen-to-square" style="color:#005382;"></a></i></td>
+            <td><a href="all-incidents.php?id=<?php echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
+            </tr>
+         <?php }
+      }
+
+?>
+
+
+
+
+
+
+
 
 <div class="d-flex justify-content-center flex-row"> 
 
@@ -81,7 +130,7 @@ if(!isset($_SESSION['username'])){
 <!-- class5 -->
 <div class="card" style="width: 12rem;">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title"></h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
