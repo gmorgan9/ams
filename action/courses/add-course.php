@@ -27,7 +27,7 @@ session_start();
     <title>Add Course - AMS</title>
     <style>
         .log-form {
-            margin-top: -10px;
+            margin-top: -20px;
         }
     </style>
 </head>
