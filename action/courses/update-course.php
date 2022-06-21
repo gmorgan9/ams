@@ -12,7 +12,7 @@ $course = "";
 $course_err = "";
  
 // Processing form data when form is submitted
-if(isset($_POST["course_id"]) && !empty($_POST["course_id"])){
+if(isset($_POST["course_id"])){
     // Get hidden input value
     $course_id = $_POST["course_id"];
     
