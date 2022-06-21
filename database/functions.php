@@ -79,12 +79,4 @@ if (isset($_POST['login_user'])) {
             array_push($errors, "Wrong username/password combination");
         }
     }
-  }
-
-  function usersOnly($redirect = '/action/login.php')
-  {
-      if (empty($_SESSION['id'])) {
-          $_SESSION['message'] = 'You need to login first';
-          header('location: '. $redirect);
-      }
-  }
+}
