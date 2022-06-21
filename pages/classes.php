@@ -39,7 +39,7 @@ if(!isset($_SESSION['username'])){
 <div class="d-flex flex-row"> 
 
 <!-- class1 -->
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 12rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -48,7 +48,7 @@ if(!isset($_SESSION['username'])){
 </div>
 <!-- end -->
 <!-- class2 -->
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 12rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -57,7 +57,7 @@ if(!isset($_SESSION['username'])){
 </div>
 <!-- end -->
 <!-- class3 -->
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 12rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -66,7 +66,7 @@ if(!isset($_SESSION['username'])){
 </div>
 <!-- end -->
 <!-- class4 -->
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 12rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -75,7 +75,7 @@ if(!isset($_SESSION['username'])){
 </div>
 <!-- end -->
 <!-- class5 -->
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 12rem;">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
