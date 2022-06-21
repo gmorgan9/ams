@@ -72,7 +72,9 @@ session_start();
     <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>
     
 </div>  
-<a class="text-center" href="register.php">Register</a>                                                           
+<p>
+			Not yet a member? <a href="register.php">Sign up</a>
+		</p>                                                          
 </form>
 
 <script>
