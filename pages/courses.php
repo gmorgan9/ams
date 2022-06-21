@@ -35,10 +35,8 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-<a class="me-3 me-lg-0 secondary" href="../action/courses/add-course.php">
-        <i class="fas fa-plus"></i>
-      </a>
-    <h3 class="page_title">Courses</h3>
+    
+    <h3 class="page_title">Courses <a class="me-3 me-lg-0 secondary" href="../action/courses/add-course.php"><i class="fas fa-plus"></i></a></h3>
     
 
 
