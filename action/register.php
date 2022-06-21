@@ -77,7 +77,11 @@ session_start();
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
     <button type="submit" name="reg_user" class="btn btn-primary text-center reg-log">Register</button>  
-</div>                                                                
+</div>   
+<br>
+    <p class="d-flex justify-content-center">
+		<span>Not yet a member? <a href="register.php">Sign up</a></span>
+	</p>                                                              
 </form>
 
 <script>
