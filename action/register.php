@@ -6,10 +6,10 @@ session_start();
 <?php 
 include("../database/functions.php");
 
-if (isset($_SESSION['username'])) {
-    $_SESSION['msg'] = "You are already logged in";
-    header('location: /');
-}
+// if (isset($_SESSION['username'])) {
+//     $_SESSION['msg'] = "You are already logged in";
+//     header('location: /');
+// }
 
 ?>
 

@@ -3,9 +3,9 @@ include("path.php");
 include("../database/functions.php");
 session_start();
 
-usersOnly();
-
-
+if(!isset($_SESSION['username'])){
+    header("Location: /action/login.php");
+ }
 
 
 ?>
