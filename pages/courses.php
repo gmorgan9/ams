@@ -1,5 +1,6 @@
 <?php 
 include("../path.php");
+include("../database/connection.php");
 session_start();
 
 if(!isset($_SESSION['username'])){
@@ -42,7 +43,7 @@ if(!isset($_SESSION['username'])){
 
     <?php
 
-      $sql = "SELECT * FROM course WHERE taken='fall22'";
+      $sql = "SELECT * FROM course WHERE taken = 'fall22'";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
