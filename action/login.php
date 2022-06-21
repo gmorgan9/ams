@@ -3,36 +3,13 @@ include("../path.php");
 session_start();
 ?>
 
-<!-- LOGIN FUNCTION -->
 <?php 
-include('../database/connection.php');
+    include("../database/functions.php");
 
-if(isset($_POST['login_user'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    if (empty($username)) {
-        array_push($errors, "Username is required");
+    if (isset($_SESSION['username'])) {
+        $_SESSION['msg'] = "You are already logged in";
+        header('location: index.php');
     }
-    if (empty($password)) {
-        array_push($errors, "Password is required");
-    }
-
-    if (count($errors) == 0) {
-        $query = "SELECT * FROM user WHERE username='$username' AND password='$password' LIMIT 1";
-        $results = mysqli_query($conn, $query);
-
-        if (mysqli_num_rows($results) == 1) {
-            $_SESSION['username'] = $username;
-            $_SESSION['success'] = "You are logged in!";
-            header('location: /');
-        } else {
-            array_push($errors, "Wrong username/password combination!");
-        }
-    }
-}
-
-
 
 ?>
 
