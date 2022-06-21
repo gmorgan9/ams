@@ -14,7 +14,7 @@ session_start();
 // Processing form data when form is submitted
 if(isset($_POST["update_course"])){
     // Get hidden input value
-    $courseid = $_POST["course_id"];
+    $course_id = $_POST["course_id"];
     //$status = isset($_POST['status']) ? 1 : 0;
     
     // Validate course address
@@ -145,7 +145,7 @@ if(isset($_POST["update_course"])){
             $param_instructor = $instructor;
             $param_credits = $credits;
             $param_mode = $mode;
-            $param_course_id = $courseid;
+            $param_course_id = $course_id;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
