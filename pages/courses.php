@@ -78,7 +78,7 @@ else if(array_key_exists('winter23', $_POST)) {
   <div class="sem-btn">
     <form method="post">
     <button type="submit" name="fall22" type="button" class="btn btn-outline-secondary btn-sm">Fall '22</button>
-    <button name="winter23" type="button" class="btn btn-outline-secondary btn-sm">Winter '23</button>
+    <button type="submit" name="winter23" type="button" class="btn btn-outline-secondary btn-sm">Winter '23</button>
     </form>
   </div>
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
