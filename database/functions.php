@@ -129,7 +129,7 @@ if (isset($_POST['add_course'])) {
   $course = mysqli_real_escape_string($conn, $_POST['course']);
   $title = mysqli_real_escape_string($conn, $_POST['title']);
   $taken = mysqli_real_escape_string($conn, $_POST['taken']);
-  $date = mysqli_real_escape_string($conn, $_POST['date']);
+  $day = mysqli_real_escape_string($conn, $_POST['day']);
   $time = mysqli_real_escape_string($conn, $_POST['time']);
   $location = mysqli_real_escape_string($conn, $_POST['location']);
   $instructor = mysqli_real_escape_string($conn, $_POST['instructor']);
@@ -148,7 +148,7 @@ if (isset($_POST['add_course'])) {
   if (empty($taken)) { 
       array_push($errors, "Taken is required"); 
   }
-  if (empty($date)) {
+  if (empty($day)) {
       array_push($errors, "Date is required");
   }
   if (empty($time)) { 
@@ -185,8 +185,8 @@ if (empty($section)) {
   // Finally, add course if there are no errors in the form
   if (count($errors) == 0) {
 
-      $query = "INSERT INTO course (course, title, taken, date, time, location, instructor, credits, mode, section) 
-                VALUES('$course', '$title', '$taken', '$date', '$time', '$location', '$instructor', '$credits', '$mode', '$section')";
+      $query = "INSERT INTO course (course, title, taken, day, time, location, instructor, credits, mode, section) 
+                VALUES('$course', '$title', '$taken', '$day', '$time', '$location', '$instructor', '$credits', '$mode', '$section')";
       mysqli_query($conn, $query);
       header('location: '. BASE_URL .'/pages/courses.php');
   }

@@ -81,7 +81,7 @@ session_start();
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
-            <input name="days" class="form-control" placeholder="Days" type="text">
+            <input name="day" class="form-control" placeholder="Days" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
