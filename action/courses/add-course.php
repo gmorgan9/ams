@@ -29,6 +29,18 @@ session_start();
         .log-form {
             margin-top: -20px;
         }
+        .back-btn {
+        float: right; 
+        margin-right: 10px; 
+        margin-left: -70px; 
+        color: #5C5B5B; 
+        font-size: 12px; 
+        text-decoration: none;
+      }
+      .back-btn:hover {
+        color: #5C5B5B; 
+        text-decoration: none;
+      }
     </style>
 </head>
 <body>
@@ -36,7 +48,7 @@ session_start();
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
-<a class="add-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-back"></i> Back</a>
+<a class="back-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-left"></i> Back</a>
 <div class="d-flex justify-content-center">
 <form action="add-course.php" class="log-form" method="post">
 <?php //include('errors.php'); ?>
