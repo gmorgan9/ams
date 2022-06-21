@@ -43,9 +43,21 @@ if(!isset($_SESSION['username'])){
     <h3 class="page_title">Profile</h3>
 </div>
 <div class="d-flex justify-content-center">
-    
+
     <div class="card" style="width: 35rem;">
-      <img class="card-img-top" src="..." alt="Card image cap">
+      
+    <div class="form-header d-flex justify-content-center">
+        <div class="bg-circle">
+            <div class="sm-circle">
+                <div class="d-flex justify-content-center">
+                    <i class="user-header fa-solid fa-user fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
