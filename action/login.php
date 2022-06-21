@@ -72,6 +72,7 @@ session_start();
     <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>
     
 </div>  
+<br>
     <p class="d-flex justify-content-center">
         Forgot Password? <button type="submit" name="reset_btn">Reset</button>
 		Not yet a member? <a href="register.php">Sign up</a>
