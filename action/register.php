@@ -10,6 +10,7 @@ include('../database/connection.php');
 if(isset($_POST['login_user'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $confpassword = $_POST['confpassword'];
 
     if (empty($username)) {
         array_push($errors, "Username is required");
@@ -17,6 +18,9 @@ if(isset($_POST['login_user'])) {
     if (empty($password)) {
         array_push($errors, "Password is required");
     }
+    if ($password != $confirm_password) {
+        array_push($errors, "The two passwords do not match");
+      }
 
     if (count($errors) == 0) {
         $query = "SELECT * FROM user WHERE username='$username' AND password='$password' LIMIT 1";
@@ -96,14 +100,20 @@ if(isset($_POST['login_user'])) {
 		</div>
         <input name="password" class="form-control" placeholder="Enter password" type="password" id="password">
         
-</div>
+    </div>
+    <div class="form-group input-group w-75">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input name="confpassword" class="form-control" placeholder="Enter password" type="password" id="confpassword">
+        
+    </div>
 
     </div> 
     <input style="margin-left: 65px;" type="checkbox" onclick="myFunction()"> Show Password<!-- form-group// -->   
     <div class="d-flex justify-content-center">                                
     <button type="submit" name="login_user" class="btn btn-primary text-center reg-log">Log In</button>  
-</div>  
-<a href="register.php">Register</a>                                                                
+</div>                                                                
 </form>
 
 <script>
