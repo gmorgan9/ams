@@ -50,23 +50,23 @@ if(!isset($_SESSION['username'])){
       }
     </style>
 </head>
-<body>
 
-<?php
-      $courseid = $_GET['id'];
-      $sql = "SELECT * FROM course where id=$courseid";
+<!-- new body -->
+<body>
+   
+
+    <?php
+      $viewid = $_GET['viewid'];
+      $sql = "SELECT * FROM course where course_id=$viewid";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
             $course_id = $row['course_id'];
+            $course = $row['course'];
           }
-          $fullDate = date("M d, Y", strtotime($date));
+          //$fullDate = date("M d, Y", strtotime($date));
         }
             ?>
-
-
-
-
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
@@ -76,69 +76,20 @@ if(!isset($_SESSION['username'])){
     <h3 class="page_title"><?php echo $id; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
 
-    <?php
-      if(isset($_POST['fall22'])) {
-    ?>
-    <h5 class="page_subtitle text-center">Fall 2022</h5>
-    <div class="d-flex justify-content-center flex-row"> 
-      <?php
-        $sql = "SELECT * FROM course WHERE taken = 'fall22'";
-        $result = mysqli_query($conn, $sql);
-          if($result) {
-            while ($row = mysqli_fetch_assoc($result)) {
-              $course_id=$row['course_id'];
-              $course=$row['course'];
-              $title = $row['title'];
-            ?>
-            
-              <div class="card" style="width: 12rem;">
-                <div class="card-body">
-                  <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
-                  <p class="card-text text-center"><?php echo $course; ?></p>
-                  <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-secondary btn-sm">See Course</a>
-                  </div>
-                </div>
-              </div>
-              <p class="ml-3"></p>
-    <?php }
-        } ?>
-    </div>
+<br>
+<div class="record_incident">
+    <a href="incident-notes.php"><button class="btn btn-primary rec">Back</button></a>
+</div>
 
-    <?php 
-      }
-      if(isset($_POST['winter23'])) {
-    ?>
-    <h5 class="page_subtitle text-center">Winter 2023</h5>
-    <div class="d-flex justify-content-center flex-row"> 
-      <?php
-        $sql = "SELECT * FROM course WHERE taken = 'winter23'";
-        $result = mysqli_query($conn, $sql);
-          if($result) {
-            while ($row = mysqli_fetch_assoc($result)) {
-              $course_id=$row['course_id'];
-              $course=$row['course'];
-              $title = $row['title'];
-        ?>
-              <div class="card" style="width: 12rem;">
-                <div class="card-body">
-                  <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
-                  <p class="card-text text-center"><?php echo $course; ?></p>
-                  <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-secondary btn-sm">See Course</a>
-                  </div>
-                </div>
-              </div>
-              <p class="ml-3"></p>
-        <?php 
-            }
-          } ?>
-        </div>
-      <?php
-        }
-      ?>
+<br><br>
 
-</div> <!-- end main -->
+            <h1 class="text-center"><?php echo $title; ?></h1>
+            <p class="text-center text-muted"><?php echo $fullDate; ?></p>
+            <div class="mx-auto" style="width:1200px;">
+            <p><?php echo html_entity_decode($note); ?></p>
+            </div>
+
+
 
 </body>
 </html>
