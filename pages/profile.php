@@ -67,7 +67,7 @@ if(!isset($_SESSION['username'])){
         <button type="button" class="btn btn-secondary">
             Classes Left <span class="badge badge-light">
                 <?php
-                    $sql="select count('1') from course where completed=1";
+                    $sql="select count('1') from course where completed=0";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "$rowtotal[0]";
