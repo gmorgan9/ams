@@ -31,6 +31,7 @@ if(!isset($_SESSION['username'])){
 
     <style>
       .add-btn {
+        font-family: "Candal", serif;
         float: right; 
         margin-right: 10px; 
         margin-left: -70px; 
@@ -54,7 +55,7 @@ if(!isset($_SESSION['username'])){
         margin-left: 15px;
       }
       .sem-btn p {
-        /* font-family: "Candal", serif; */
+        font-family: "Candal", serif;
         color: #5c5b5b;
         font-size: 14px; 
         margin-bottom: 0px;
