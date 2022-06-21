@@ -165,9 +165,9 @@ if(isset($_POST["update_course"])){
     mysqli_close($conn);
 } else{
     // Check existence of id parameter before processing further
-    if(isset($_GET["updateid"]) && !empty(trim($_GET["updateid"]))){
+    if(isset($_GET["cid"]) && !empty(trim($_GET["cid"]))){
         // Get URL parameter
-        $cid =  trim($_GET["updateid"]);
+        $cid =  trim($_GET["cid"]);
         
         // Prepare a select statement
         $sql = "SELECT * FROM course WHERE course_id = ?";
@@ -216,7 +216,7 @@ if(isset($_POST["update_course"])){
         mysqli_stmt_close($stmt);
         
         // Close connection
-        mysqli_close($con);
+        mysqli_close($conn);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
         header("location: die-page2.php");
