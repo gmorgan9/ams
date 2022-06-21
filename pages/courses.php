@@ -121,17 +121,16 @@ if(!isset($_SESSION['username'])){
         $result = mysqli_query($conn, $sql);
           if($result) {
             while ($row = mysqli_fetch_assoc($result)) {
-              $id=$row['course_id'];
+              $course_id=$row['course_id'];
               $course=$row['course'];
               $title = $row['title'];
         ?>
-        <?php echo $id; ?>
               <div class="card" style="width: 12rem;">
                 <div class="card-body">
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
-                  <p class="card-text text-center"><?php echo $id; ?></p>
+                  <p class="card-text text-center"><?php echo $course; ?></p>
                   <div class="d-flex justify-content-center">
-                    <a href="<?php BASE_URL ?>/course-page.php?id=<?php echo $id; ?>" class="btn btn-secondary btn-sm">See Course</a>
+                    <a href="<?php BASE_URL ?>/course-page.php?id=<?php echo $course_id; ?>" class="btn btn-secondary btn-sm">See Course</a>
                   </div>
                 </div>
               </div>
