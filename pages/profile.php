@@ -60,7 +60,7 @@ if(!isset($_SESSION['username'])){
       <div class="card-body">
         <h5 class="card-title text-center"><?php echo $_SESSION['name']; ?></h5>
         <div class="d-flex justify-content-center">
-            <a href="action/edit-profile.php" class="btn btn-primary ">Edit Profile</a>
+            <a href="../action/edit-profile.php" class="btn btn-primary ">Edit Profile</a>
         </div>
       </div>
     </div>
