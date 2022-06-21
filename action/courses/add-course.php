@@ -53,17 +53,17 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-50">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-book"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Course" type="text">
+            <input name="course" class="form-control" placeholder="Course" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="title" class="form-control" placeholder="Title" type="text">
         </div>
     </div> <!-- form-group// -->
 
@@ -71,17 +71,17 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-calendar-check"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="taken" class="form-control" placeholder="Taken" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="days" class="form-control" placeholder="Days" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -90,17 +90,17 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="time" class="form-control" placeholder="time" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-location-dot"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="location" class="form-control" placeholder="Location" type="text">
         </div>
     </div> <!-- form-group// -->
 </div>
@@ -109,15 +109,15 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-user-tie"></i> </span>
 		    </div>
-            <input name="name" class="form-control" placeholder="Enter Name" type="text">
+            <input name="instructor" class="form-control" placeholder="Instructor" type="text">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-arrow-down-1-9"></i> </span>
 		    </div>
             <input name="name" class="form-control" placeholder="Enter Name" type="text">
         </div>
