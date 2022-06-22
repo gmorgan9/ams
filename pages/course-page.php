@@ -131,7 +131,7 @@ if(!isset($_SESSION['username'])){
 
     <!-- Assignments -->
     <br>
-    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
+    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
@@ -153,18 +153,18 @@ if(!isset($_SESSION['username'])){
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $aid=$row['id'];
-            $atitle=$row['title'];
-            $acourse_id=$row['course_id']
-            //$adue_date = $row['due_date'];
-            //$due_time = $row['due_time'];
+            $id=$row['id'];
+            $a=$row['title'];
+            $course_id=$row['course_id'];
+            $due_date = $row['due_date'];
+            $due_time = $row['due_time'];
             ?>
             <tr>
-            <th scope="row"><?php echo $aid; ?></th>
-            <td><?php echo $atitle; ?></td>
-            <td><?php echo $acourse_id; ?></td>
-            <!-- <td><?php //echo $adue_date; ?></td> -->
-            <!-- <td><?php //echo $due_time; ?></td> -->
+            <th scope="row"><?php echo $id; ?></th>
+            <td><?php echo $title; ?></td>
+            <td><?php echo $course_id; ?></td>
+            <td><?php echo $due_date; ?></td>
+            <td><?php echo $due_time; ?></td>
             </tr>
          <?php }
       }
