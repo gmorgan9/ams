@@ -150,7 +150,7 @@ if(!isset($_SESSION['username'])){
   <tbody>
 
       <?php
-      $cid = $_GET['id'];
+      $cid = $_GET['cid'];
       $sql = "SELECT * FROM course_assignments where course_id=$cid";
       $result = mysqli_query($conn, $sql);
       if($result) {
