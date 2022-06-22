@@ -101,7 +101,7 @@ if(!isset($_SESSION['username'])){
                 <h3 class="card-title text-center">Lab Info</h3>
                 <p class="card-text text-center"><?php echo $lab_day; ?></p>
                 <p class="card-text text-center"><?php echo $lab_time; ?></p>
-                <p class="card-tex text-center"><?php echo $lab_location; ?></p>
+                <p class="card-text text-center"><?php echo $lab_location; ?></p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
