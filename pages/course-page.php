@@ -149,7 +149,7 @@ if(!isset($_SESSION['username'])){
 
     <!-- Assignments -->
     <br>
-    <a data-toggle="modal" data-target="#exampleModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-plus"></i> Add Assignment</a>
+    <a data-toggle="modal" data-target="#addModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-plus"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
@@ -195,7 +195,7 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $ascore; ?></td>
             <?php } ?>
             <td><?php echo $apercent; ?></td>
-            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?uid=<?php echo $cid; ?>"><i class="fas fa-pencil"></i> </a></td>
+            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?uid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> </a></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -209,7 +209,7 @@ if(!isset($_SESSION['username'])){
 
 
   <!-- ADD Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
