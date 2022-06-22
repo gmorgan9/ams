@@ -98,7 +98,7 @@ if(!isset($_SESSION['username'])){
                 <div class="col">
                     <h5 class="card-title text-center">Lab Info</h5>
                     <p class="card-text text-center"><b>Lab Days:</b> <?php 
-                    if(isset($lab_day)) {
+                    if(!empty($lab_day)) {
                         echo $lab_day;
                     } else { 
                         echo "No Lab";
