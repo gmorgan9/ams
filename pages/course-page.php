@@ -153,14 +153,14 @@ if(!isset($_SESSION['username'])){
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $id=$row['id'];
+            $aid=$row['id'];
             $atitle=$row['title'];
             $acourse_id=$row['course_id']
             $adue_date = $row['due_date'];
             //$due_time = $row['due_time'];
             ?>
             <tr>
-            <th scope="row"><?php echo $id; ?></th>
+            <th scope="row"><?php echo $aid; ?></th>
             <td><?php echo $atitle; ?></td>
             <td><?php echo $acourse_id; ?></td>
             <td><?php echo $adue_date; ?></td>
