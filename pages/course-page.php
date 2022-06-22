@@ -102,10 +102,10 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div class="row">
                     <h3 class="card-title">Lab Info</h3>
+                </div>
                     <p class="card-text"><?php echo $lab_day; ?></p>
                     <p class="card-text"><?php echo $lab_time; ?></p>
                     <p class="card-text"><?php echo $lab_location; ?></p>
-                </div>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
