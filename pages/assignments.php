@@ -89,7 +89,7 @@ if(!isset($_SESSION['username'])){
 </table>
     </div>
 
-
+    </div>
 
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
@@ -120,7 +120,7 @@ if(!isset($_SESSION['username'])){
 
 
 
-</div>
+
 
 <script>
   $('#myModal').on('shown.bs.modal', function () {
