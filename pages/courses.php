@@ -63,7 +63,7 @@ if(!isset($_SESSION['username'])){
       .page_subtitle {
         margin-left: -150px;
       }
-      button {
+      .buttons {
         margin-right: -50px;
       }
     </style>
@@ -77,9 +77,11 @@ if(!isset($_SESSION['username'])){
   <div class="sem-btn">
     <form method="post">
       <p>Select a Semester</p>
+      <div class="buttons">
       <button type="submit" name="spr22" type="button" class="btn btn-outline-secondary btn-sm">Spring '22</button>
     <button type="submit" name="fall22" type="button" class="btn btn-outline-secondary btn-sm">Fall '22</button>
     <button type="submit" name="winter23" type="button" class="btn btn-outline-secondary btn-sm">Winter '23</button>
+    </div>
     </form>
   </div>
 <a class="add-btn me-3 me-lg-0"href="../action/courses/add-course.php"><i class="fas fa-plus"></i> Add Course</a>
