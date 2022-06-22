@@ -241,7 +241,7 @@ if(!isset($_SESSION['username'])){
         </button>
         </div>
         <div class="modal-body">
-      <form action="course-page.php?uid=<?php echo $aid; ?>" class="log-form" method="post">
+      <form action="/pages/assignment-update.php?uid=<?php echo $aid; ?>" class="log-form" method="post">
       <div class="d-flex justify-content-center">
                   <div class="form-group input-group w-75">
               	    <div class="input-group-prepend">
