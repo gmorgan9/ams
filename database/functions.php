@@ -320,7 +320,7 @@ if (empty($course_title)) {
   }
 }
 
-if(isset($_POST['add-score'])) {
+if (isset($_POST['add-score'])) {
   $aid = $_GET['uid'];
   $query = "SELECT score FROM assignments WHERE id='$aid'";
   $result = mysqli_query( $conn, $query );
