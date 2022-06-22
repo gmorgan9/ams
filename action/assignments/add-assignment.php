@@ -69,7 +69,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-clipboard"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
 		    </div>
             <input name="title" class="form-control" placeholder="Title" type="text">
         </div>
@@ -77,7 +77,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
 		    </div>
             <input name="due_date" class="form-control" placeholder="Date" type="date">
         </div>
@@ -85,7 +85,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-calendar-check"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
             <input name="due_time" class="form-control" placeholder="Time" type="time">
         </div>
@@ -93,7 +93,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-list-ul"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-file"></i> </span>
 		    </div>
             <input name="file_submit" class="form-control" placeholder="File Submission" type="file">
         </div>
@@ -102,7 +102,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		    </div>
             <input name="score" class="form-control" placeholder="Score" type="number">
         </div>
@@ -110,7 +110,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		    </div>
             <input name="possible_points" class="form-control" placeholder="Possible Points" type="number">
         </div>
@@ -119,7 +119,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-percent"></i> </span>
 		    </div>
             <input name="percent" class="form-control" placeholder="% of Grade" type="percent">
         </div>
@@ -127,7 +127,7 @@ session_start();
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
+		        <span class="input-group-text"> <i class="fa fa-group"></i> </span>
 		    </div>
             <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text">
         </div>
