@@ -42,6 +42,7 @@ if(!isset($_SESSION['username'])){
         <div class="card" style="width: 50rem;">
             <div class="card-body">
                 <h5 class="card-title text-center">Quick Links</h5>
+                <div class="row">
                     <!-- card -->
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
@@ -63,6 +64,7 @@ if(!isset($_SESSION['username'])){
                         </div>
                     </div>
                     <!-- end card -->
+                </div>
             </div>
         </div>
     </div>
