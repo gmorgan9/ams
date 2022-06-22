@@ -240,7 +240,7 @@ if(!isset($_SESSION['username'])){
 
 <!--modal-->
 <script>
- $('#myModal').on('shown.bs.modal', function () {
+ $("#myModal").on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
 </script>
