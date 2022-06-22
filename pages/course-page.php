@@ -150,8 +150,8 @@ if(!isset($_SESSION['username'])){
   <tbody>
 
       <?php
-      // $cid = $_GET['id'];
-      $sql = "SELECT * FROM course_assignments";
+      $cid = $_GET['id'];
+      $sql = "SELECT * FROM course_assignments where course_id=$cid";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
