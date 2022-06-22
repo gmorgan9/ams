@@ -195,7 +195,7 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $ascore; ?></td>
             <?php } ?>
             <td><?php echo $apercent; ?></td>
-            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $cid; ?>"><i class="fas fa-pencil"></i> </a></td>
+            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?uid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i> </a></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -437,7 +437,7 @@ if(!isset($_SESSION['username'])){
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" name="add_assignment" class="btn btn-secondary">Add</button>
+          <button type="submit" name="update_assignment" class="btn btn-secondary">Add</button>
         </div>
       </form>
       </div>
