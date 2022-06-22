@@ -35,6 +35,30 @@ if(!isset($_SESSION['username'])){
     </style>
 </head>
 <body>
+<?php
+      $id = $_GET['cid'];
+      $sql = "SELECT * FROM course where course_id=$id";
+      $result = mysqli_query($conn, $sql);
+      if($result) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $course_id = $row['course_id'];
+            $title = $row['title'];
+            $course = $row['course'];
+            $taken = $row['taken'];
+            $day = $row['day'];
+            $time = $row['time'];
+            $lab_day = $row['lab_day'];
+            $lab_time = $row['lab_time'];
+            $location = $row['location'];
+            $lab_location = $row['lab_location'];
+            $section = $row['section'];
+            $instructor = $row['instructor'];
+            $credits = $row['credits'];
+            $mode = $row['mode'];
+          }
+          //$fullDate = date("M d, Y", strtotime($date));
+        }
+            ?>
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
