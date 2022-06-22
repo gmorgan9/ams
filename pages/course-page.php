@@ -234,12 +234,21 @@ if(!isset($_SESSION['username'])){
         </button>
       </div>
       <div class="modal-body">
-        ...
+      <form action="course-page.php?cid=<?php echo $cid; ?>" class="log-form" method="post">
+      <div class="d-flex justify-content-center">
+                  <div class="form-group input-group w-75">
+              	    <div class="input-group-prepend">
+		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
+		                </div>
+                    <input name="score" class="form-control" placeholder="Score" type="number" value="0">
+                  </div>
+              </div> <!-- form-group// -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
+    </form>
     </div>
   </div>
 </div>
