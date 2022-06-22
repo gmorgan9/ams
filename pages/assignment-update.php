@@ -249,14 +249,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		    </div>
-            <?php 
-                $sql = "SELECT * FROM assignments where id=$aid";
-                $result = mysqli_query($conn, $sql);
-                if($result) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                      $title=$row['title'];
-                      ?>
-            <input name="course_title" class="form-control" placeholder="Course ID" type="text" value="<?php echo $title; ?>" readonly>
+            <input name="course_title" class="form-control" placeholder="Course ID" type="text" value="<?php echo $course_title; ?>" readonly>
         </div>
     </div> <!-- form-group// -->
     <?php }
