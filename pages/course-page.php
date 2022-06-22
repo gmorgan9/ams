@@ -141,8 +141,8 @@ if(!isset($_SESSION['username'])){
       <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Course ID</th>
-      <th scope="col">Due Date</th>
-      <th scope="col">Due Time</th>
+      <th scope="col">Day</th>
+      <th scope="col">Time</th>
     </tr>
   </thead>
   <tbody>
@@ -156,15 +156,15 @@ if(!isset($_SESSION['username'])){
             $id=$row['id'];
             $title=$row['title'];
             $course_id=$row['course_id']
-            $due_date = $row['due_date'];
-            $due_time = $row['due_time'];
+            //$due_date = $row['due_date'];
+            //$due_time = $row['due_time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
             <td><?php echo $course_id; ?></td>
-            <td><?php echo $due_date; ?></td>
-            <td><?php echo $due_time; ?></td>
+            <!-- <td><?php //echo $due_date; ?></td> -->
+            <!-- <td><?php //echo $due_time; ?></td> -->
             </tr>
          <?php }
       }
