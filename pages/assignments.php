@@ -35,30 +35,7 @@ if(!isset($_SESSION['username'])){
     </style>
 </head>
 <body>
-<?php
-      $id = $_GET['cid'];
-      $sql = "SELECT * FROM course where course_id=$id";
-      $result = mysqli_query($conn, $sql);
-      if($result) {
-          while ($row = mysqli_fetch_assoc($result)) {
-            $course_id = $row['course_id'];
-            $title = $row['title'];
-            $course = $row['course'];
-            $taken = $row['taken'];
-            $day = $row['day'];
-            $time = $row['time'];
-            $lab_day = $row['lab_day'];
-            $lab_time = $row['lab_time'];
-            $location = $row['location'];
-            $lab_location = $row['lab_location'];
-            $section = $row['section'];
-            $instructor = $row['instructor'];
-            $credits = $row['credits'];
-            $mode = $row['mode'];
-          }
-          //$fullDate = date("M d, Y", strtotime($date));
-        }
-            ?>
+  
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
@@ -109,7 +86,7 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $score; ?></td>
             <?php } ?>
             <td><?php echo $percent; ?></td>
-            <td><a data-toggle="modal" data-target="#exampleModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> </a></td>
+            <td><a data-toggle="modal" data-target="#myModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> </a></td>
             <td><a href="all-incidents.php?id=<?php echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -131,11 +108,11 @@ if(!isset($_SESSION['username'])){
 
 <!-- MODALS -->
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Assignment</h5>
+          <h5 class="modal-title" id="myModalLabel">Add Assignment</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
