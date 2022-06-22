@@ -173,27 +173,27 @@ if(!isset($_SESSION['username'])){
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $id=$row['id'];
-            $title=$row['title'];
-            $course_id=$row['course_id'];
-            $due_date = $row['due_date'];
-            $due_time = $row['due_time'];
-            $score=$row['score'];
-            $percent = $row['percent'];
+            $aid=$row['id'];
+            $atitle=$row['title'];
+            $acourse_id=$row['course_id'];
+            $adue_date = $row['due_date'];
+            $adue_time = $row['due_time'];
+            $ascore=$row['score'];
+            $apercent = $row['percent'];
             ?>
             <tr>
-            <td><?php echo $title; ?></td>
-            <td><?php echo $course_id; ?></td>
-            <td><?php echo $due_date; ?></td>
-            <td><?php echo $due_time; ?></td>
+            <td><?php echo $atitle; ?></td>
+            <td><?php echo $acourse_id; ?></td>
+            <td><?php echo $adue_date; ?></td>
+            <td><?php echo $adue_time; ?></td>
             <?php 
             if($row['score'] == 0){
               echo "<td> - </td>";
             } else { ?>
-            <td><?php echo $score; ?></td>
+            <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <td><?php echo $percent; ?></td>
-            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> </a></td>
+            <td><?php echo $apercent; ?></td>
+            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $acourse_id; ?>"><i class="fas fa-pencil"></i> </a></td>
             <td><a href="all-incidents.php?id=<?php echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -352,7 +352,7 @@ if(!isset($_SESSION['username'])){
     	            <div class="input-group-prepend">
 		                <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
 		              </div>
-                  <input name="title" class="form-control" placeholder="Title" type="text" value="<?php echo $title; ?>">
+                  <input name="title" class="form-control" placeholder="Title" type="text" value="<?php echo $atitle; ?>">
                 </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
