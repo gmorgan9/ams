@@ -64,7 +64,7 @@ if(!isset($_SESSION['username'])){
         margin-left: -150px;
       }
       .buttons {
-        margin-right: -50px;
+        margin-right: -25px;
       }
     </style>
 </head>
