@@ -38,10 +38,11 @@ if(!isset($_SESSION['username'])){
 <div class="main">
     <h3 class="page_title">Dashboard</h3>
 
-
-    <div class="card" style="width: 35rem;">
-        <div class="card-body">
-            <h5 class="card-title text-center">Quick Links</h5>
+    <div class="d-flex justify-content-center">
+        <div class="card" style="width: 35rem;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Quick Links</h5>
+            </div>
         </div>
     </div>
 
