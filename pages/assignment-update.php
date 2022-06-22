@@ -26,7 +26,7 @@ if(isset($_POST["add-score"])){
         // Prepare an update statement
         $sql = "UPDATE assignments SET score=? WHERE id=?";
          
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "ii", $param_score, $param_id);
             
@@ -52,13 +52,13 @@ if(isset($_POST["add-score"])){
     mysqli_close($conn);
 } else{
     // Check existence of id parameter before processing further
-    if(isset($_GET["iud"]) && !empty(trim($_GET["uid"]))){
+    if(isset($_GET["uid"]) && !empty(trim($_GET["uid"]))){
         // Get URL parameter
         $id =  trim($_GET["uid"]);
         
         // Prepare a select statement
         $sql = "SELECT * FROM assignments WHERE id = ?";
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "i", $param_id);
             
@@ -78,7 +78,7 @@ if(isset($_POST["add-score"])){
                     $score = $row["score"];
                 } else{
                     // URL doesn't contain valid id. Redirect to error page
-                    header("location: error.php");
+                    header("location: die-page2.php");
                     exit();
                 }
                 
@@ -94,7 +94,7 @@ if(isset($_POST["add-score"])){
         mysqli_close($conn);
     }  else{
         // URL doesn't contain id parameter. Redirect to error page
-        header("location: error.php");
+        header("location: die-page2.php");
         exit();
     }
 }
