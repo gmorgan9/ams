@@ -98,10 +98,10 @@ if(!isset($_SESSION['username'])){
                 <div class="col">
                     <h5 class="card-title text-center">Lab Info</h5>
                     <p class="card-text text-center"><b>Lab Days:</b> <?php 
-                    if(!isset($_POST['lab_day'])) {
+                    if(isset($_POST['lab_day'])) {
+                        echo $_POST['lab_day'];
+                    } else { 
                         echo "No Lab";
-                    } else {
-                        echo $_POST['lab_day']; 
                     }
                     ?></p>
                     <p class="card-text text-center"><b>Lab Times:</b> <?php 
