@@ -151,15 +151,6 @@ if (isset($_POST['add_course'])) {
   if (empty($taken)) { 
       array_push($errors, "Taken is required"); 
   }
-  if (empty($day)) {
-      array_push($errors, "Date is required");
-  }
-  if (empty($time)) { 
-      array_push($errors, "Time is required"); 
-  }
-  if (empty($location)) { 
-      array_push($errors, "Location is required"); 
-  }
   if (empty($instructor)) { 
       array_push($errors, "Instructor is required"); 
   }
@@ -175,7 +166,7 @@ if (empty($section)) {
 
   // first check the database to make sure 
   // a course does not already exist with the same course_id
-  $course_check_query = "SELECT * FROM course WHERE id='$id' LIMIT 1";
+  $course_check_query = "SELECT * FROM course WHERE id='$course_id' LIMIT 1";
   $result = mysqli_query($conn, $course_check_query);
   $course_data = mysqli_fetch_assoc($result);
   
