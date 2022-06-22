@@ -304,13 +304,14 @@ if(!isset($_SESSION['username'])){
               <?php }
                 }
               ?>
-            </form>
+           
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="submit" name="add_assignment" class="btn btn-secondary">Add</button>
         </div>
+      </form>
       </div>
     </div>
   </div>
