@@ -12,14 +12,14 @@ if(!isset($_SESSION['username'])){
  if(isset($_GET['cid'])) {
   $cid = $_GET['cid'];
 
-  $sql = "DELETE FROM assignments WHERE id=$cid";
-  $result = mysqli_query($conn, $sql);
-  if($result) {
-      // echo "Deleted Successfully";
-      header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid); // returns back to same page
-  } else {
-      die(mysqli_error($conn));
-  }
+  // sql to delete a record
+$sql = "DELETE FROM assignments WHERE id=$cid";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record deleted successfully";
+} else {
+  echo "Error deleting record: " . $conn->error;
+}
 }
 
 ?>
