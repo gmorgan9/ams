@@ -162,7 +162,6 @@ if(!isset($_SESSION['username'])){
       <th scope="col">Due Date</th>
       <th scope="col">Due Time</th>
       <th scope="col">Score</th>
-      <th scope="col">Percent</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -181,7 +180,6 @@ if(!isset($_SESSION['username'])){
             $adue_time = $row['due_time'];
             $ascore=$row['score'];
             $apossible_points=$row['possible_points'];
-            $apercent = $row['percent'];
             $aassign_group=$row['assign_group'];
             ?>
             <tr>
@@ -195,16 +193,6 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <?php
-            // defining function
-             function cal_percentage($num_amount, $num_total) {
-              $count1 = $num_amount / $num_total;
-              $count2 = $count1 * 100;
-              $count = number_format($count2, 0);
-              return $count;
-            }
-            ?>
-            <td><?php echo cal_percentage($apercent, 100).'%' ?></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
