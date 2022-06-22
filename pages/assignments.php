@@ -85,7 +85,7 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $score; ?></td>
             <?php } ?>
             <td><?php echo $percent; ?></td>
-            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> </a></td>
+            <td><a data-toggle="modal" data-target="#exampleModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> </a></td>
             <td><a href="all-incidents.php?id=<?php echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -107,11 +107,11 @@ if(!isset($_SESSION['username'])){
 
 <!-- MODALS -->
 <!-- Modal -->
-<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="updateModalLabel">Add Assignment</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Add Assignment</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -238,7 +238,7 @@ if(!isset($_SESSION['username'])){
 <!--modal-->
 <script>
   $(document).ready(function() {
-     $("#myModal").modal();
+     $("#MyModal").modal();
      $('#myModal').on('shown.bs.modal', function() {
         $('#myInput').focus();
      });
