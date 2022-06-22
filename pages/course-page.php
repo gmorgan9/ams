@@ -9,8 +9,8 @@ if(!isset($_SESSION['username'])){
  }
 
  // DELETE
- if(isset($_GET['cid'])) {
-  $id = $_GET['cid'];
+ if(isset($_GET['did'])) {
+  $id = $_GET['did'];
 
   $sql = "DELETE FROM assignments WHERE id=$id";
   $result = mysqli_query($conn, $sql);
@@ -210,7 +210,7 @@ if(!isset($_SESSION['username'])){
             <?php } ?>
             <td><?php echo $apercent; ?></td>
             <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $cid; ?>"><i class="fas fa-pencil"></i> </a></td>
-            <td><a href="/pages/course-page.php?cid=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
+            <td><a href="/pages/course-page.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
       }
