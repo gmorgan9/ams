@@ -131,6 +131,7 @@ if(!isset($_SESSION['username'])){
 
     <!-- Assignments -->
     <br>
+    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
@@ -139,6 +140,7 @@ if(!isset($_SESSION['username'])){
     <tr class="header-line">
       <th scope="col">#</th>
       <th scope="col">Title</th>
+      <th scope="col">Course ID</th>
       <!-- <th scope="col">Assignment Group</th> -->
       <!-- <th scope="col">KB Article</th> -->
       <!-- <th scope="col">Date</th>
@@ -148,19 +150,21 @@ if(!isset($_SESSION['username'])){
   <tbody>
 
       <?php
-
-      $sql = "SELECT * FROM assignments";
+      // $cid = $_GET['id'];
+      $sql = "SELECT * FROM courseAssign";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
             $id=$row['id'];
             $title=$row['title'];
+            $course_id=$row['course_id']
             // $date = $row['date'];
             // $time = $row['time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
+            <td><?php echo $course_id; ?></td>
             <!-- <td><?php //echo $date; ?></td>
             <td><?php //echo $time; ?></td> -->
             <!-- <td><a href="update-incident.php?updateid=<?php //echo $id; ?>"><i class="fa-solid fa-pen-to-square" style="color:#005382;"></a></i></td> -->
