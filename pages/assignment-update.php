@@ -160,7 +160,7 @@ if(isset($_POST["update_assignment"])){
 
 <a class="back-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-left"></i> Back</a>
 <div class="d-flex justify-content-center">
-<form action="add-assignment.php" class="log-form" method="post">
+<form action="assignment-update.php" class="log-form" method="post">
 <?php //include('errors.php'); ?>
 
 <div class="form-header d-flex justify-content-center">
