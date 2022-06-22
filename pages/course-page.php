@@ -94,14 +94,14 @@ if(!isset($_SESSION['username'])){
     <div class="d-flex justify-content-center">
         <div class="card" style="width: 35rem;">
             <div class="card-body">
-                <h3 class="card-title"><?php echo $title; ?></h3>
-                <p class="card-text"><?php echo $course; ?></p>
-                <p class="card-text"><?php echo $day; ?></p>
-                <p class="card-text"><?php echo $time; ?></p>
-                <h3 class="card-title">Lab Info</h3>
-                <p class="card-text"><?php echo $lab_day; ?></p>
-                <p class="card-text"><?php echo $lab_time; ?></p>
-                <p class="card-text"><?php echo $lab_location; ?></p>
+                <h3 class="card-title text-center"><?php echo $title; ?></h3>
+                <p class="card-text text-center"><?php echo $course; ?></p>
+                <p class="card-text text-center"><?php echo $day; ?></p>
+                <p class="card-text text-center"><?php echo $time; ?></p>
+                <h3 class="card-title text-center">Lab Info</h3>
+                <p class="card-text text-center"><?php echo $lab_day; ?></p>
+                <p class="card-text text-center"><?php echo $lab_time; ?></p>
+                <p class="card-tex text-centert"><?php echo $lab_location; ?></p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
