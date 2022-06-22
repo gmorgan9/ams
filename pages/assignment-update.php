@@ -39,7 +39,7 @@ if(isset($_POST["add-score"])){
     mysqli_close($conn);
 } else{
     // Check existence of id parameter before processing further
-    if(isset($_GET["uid"]) && !empty(trim($_GET["uid"]))){
+    if(isset($_GET["uid"])){
         // Get URL parameter
         $id =  trim($_GET["uid"]);
         
