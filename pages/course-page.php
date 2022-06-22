@@ -131,7 +131,7 @@ if(!isset($_SESSION['username'])){
 
     <!-- Assignments -->
     <br>
-    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
+    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
@@ -148,8 +148,8 @@ if(!isset($_SESSION['username'])){
   <tbody>
 
       <?php
-      $courseid = $_GET['cid'];
-      $sql = "SELECT * FROM assignments where course_id=$courseid";
+      $cid = $_GET['cid'];
+      $sql = "SELECT * FROM assignments where course_id=$cid";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
