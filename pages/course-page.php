@@ -210,7 +210,10 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#score-add">
+  Launch demo modal
+</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
   Launch demo modal
 </button>
           </td>
