@@ -9,7 +9,7 @@ $title = "";
 $title_err = "";
 
 // Processing form data when form is submitted
-if(isset($_POST["update_course"])){
+if(isset($_POST["update_assignment"])){
  // Get hidden input value
  $id = $_POST["uid"];
  //$status = isset($_POST['status']) ? 1 : 0;
@@ -258,7 +258,7 @@ if(isset($_POST["update_course"])){
 
   
     <div class="d-flex justify-content-center">                                
-        <button type="submit" name="add_assignment" class="btn btn-primary text-center reg-log">Add Course</button>  
+        <button type="submit" name="update_assignment" class="btn btn-primary text-center reg-log">Add Course</button>  
     </div>                                                             
 </form>
     
