@@ -261,3 +261,20 @@ if (empty($course_title)) {
       header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid);
   }
 }
+
+
+// call the register() function if register_btn is clicked
+if (isset($_POST['delete'])) {
+	deleteAssignment();
+}
+
+function deleteAssignment(){
+$sql = "DELETE FROM assignments WHERE id='" . $_GET["cid"] . "'";
+if (mysqli_query($conn, $sql)) {
+    echo "Record deleted successfully";
+} else {
+    echo "Error deleting record: " . mysqli_error($conn);
+}
+mysqli_close($conn);
+
+}
