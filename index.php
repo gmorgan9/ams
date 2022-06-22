@@ -42,28 +42,32 @@ if(!isset($_SESSION['username'])){
         <div class="card" style="width: 50rem;">
             <div class="card-body">
                 <h5 class="card-title text-center">Quick Links</h5>
-                <div class="row">
-                    <!-- card -->
-                    <div class="card" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Quick Links</h5>
+                <div class="d-flex justify-content-center">
+                    <!-- row start -->
+                    <div class="row">
+                        <!-- card -->
+                        <div class="card" style="width: 15rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Quick Links</h5>
+                            </div>
                         </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- card -->
-                    <div class="card" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Quick Links</h5>
+                        <!-- end card -->
+                        <!-- card -->
+                        <div class="card" style="width: 15rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Quick Links</h5>
+                            </div>
                         </div>
-                    </div>
-                    <!-- end card -->
-                    <!-- card -->
-                    <div class="card" style="width: 15rem;">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Quick Links</h5>
+                        <!-- end card -->
+                        <!-- card -->
+                        <div class="card" style="width: 15rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Quick Links</h5>
+                            </div>
                         </div>
+                        <!-- end card -->
                     </div>
-                    <!-- end card -->
+                    <!-- row end -->
                 </div>
             </div>
         </div>
