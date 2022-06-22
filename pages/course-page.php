@@ -105,17 +105,17 @@ if(!isset($_SESSION['username'])){
                     }
                     ?></p>
                     <p class="card-text text-center"><b>Lab Times:</b> <?php 
-                    if(!isset($_POST['lab_time'])) {
+                    if(!empty($lab_time)) {
+                        echo $lab_time;
+                    } else { 
                         echo "No Lab";
-                    } else {
-                        echo $lab_time; 
                     }
                     ?></p>
                     <p class="card-text text-center"><b>Lab Location:</b> <?php 
-                    if(!isset($_POST['lab_location'])) {
+                    if(!empty($lab_location)) {
+                        echo $lab_location;
+                    } else { 
                         echo "No Lab";
-                    } else {
-                        echo $lab_location; 
                     }
                     ?></p>
                 </div>
