@@ -152,14 +152,11 @@ if(!isset($_SESSION['username'])){
   <thead>
     <tr class="header-line">
       <th scope="col">#</th>
-      <th scope="col">Status</th>
-      <th scope="col">Incident Number</th>
-      <th scope="col">Severity</th>
-      <th scope="col">Description</th>
+      <th scope="col">Title</th>
       <!-- <th scope="col">Assignment Group</th> -->
       <!-- <th scope="col">KB Article</th> -->
-      <th scope="col">Date</th>
-      <th scope="col">Time</th>
+      <!-- <th scope="col">Date</th>
+      <th scope="col">Time</th> -->
     </tr>
   </thead>
   <tbody>
