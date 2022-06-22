@@ -166,7 +166,7 @@ if (empty($section)) {
 
   // first check the database to make sure 
   // a course does not already exist with the same course_id
-  $course_check_query = "SELECT * FROM course WHERE id='$course_id' LIMIT 1";
+  $course_check_query = "SELECT * FROM course WHERE course_id='$course_id' LIMIT 1";
   $result = mysqli_query($conn, $course_check_query);
   $course_data = mysqli_fetch_assoc($result);
   
