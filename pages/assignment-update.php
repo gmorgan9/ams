@@ -239,7 +239,7 @@ if(isset($_POST["update_assignment"])){
 		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		    </div>
             <?php 
-                $aid = $_GET['uid'];
+                $aid = $_GET['cid'];
             ?>
             <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $aid; ?>" readonly>
         </div>
