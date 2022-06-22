@@ -101,7 +101,7 @@ if(!isset($_SESSION['username'])){
                     if(!isset($_POST['lab_day'])) {
                         echo "No Lab";
                     } else {
-                        echo $lab_day; 
+                        echo $_POST['lab_day']; 
                     }
                     ?></p>
                     <p class="card-text text-center"><b>Lab Times:</b> <?php 
