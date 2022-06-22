@@ -207,6 +207,7 @@ if (isset($_POST['add_assignment'])) {
   $percent = mysqli_real_escape_string($conn, $_POST['percent']);
   $assign_group = mysqli_real_escape_string($conn, $_POST['assign_group']);
   $course_id = mysqli_real_escape_string($conn, $_POST['course_id']);
+  $course_title = mysqli_real_escape_string($conn, $_POST['course_title']);
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
@@ -232,7 +233,10 @@ if (isset($_POST['add_assignment'])) {
     array_push($errors, "Assignment Group is required"); 
 }
 if (empty($course_id)) {
-    array_push($errors, "Course_id is required");
+    array_push($errors, "Course ID is required");
+}
+if (empty($course_title)) {
+  array_push($errors, "Course Title is required");
 }
 
   // first check the database to make sure 
@@ -250,8 +254,8 @@ if (empty($course_id)) {
   // Finally, add course if there are no errors in the form
   if (count($errors) == 0) {
 
-      $query = "INSERT INTO assignments (title, due_date, due_time, score, possible_points, percent, assign_group, course_id) 
-                VALUES('$title', '$due_date', '$due_time', '$score', '$possible_points', '$percent', '$assign_group', '$course_id')";
+      $query = "INSERT INTO assignments (title, due_date, due_time, score, possible_points, percent, assign_group, course_id, course_title) 
+                VALUES('$title', '$due_date', '$due_time', '$score', '$possible_points', '$percent', '$assign_group', '$course_id', '$course_title')";
       mysqli_query($conn, $query);
       header('location: '. BASE_URL .'/pages/courses.php');
   }
