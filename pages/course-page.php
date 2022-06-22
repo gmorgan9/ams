@@ -179,7 +179,9 @@ if(!isset($_SESSION['username'])){
             $adue_date = $row['due_date'];
             $adue_time = $row['due_time'];
             $ascore=$row['score'];
+            $apossible_points=$row['possible_points'];
             $apercent = $row['percent'];
+            $aassign_group=$row['assign_group'];
             ?>
             <tr>
             <td><?php echo $atitle; ?></td>
