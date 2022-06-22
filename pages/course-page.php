@@ -135,7 +135,7 @@ if(!isset($_SESSION['username'])){
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
-        <div class="card" style="width: 35rem;">
+        <div class="card" style="width: 75rem;">
 <table class="table table-hover table-light">
   <thead>
     <tr class="header-line">
