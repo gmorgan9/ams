@@ -84,6 +84,7 @@ if(isset($_POST["update_assignment"])){
                  $possible_points = $row['possible_points'];
                  $percent = $row['percent'];
                  $assign_group = $row['assign_group'];
+                 $course_id = $row['course_id'];
                  $course_title = $row['course_title'];
              } else{
                  // URL doesn't contain valid id. Redirect to error page
@@ -238,10 +239,7 @@ if(isset($_POST["update_assignment"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		    </div>
-            <?php 
-                $aid = $_GET['cid'];
-            ?>
-            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $aid; ?>" readonly>
+            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $course_id; ?>" readonly>
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
