@@ -78,6 +78,13 @@ if(isset($_POST["update_course"])){
                  
                  // Retrieve individual field value
                  $title = $row['title'];
+                 $due_date = $row['due_date'];
+                 $due_time = $row['due_time'];
+                 $score = $row['score'];
+                 $possible_points = $row['possible_points'];
+                 $percent = $row['percent'];
+                 $assign_group = $row['assign_group'];
+                 $course_title = $row['course_title'];
              } else{
                  // URL doesn't contain valid id. Redirect to error page
                  header("location: die-page.php");
