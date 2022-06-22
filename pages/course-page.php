@@ -214,7 +214,7 @@ if(!isset($_SESSION['username'])){
   Launch demo modal
 </button>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-  Launch demo modal
+  new
 </button>
           </td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
@@ -356,35 +356,7 @@ if(isset($_POST["add-score"])){
 
 
 <!-- Add Score Modal -->
-<div class="modal fade" id="score-add" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <!-- <span aria-hidden="true">&times;</span> -->
-        </button>
-      </div>
-      <div class="modal-body">
-      <form action="course-page.php?uid=<?php echo $aid; ?>" class="log-form" method="post">
-      <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
-		                </div>
-                    <input name="score" class="form-control" placeholder="Score" type="number" value="0">
-                  </div>
-              </div> <!-- form-group// -->
-              </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" name="add-score" class="btn btn-primary">Save changes</button>
-      </div>
-    
-    </div>
-  </div>
-</div>
+
 
 
   <!-- ADD Modal -->
