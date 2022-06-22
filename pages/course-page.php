@@ -251,7 +251,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		                </div>
-                    <input name="score" class="form-control" placeholder="Score" type="text">
+                    <input name="score" class="form-control" placeholder="Score" type="number" value="0">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
