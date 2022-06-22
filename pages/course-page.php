@@ -329,7 +329,7 @@ if(!isset($_SESSION['username'])){
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Assignment</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Update Assignment</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -352,7 +352,7 @@ if(!isset($_SESSION['username'])){
     	            <div class="input-group-prepend">
 		                <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
 		              </div>
-                  <input name="title" class="form-control" placeholder="Title" type="text">
+                  <input name="title" class="form-control" placeholder="Title" type="text" value="<?php echo $title; ?>">
                 </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
