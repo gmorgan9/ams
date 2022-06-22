@@ -52,6 +52,7 @@ if(!isset($_SESSION['username'])){
                             </div>
                         </div>
                         <!-- end card -->
+                        <p class="ml-2"></p>
                         <!-- card -->
                         <div class="card" style="width: 15rem;">
                             <div class="card-body">
@@ -59,6 +60,7 @@ if(!isset($_SESSION['username'])){
                             </div>
                         </div>
                         <!-- end card -->
+                        <p class="ml-2"></p>
                         <!-- card -->
                         <div class="card" style="width: 15rem;">
                             <div class="card-body">
