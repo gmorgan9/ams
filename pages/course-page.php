@@ -7,14 +7,14 @@ session_start();
 if(!isset($_SESSION['username'])){
     header("Location: ". BASE_URL . "/action/login.php");
  }
-
+ if($conn === false){
+  die("ERROR: Could not connect. " . mysqli_connect_error());
+}
  // DELETE
  if(isset($_GET['cid'])) {
   $cid = $_GET['cid'];
 
-  if($conn === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+  
  
 // Attempt delete query execution
 $sql = "DELETE FROM assignments WHERE id=$cid";
@@ -216,7 +216,7 @@ mysqli_close($conn);
             <?php } ?>
             <td><?php echo $apercent; ?></td>
             <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $cid; ?>"><i class="fas fa-pencil"></i> </a></td>
-            <td><a href="course-page.php?id=<?php echo $cid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
+            <td><a href="course-page.php?cid=<?php echo $cid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
       }
