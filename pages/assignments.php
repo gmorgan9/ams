@@ -34,40 +34,55 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-<h3 class="page_title">Assignments</h3>
+<!-- Assignments -->
+<br>
+    <a class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
+      <h3 class="page_title">Course Assignments</h3>
 
-<div class="col d-flex justify-content-center">
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 75rem;">
 <table class="table table-hover table-light">
-<thead>
-<tr class="header-line">
-<th scope="col">#</th>
-<th scope="col">Title</th>
-</tr>
-</thead>
-<tbody> 
+  <thead>
+    <tr class="header-line">
+      <th scope="col">Title</th>
+      <th scope="col">Course ID</th>
+      <th scope="col">Due Date</th>
+      <th scope="col">Due Time</th>
+      <th scope="col">Score</th>
+      <th scope="col">Percent</th>
+    </tr>
+  </thead>
+  <tbody>
 
-<?php
-
-$sql = "SELECT * FROM assignments";
-$result = mysqli_query($conn, $sql);
-if($result) {
-    while ($row = mysqli_fetch_assoc($result)) {
-      $id=$row['id'];
-      $title=$row['title'];
-      $course_id=$row['course_id'];
-      ?>
-      <tr>
-      <th scope="row"><?php echo $id; ?></th>
-      <td><?php echo $title; ?></td>
-      <td><?php echo $course_id; ?></td>
-      </tr>
-   <?php }
-}
+      <?php
+      $cid = $_GET['cid'];
+      $sql = "SELECT * FROM assignments where course_id=$cid";
+      $result = mysqli_query($conn, $sql);
+      if($result) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $id=$row['id'];
+            $title=$row['title'];
+            $course_id=$row['course_id'];
+            $due_date = $row['due_date'];
+            $due_time = $row['due_time'];
+            $score=$row['score'];
+            $percent = $row['percent'];
+            ?>
+            <tr>
+            <td><?php echo $title; ?></td>
+            <td><?php echo $course_id; ?></td>
+            <td><?php echo $due_date; ?></td>
+            <td><?php echo $due_time; ?></td>
+            <td><?php echo $score; ?></td>
+            <td><?php echo $percent; ?></td>
+            </tr>
+         <?php }
+      }
 
 ?>
-</tbody>
+  </tbody>
 </table>
-</div>
+    </div>
 
 
 
