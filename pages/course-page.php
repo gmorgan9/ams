@@ -83,14 +83,32 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
 <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
-    <h3 class="page_title"><?php echo $title; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
-    <h5 class="page_title"><?php echo $day; ?></h5>
-    <h5 class="page_title"><?php echo $time; ?></h5>
+    <h5 class="page_title"></h5>
+    <h5 class="page_title"></h5>
     <h4 class="page_title">Lab Info</h4>
-    <h5 class="page_title"><?php echo $lab_day; ?></h5>
-    <h5 class="page_title"><?php echo $lab_time; ?></h5>
-    <h5 class="page_title"><?php echo $lab_location; ?></h5>
+    <h5 class="page_title"></h5>
+    <h5 class="page_title"></h5>
+    <h5 class="page_title"></h5>
+
+  
+    <div class="card" style="width: 35rem;">
+        <div class="card-body">
+            <div class="row">
+                <h3 class="card-title"><?php echo $title; ?></h3>
+                <p class="card-text"><?php echo $course; ?></p>
+                <p class="card-text"><?php echo $day; ?></p>
+                <p class="card-text"><?php echo $time; ?></p>
+            </div>
+            <div class="row">
+                <h3 class="card-title">Lab Info</h3>
+                <p class="card-text"><?php echo $lab_day; ?></p>
+                <p class="card-text"><?php echo $lab_time; ?></p>
+                <p class="card-text"><?php echo $lab_location; ?></p>
+            </div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 
 
 
