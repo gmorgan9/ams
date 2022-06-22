@@ -108,9 +108,27 @@ if(!isset($_SESSION['username'])){
                 <div class="row">
                 <div class="col">
                     <p class="card-text text-center"><b>Course Number:</b> <?php echo $course; ?></p>
-                    <p class="card-text text-center"><b>Course Days:</b> <?php echo $day; ?></p>
-                    <p class="card-text text-center"><b>Course Time:</b> <?php echo $time; ?></p>
-                    <p class="card-text text-center"><b>Course Location:</b> <?php echo $location; ?></p>
+                    <p class="card-text text-center"><b>Course Days:</b>  <?php 
+                    if(!empty($day)) {
+                        echo $day;
+                    } else { 
+                        echo "Online";
+                    }
+                    ?></p>
+                    <p class="card-text text-center"><b>Course Time:</b>  <?php 
+                    if(!empty($time)) {
+                        echo $time;
+                    } else { 
+                        echo "Online";
+                    }
+                    ?></p>
+                    <p class="card-text text-center"><b>Course Location:</b>  <?php 
+                    if(!empty($location)) {
+                        echo $location;
+                    } else { 
+                        echo "Online";
+                    }
+                    ?></p>
                 </div>
                 <div class="col">
                     <h5 class="card-title text-center">Lab Info</h5>
