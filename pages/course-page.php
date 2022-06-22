@@ -16,7 +16,7 @@ if(!isset($_SESSION['username'])){
   $result = mysqli_query($conn, $sql);
   if($result) {
       // echo "Deleted Successfully";
-      header('location: course-page.php?cid='. $cid); // returns back to same page
+      header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid); // returns back to same page
   } else {
       die(mysqli_error($con));
   }
