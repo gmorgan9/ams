@@ -18,7 +18,7 @@ if(!isset($_SESSION['username'])){
       // echo "Deleted Successfully";
       header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid); // returns back to same page
   } else {
-      die(mysqli_error($con));
+      die(mysqli_error($conn));
   }
 }
 
