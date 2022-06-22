@@ -45,7 +45,7 @@ if(!isset($_SESSION['username'])){
   <thead>
     <tr class="header-line">
       <th scope="col">Title</th>
-      <th scope="col">Course ID</th>
+      <th scope="col">Course Title</th>
       <th scope="col">Due Date</th>
       <th scope="col">Due Time</th>
       <th scope="col">Score</th>
@@ -62,7 +62,7 @@ if(!isset($_SESSION['username'])){
           while ($row = mysqli_fetch_assoc($result)) {
             $id=$row['id'];
             $title=$row['title'];
-            $course_id=$row['course_id'];
+            $course_title=$row['course_title'];
             $due_date = $row['due_date'];
             $due_time = $row['due_time'];
             $score=$row['score'];
@@ -70,7 +70,7 @@ if(!isset($_SESSION['username'])){
             ?>
             <tr>
             <td><?php echo $title; ?></td>
-            <td><?php echo $course_id; ?></td>
+            <td><?php echo $course_title; ?></td>
             <td><?php echo $due_date; ?></td>
             <td><?php echo $due_time; ?></td>
             <td><?php echo $score; ?></td>
