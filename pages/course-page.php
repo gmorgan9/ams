@@ -203,7 +203,7 @@ if(!isset($_SESSION['username'])){
             <tr>
             <td><?php echo $atitle; ?></td>
             <td><?php echo $aassign_group; ?></td>
-            <td><?php echo $fullDate; ?><br><?php echo $fullTime; ?></td>
+            <td><?php echo $fullDate; ?> by <?php echo $fullTime; ?></td>
             <?php 
             if($row['score'] == 0){
               echo "<td> - </td>";
