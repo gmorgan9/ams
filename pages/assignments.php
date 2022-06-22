@@ -95,7 +95,7 @@ if(!isset($_SESSION['username'])){
     <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -121,7 +121,7 @@ if(!isset($_SESSION['username'])){
 
 
 <script>
-$('#myModal').modal('toggle')
+$('#myModal').modal('show')
 </script>
 </body>
 </html>
