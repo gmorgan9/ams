@@ -98,8 +98,9 @@ session_start();
             <input name="file_submit" class="form-control" placeholder="File Submission" type="file">
         </div>
     </div> <!-- form-group// -->
+    <div class="row">
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-75">
+        <div class="form-group input-group w-25">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
@@ -107,13 +108,14 @@ session_start();
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-75">
+        <div class="form-group input-group w-25">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
             <input name="possible_points" class="form-control" placeholder="Possible Points" type="number">
         </div>
     </div> <!-- form-group// -->
+    </div>
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
