@@ -56,14 +56,25 @@ if(!isset($_SESSION['username'])){
    
 
     <?php
-      $cid = $_GET['cid'];
-      $sql = "SELECT * FROM course where id=$cid";
+      $id = $_GET['cid'];
+      $sql = "SELECT * FROM course where id=$id";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
             $id = $row['id'];
             $title = $row['title'];
             $course = $row['course'];
+            $taken = $row['taken'];
+            $day = $row['day'];
+            $time = $row['time'];
+            $lab_day = $row['lab_day'];
+            $lab_time = $row['lab_time'];
+            $location = $row['location'];
+            $lab_location = $row['lab_location'];
+            $section = $row['section'];
+            $instructor = $row['instructor'];
+            $credits = $row['credits'];
+            $mode = $row['mode'];
           }
           //$fullDate = date("M d, Y", strtotime($date));
         }
@@ -74,6 +85,12 @@ if(!isset($_SESSION['username'])){
 <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
     <h3 class="page_title"><?php echo $title; ?></h3>
     <h5 class="page_title"><?php echo $course; ?></h5>
+    <h5 class="page_title"><?php echo $day; ?></h5>
+    <h5 class="page_title"><?php echo $time; ?></h5>
+    <h4 class="page_title">Lab Info</h4>
+    <h5 class="page_title"><?php echo $lab_day; ?></h5>
+    <h5 class="page_title"><?php echo $lab_time; ?></h5>
+    <h5 class="page_title"><?php echo $lab_location; ?></h5>
 
 
 
