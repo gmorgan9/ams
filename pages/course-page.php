@@ -203,8 +203,13 @@ if(!isset($_SESSION['username'])){
   Launch demo modal
 </button> -->
 
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -235,9 +240,9 @@ if(!isset($_SESSION['username'])){
 
 <!--modal-->
 <script>
-  $(document).ready(function() {
-    $("#myModal").modal();
-  });
+ $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 </script>
 
 
