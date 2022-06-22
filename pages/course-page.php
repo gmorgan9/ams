@@ -141,7 +141,7 @@ if(!isset($_SESSION['username'])){
       <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Course ID</th>
-      <th scope="col">Date</th>
+      <th scope="col">Day</th>
       <th scope="col">Time</th>
     </tr>
   </thead>
@@ -156,14 +156,14 @@ if(!isset($_SESSION['username'])){
             $id=$row['id'];
             $title=$row['title'];
             $course_id=$row['course_id']
-            $date = $row['date'];
+            $day = $row['day'];
             $time = $row['time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
             <td><?php echo $course_id; ?></td>
-            <td><?php echo $date; ?></td>
+            <td><?php echo $day; ?></td>
             <td><?php echo $time; ?></td>
             </tr>
          <?php }
