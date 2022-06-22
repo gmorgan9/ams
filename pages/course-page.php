@@ -149,7 +149,7 @@ if(!isset($_SESSION['username'])){
 
       <?php
       $cid = $_GET['cid'];
-      $sql = "SELECT * FROM course_assignments where course_id=$cid";
+      $sql = "SELECT * FROM assignments where course_id=$cid";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
