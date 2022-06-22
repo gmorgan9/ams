@@ -156,14 +156,14 @@ if(!isset($_SESSION['username'])){
             $id=$row['id'];
             $title=$row['title'];
             $course_id=$row['course_id']
-            //$due_date = $row['due_date'];
+            $due_date = $row['due_date'];
             //$due_time = $row['due_time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
             <td><?php echo $course_id; ?></td>
-            <!-- <td><?php //echo $due_date; ?></td> -->
+            <td><?php echo $due_date; ?></td>
             <!-- <td><?php //echo $due_time; ?></td> -->
             </tr>
          <?php }
