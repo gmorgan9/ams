@@ -90,14 +90,6 @@ session_start();
             <input name="due_time" class="form-control" placeholder="Time" type="time">
         </div>
     </div> <!-- form-group// -->
-    <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-75">
-    	    <div class="input-group-prepend">
-		        <span class="input-group-text"> <i class="fa fa-file"></i> </span>
-		    </div>
-            <input name="file_submit" class="form-control" placeholder="File Submission" type="file">
-        </div>
-    </div> <!-- form-group// -->
     <div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
