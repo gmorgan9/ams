@@ -1,6 +1,6 @@
 <?php 
-include("../../path.php");
-include("../../database/functions.php");
+include("../path.php");
+include("../database/functions.php");
 session_start();
 
 

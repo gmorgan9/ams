@@ -150,8 +150,6 @@ if(!isset($_SESSION['username'])){
     <!-- Assignments -->
     <br>
     <a data-toggle="modal" data-target="#addModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-plus"></i> Add Assignment</a>
-    <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal1">add</button>
-    <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal2">update</button>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
@@ -327,124 +325,7 @@ if(!isset($_SESSION['username'])){
       </div>
     </div>
   </div>
-
-  <!-- Update Modal -->
-  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Update Assignment</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-          <div class="d-flex justify-content-center">
-            <form action="course-page.php?cid=<?php echo $cid; ?>" class="log-form" method="post">
-              <div class="form-header d-flex justify-content-center">
-                <div class="bg-circle">
-                  <div class="sm-circle">
-                    <div class="d-flex justify-content-center">
-                      <i class="user-header fa-solid fa-clipboard fa-3x"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <div class="d-flex justify-content-center">
-                <div class="form-group input-group w-75">
-    	            <div class="input-group-prepend">
-		                <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
-		              </div>
-                  <input name="title" class="form-control" placeholder="Title" type="text" value="<?php echo $atitle; ?>">
-                </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
-		                </div>
-                    <input name="due_date" class="form-control" placeholder="Date" type="date" value="<?php echo $adue_date; ?>">
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
-		                </div>
-                    <input name="due_time" class="form-control" placeholder="Time" type="time" value="<?php echo $adue_time; ?>">
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
-		                </div>
-                    <input name="score" class="form-control" placeholder="Score" type="number" value="<?php echo $ascore; ?>">
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
-		                </div>
-                    <input name="possible_points" class="form-control" placeholder="Possible Points" type="number"  value="<?php echo $apossible_points; ?>">
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-percent"></i> </span>
-		                </div>
-                    <input name="percent" class="form-control" placeholder="% of Grade" type="percent" value="<?php echo $apercent; ?>">
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
-		                </div>
-                    <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text" value="<?php echo $aassign_group; ?>">
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
-		                </div>
-                    <?php $cid = $_GET['cid']; ?>
-                    <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $cid; ?>" readonly>
-                  </div>
-              </div> <!-- form-group// -->
-              <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
-		                </div>
-                    <?php 
-                      $sql = "SELECT * FROM course where course_id=$cid";
-                      $result = mysqli_query($conn, $sql);
-                        if($result) {
-                          while ($row = mysqli_fetch_assoc($result)) {
-                            $title=$row['title'];
-                    ?>
-                    <input name="course_title" class="form-control" placeholder="Course ID" type="text" value="<?php echo $title; ?>" readonly>
-                  </div>
-              </div> <!-- form-group// -->
-              <?php }
-                }
-              ?>
-           
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" name="update_assignment" class="btn btn-secondary">Update</button>
-        </div>
-      </form>
-      </div>
-    </div>
-  </div>
+<!-- end add modal -->
 
 </body>
 <!-- JS code -->
