@@ -8,20 +8,6 @@ if(!isset($_SESSION['username'])){
     header("Location: ". BASE_URL . "/action/login.php");
  }
 
- // DELETE
- if(isset($_GET['did'])) {
-  $id = $_GET['did'];
-
-  $sql = "DELETE FROM assignments WHERE id=$id";
-  $result = mysqli_query($conn, $sql);
-  if($result) {
-      // echo "Deleted Successfully";
-      header('location: /pages/course-page.php');
-  } else {
-      die(mysqli_error($conn));
-  }
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
