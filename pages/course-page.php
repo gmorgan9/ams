@@ -225,7 +225,7 @@ if(!isset($_SESSION['username'])){
 <?php
 
 if(isset($_POST['add-score'])) {
-$sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+$sql = "UPDATE assignments SET score= ? WHERE id=30";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";
