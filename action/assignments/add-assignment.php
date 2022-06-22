@@ -135,7 +135,25 @@ session_start();
             <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $cid; ?>">
         </div>
     </div> <!-- form-group// -->
-
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
+		    </div>
+            <?php 
+                $sql = "SELECT * FROM course where course_id=$cid";
+                $result = mysqli_query($conn, $sql);
+                if($result) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                      $title=$row['title'];
+                      ?>
+            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $title; ?>">
+        </div>
+    </div> <!-- form-group// -->
+    <?php }
+                }
+          
+          ?>
 
 
 
