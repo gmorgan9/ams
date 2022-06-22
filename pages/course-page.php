@@ -104,8 +104,20 @@ if(!isset($_SESSION['username'])){
                         echo $lab_day; 
                     }
                     ?></p>
-                    <p class="card-text text-center"><b>Lab Times:</b> <?php echo $lab_time; ?></p>
-                    <p class="card-text text-center"><b>Lab Location:</b> <?php echo $lab_location; ?></p>
+                    <p class="card-text text-center"><b>Lab Times:</b> <?php 
+                    if(!isset($_POST['lab_time'])) {
+                        echo "No Lab";
+                    } else {
+                        echo $lab_time; 
+                    }
+                    ?></p>
+                    <p class="card-text text-center"><b>Lab Location:</b> <?php 
+                    if(!isset($_POST['lab_location'])) {
+                        echo "No Lab";
+                    } else {
+                        echo $lab_location; 
+                    }
+                    ?></p>
                 </div>
                 </div>
                 <!-- <br> -->
