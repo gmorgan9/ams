@@ -132,7 +132,7 @@ session_start();
             <?php 
                 $cid = $_GET['cid'];
             ?>
-            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $cid; ?>">
+            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $cid; ?>" readonly>
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -147,7 +147,7 @@ session_start();
                     while ($row = mysqli_fetch_assoc($result)) {
                       $title=$row['title'];
                       ?>
-            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $title; ?>">
+            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $title; ?>" readonly>
         </div>
     </div> <!-- form-group// -->
     <?php }
