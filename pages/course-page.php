@@ -102,7 +102,7 @@ if(!isset($_SESSION['username'])){
                     <p class="card-text text-center"><b>Lab Location:</b> <?php echo $lab_location; ?></p>
                 </div>
                 </div>
-                <br><br>
+                <br>
                 <div class="d-flex justify-content-center">
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
