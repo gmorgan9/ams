@@ -210,7 +210,7 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <td><a data-toggle="modal" data-target="#score-add" class="edit-btn me-3 me-lg-0" href="/pages/course-page.php?uid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i></a></td>
+            <td><button type="button" data-toggle="modal" data-target="#score-add" class="edit-btn me-3 me-lg-0"><i class="fas fa-pencil"></i></button></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
