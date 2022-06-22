@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
     </div>
 <br><br>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
+<button type="button" class="btn btn-primary" data-toggle="mymodal" data-target="#myModal">
   Launch demo modal
 </button>
 
