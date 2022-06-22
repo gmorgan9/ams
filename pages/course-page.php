@@ -157,6 +157,7 @@ if(!isset($_SESSION['username'])){
   <thead>
     <tr class="header-line">
       <th scope="col">Title</th>
+      <th scope="col">Assignment Category</th>
       <th scope="col">Due Date</th>
       <th scope="col">Due Time</th>
       <th scope="col">Score</th>
@@ -184,6 +185,7 @@ if(!isset($_SESSION['username'])){
             ?>
             <tr>
             <td><?php echo $atitle; ?></td>
+            <td><?php echo $aassign_group; ?></td>
             <td><?php echo $fullDate; ?></td>
             <td><?php echo $fullTime; ?></td>
             <?php 
