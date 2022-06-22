@@ -210,7 +210,7 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <td><a data-toggle="modal" data-target="#scoreModal" class="edit-btn me-3 me-lg-0" href="/pages/course-page.php?uid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i></a>
+            <td><a data-toggle="modal" data-target="#scoreModal" class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?uid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i></a>
           </td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
@@ -227,17 +227,7 @@ if(!isset($_SESSION['username'])){
 <!-- Button trigger modal -->
 
 
-<?php 
-$aid = $_GET['uid'];
-$query = "SELECT score FROM assignments WHERE id='$aid'";
-$result = mysqli_query( $conn, $query );
-$row = mysqli_fetch_assoc( $query );
 
-$newhp = $row['score'];
-$query = "UPDATE assignments SET score='$newscore' WHERE id='$aid'";
-$result = mysqli_query( $conn, $query );
-
-?>
 
 
 <!-- ADD Modal -->
