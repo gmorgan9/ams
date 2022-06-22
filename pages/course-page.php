@@ -176,8 +176,7 @@ if(!isset($_SESSION['username'])){
     <tr class="header-line">
       <th scope="col">Title</th>
       <th scope="col">Category</th>
-      <th scope="col">Due Date</th>
-      <th scope="col">Due Time</th>
+      <th scope="col">Due</th>
       <th scope="col">Score</th>
       <th scope="col">Action</th>
     </tr>
