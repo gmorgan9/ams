@@ -210,7 +210,7 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <td><a data-toggle="modal" data-target="#scoreModal" class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?uid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i></a>
+            <td><a class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?uid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i></a>
           </td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
@@ -225,42 +225,6 @@ if(!isset($_SESSION['username'])){
 
 
 <!-- Button trigger modal -->
-
-
-
-
-
-<!-- ADD Modal -->
-<div class="modal fade" id="scoreModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Update Score</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-      <form action="/pages/assignment-update.php?uid=<?php echo $aid; ?>" class="log-form" method="post">
-      <div class="d-flex justify-content-center">
-                  <div class="form-group input-group w-75">
-              	    <div class="input-group-prepend">
-		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
-		                </div>
-                    <input name="score" class="form-control" placeholder="Score" type="number" value="0">
-                  </div>
-              </div> <!-- form-group// -->
-            
-      </div>
-      <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" name="add-score" class="btn btn-secondary">Update</button>
-        </div>
-      </form>
-      </div>
-    </div>
-  </div>
-<!-- end add modal -->
 
 
   <!-- ADD Modal -->
