@@ -188,7 +188,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
 		    </div>
-            <input name="due_date" class="form-control" placeholder="Date" type="date" value="<?php echo $date; ?>">
+            <input name="due_date" class="form-control" placeholder="Date" type="date" value="<?php echo $due_date; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -196,7 +196,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
-            <input name="due_time" class="form-control" placeholder="Time" type="time" value="<?php echo $time; ?>">
+            <input name="due_time" class="form-control" placeholder="Time" type="time" value="<?php echo $due_time; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="row">
