@@ -254,7 +254,7 @@ if(!isset($_SESSION['username'])){
       </div>
       <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" name="add-score" class="btn btn-secondary">Add</button>
+          <button type="submit" name="add-score" class="btn btn-secondary">Update</button>
         </div>
       </form>
       </div>
