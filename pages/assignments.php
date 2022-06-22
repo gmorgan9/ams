@@ -124,6 +124,7 @@ if(!isset($_SESSION['username'])){
           
 
         <div class="d-flex justify-content-center">
+        <?php $cid = $_GET['cid']; ?>
             <form action="course-page.php?cid=<?php echo $cid; ?>" class="log-form" method="post">
               <div class="form-header d-flex justify-content-center">
                 <div class="bg-circle">
