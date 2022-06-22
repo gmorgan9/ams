@@ -222,6 +222,20 @@ if(!isset($_SESSION['username'])){
     </div>
 </div>
 
+<?php
+
+if(isset($_POST['add-score'])) {
+$sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . $conn->error;
+}
+}
+
+?>
+
 
 <!-- Add Score Modal -->
 <div class="modal fade" id="score" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -234,7 +248,7 @@ if(!isset($_SESSION['username'])){
         </button>
       </div>
       <div class="modal-body">
-      <form action="course-page.php?cid=<?php echo $cid; ?>" class="log-form" method="post">
+      <form action="course-page.php" class="log-form" method="post">
       <div class="d-flex justify-content-center">
                   <div class="form-group input-group w-75">
               	    <div class="input-group-prepend">
@@ -246,7 +260,7 @@ if(!isset($_SESSION['username'])){
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" name="add-score" class="btn btn-primary">Save changes</button>
       </div>
     </form>
     </div>
