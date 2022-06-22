@@ -121,7 +121,7 @@ if(!isset($_SESSION['username'])){
 
 
 <script>
- $('#myModal').modal(show)
+$('#myModal').modal('toggle')
 </script>
 </body>
 </html>
