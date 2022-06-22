@@ -76,3 +76,8 @@
   });
 </script>
 ```
+
+# Redirect back to previous page
+```
+header('Location: ' . $_SERVER['HTTP_REFERER']);
+```
