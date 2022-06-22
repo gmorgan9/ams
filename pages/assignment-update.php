@@ -1,6 +1,6 @@
 <?php 
 include("../path.php");
-//include("../database/functions.php");
+include("../database/functions.php");
 session_start();
 
 
@@ -11,7 +11,7 @@ $title_err = "";
 // Processing form data when form is submitted
 if(isset($_POST["update_assignment"])){
  // Get hidden input value
- $id = $_POST["uid"];
+ $id = $_POST["updateid"];
  //$status = isset($_POST['status']) ? 1 : 0;
  
  // Validate address address
@@ -54,9 +54,9 @@ if(isset($_POST["update_assignment"])){
  mysqli_close($conn);
 } else{
  // Check existence of id parameter before processing further
- if(isset($_GET["uid"]) && !empty(trim($_GET["uid"]))){
+ if(isset($_GET["updateid"]) && !empty(trim($_GET["updateid"]))){
      // Get URL parameter
-     $id =  trim($_GET["uid"]);
+     $id =  trim($_GET["updateid"]);
      
      // Prepare a select statement
      $sql = "SELECT * FROM assignments WHERE id = ?";
