@@ -53,7 +53,6 @@ if(!isset($_SESSION['username'])){
         border-bottom: 3px rgb(128, 128, 128) solid;
       }
       .back-btn {
-        margin-top: 20px;
         float: right; 
         margin-right: 10px; 
         margin-left: -70px; 
