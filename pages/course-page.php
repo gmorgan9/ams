@@ -48,6 +48,9 @@ if(!isset($_SESSION['username'])){
         margin: 5px;
         margin-bottom: 10px;
       }
+      .header-line {
+        border-bottom: 3px rgb(128, 128, 128) solid;
+      }
     </style>
 </head>
 
