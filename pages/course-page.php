@@ -148,7 +148,7 @@ if(!isset($_SESSION['username'])){
 
     <!-- Assignments -->
     <br>
-    <a type="button" data-toggle="modal" data-target="#myModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-plus"></i> Add Assignment</a>
+    <a type="button" data-toggle="modal" data-target="#exampleModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-plus"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
