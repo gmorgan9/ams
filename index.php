@@ -44,21 +44,21 @@ if(!isset($_SESSION['username'])){
                 <h5 class="card-title text-center">Quick Links</h5>
                 <div class="row">
                     <!-- card -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 15rem;">
                         <div class="card-body">
                             <h5 class="card-title text-center">Quick Links</h5>
                         </div>
                     </div>
                     <!-- end card -->
                     <!-- card -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 15rem;">
                         <div class="card-body">
                             <h5 class="card-title text-center">Quick Links</h5>
                         </div>
                     </div>
                     <!-- end card -->
                     <!-- card -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 15rem;">
                         <div class="card-body">
                             <h5 class="card-title text-center">Quick Links</h5>
                         </div>
