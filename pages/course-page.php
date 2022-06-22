@@ -95,8 +95,8 @@ if(!isset($_SESSION['username'])){
                     <p class="card-text text-center"><b>Course Time:</b> <?php echo $time; ?></p>
                     <p class="card-text text-center"><b>Course Location:</b> <?php echo $location; ?></p>
                 </div>
-                <h3 class="card-title text-center">Lab Info</h3>
                 <div class="col">
+                    <h3 class="card-title text-center">Lab Info</h3>
                     <p class="card-text text-center"><b>Lab Days:</b> <?php echo $lab_day; ?></p>
                     <p class="card-text text-center"><b>Lab Times:</b> <?php echo $lab_time; ?></p>
                     <p class="card-text text-center"><b>Lab Location:</b> <?php echo $lab_location; ?></p>
