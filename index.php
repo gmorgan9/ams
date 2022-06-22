@@ -42,6 +42,11 @@ if(!isset($_SESSION['username'])){
         <div class="card" style="width: 50rem;">
             <div class="card-body">
                 <h5 class="card-title text-center">Quick Links</h5>
+                <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Quick Links</h5>
+            </div>
+        </div>
             </div>
         </div>
     </div>
