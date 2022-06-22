@@ -180,11 +180,12 @@ if(!isset($_SESSION['username'])){
             $ascore=$row['score'];
             $apossible_points=$row['possible_points'];
             $aassign_group=$row['assign_group'];
+            $fullDate = date("M d, Y", strtotime($adue_date));
             ?>
             <tr>
             <td><?php echo $atitle; ?></td>
             <td><?php echo $acourse_id; ?></td>
-            <td><?php echo $adue_date; ?></td>
+            <td><?php echo $fullDate; ?></td>
             <td><?php echo $adue_time; ?></td>
             <?php 
             if($row['score'] == 0){
