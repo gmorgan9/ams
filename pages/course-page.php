@@ -3,7 +3,7 @@ include("../path.php");
 include("../database/connection.php");
 include("../database/functions.php");
 session_start();
-
+$courseid = $_GET['cid'];
 if(!isset($_SESSION['username'])){
     header("Location: ". BASE_URL . "/action/login.php");
  }
@@ -16,9 +16,7 @@ if(!isset($_SESSION['username'])){
   $result = mysqli_query($conn, $sql);
   if($result) {
       // echo "Deleted Successfully";
-      $cid = $_GET['cid'];
-      $sql = "SELECT * FROM assignments where course_id=$cid";
-      header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid);
+      header('location: '. BASE_URL .'/pages/course-page.php?cid='. $courseid);
   } else {
       die(mysqli_error($conn));
   }
