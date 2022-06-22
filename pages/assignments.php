@@ -56,7 +56,6 @@ if(!isset($_SESSION['username'])){
       <th scope="col">Due Time</th>
       <th scope="col">Score</th>
       <th scope="col">Percent</th>
-      <th scope="col">Percent</th>
     </tr>
   </thead>
   <tbody>
