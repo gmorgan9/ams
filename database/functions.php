@@ -257,6 +257,6 @@ if (empty($course_title)) {
       $query = "INSERT INTO assignments (title, due_date, due_time, score, possible_points, percent, assign_group, course_id, course_title) 
                 VALUES('$title', '$due_date', '$due_time', '$score', '$possible_points', '$percent', '$assign_group', '$course_id', '$course_title')";
       mysqli_query($conn, $query);
-      header('location: '. BASE_URL .'/pages/courses.php');
+      header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid);
   }
 }
