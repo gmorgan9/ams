@@ -253,19 +253,11 @@ if (empty($course_title)) {
 
   // Finally, add course if there are no errors in the form
   if (count($errors) == 0) {
-    if (isset($_POST['score'])) {
+
       $query = "INSERT INTO assignments (title, due_date, due_time, score, possible_points, percent, assign_group, course_id, course_title) 
                 VALUES('$title', '$due_date', '$due_time', '$score', '$possible_points', '$percent', '$assign_group', '$course_id', '$course_title')";
       mysqli_query($conn, $query);
       $cid = $_GET['cid'];
       header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid);
-  } else {
-      $query = "INSERT INTO assignments (title, due_date, due_time, score, possible_points, percent, assign_group, course_id, course_title) 
-                VALUES('$title', '$due_date', '$due_time', 'null', '$possible_points', '$percent', '$assign_group', '$course_id', '$course_title')";
-      mysqli_query($conn, $query);
-      $cid = $_GET['cid'];
-      header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid);
-}
-      
   }
 }
