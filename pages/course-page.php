@@ -97,7 +97,13 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div class="col">
                     <h5 class="card-title text-center">Lab Info</h5>
-                    <p class="card-text text-center"><b>Lab Days:</b> <?php echo $lab_day; ?></p>
+                    <p class="card-text text-center"><b>Lab Days:</b> <?php 
+                    if(!isset($lab_day)) {
+                        echo "No Lab";
+                    } else {
+                        echo $lab_day; 
+                    }
+                    ?></p>
                     <p class="card-text text-center"><b>Lab Times:</b> <?php echo $lab_time; ?></p>
                     <p class="card-text text-center"><b>Lab Location:</b> <?php echo $lab_location; ?></p>
                 </div>
@@ -109,6 +115,11 @@ if(!isset($_SESSION['username'])){
             </div>
         </div>
     </div>
+
+
+    <!-- Assignments -->
+
+
 
 
 
