@@ -196,11 +196,15 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $ascore; ?></td>
             <?php } ?>
             <?php
-            function percent($apercent){
-              return $apercent * 100 . '%';
+            // defining function
+             function cal_percentage($num_amount, $num_total) {
+              $count1 = $num_amount / $num_total;
+              $count2 = $count1 * 100;
+              $count = number_format($count2, 0);
+              return $count;
             }
             ?>
-            <td><?php echo percent($apercent); ?></td>
+            <td><?php echo cal_percentage($apercent, 100).'%' ?></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
