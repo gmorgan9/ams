@@ -100,7 +100,7 @@ session_start();
     </div> <!-- form-group// -->
     <div class="row">
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-25">
+        <div class="form-group input-group w-50">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar-days"></i> </span>
 		    </div>
@@ -108,7 +108,7 @@ session_start();
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-25">
+        <div class="form-group input-group w-50">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
