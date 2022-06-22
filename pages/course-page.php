@@ -187,7 +187,7 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $due_date; ?></td>
             <td><?php echo $due_time; ?></td>
             <?php 
-            if($score === 0){
+            if($score == 0){
               echo "<td> - </td>"
             } else { ?>
             <td><?php echo $score; ?></td>
