@@ -130,8 +130,6 @@ session_start();
             <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text">
         </div>
     </div> <!-- form-group// -->
-</div>
-    </div>
 
 
 
