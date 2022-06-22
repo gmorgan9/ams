@@ -99,8 +99,8 @@ if(!isset($_SESSION['username'])){
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
-<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
-<!-- <a class="back-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-left"></i> Back</a> -->
+<!-- <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Edit Course</a> -->
+<a class="back-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-left"></i> Back</a>
 
     <div class="d-flex justify-content-center">
         <div class="card" style="width: 35rem;">
