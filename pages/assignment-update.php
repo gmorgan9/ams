@@ -10,19 +10,6 @@ $name_err = $address_err = $salary_err = "";
  
 // Processing form data when form is submitted
 if(isset($_POST["add-score"])){
-    // Get hidden input value
-    $id = $_POST["id"];
-    
-    // Validate address address
-    $input_score = trim($_POST["score"]);
-    if(empty($input_score)){
-        $score_err = "Please enter a Score.";     
-    } else{
-        $score = $input_score;
-    }
-    
-    // Check input errors before inserting in database
-    if(empty($score_err)){
         // Prepare an update statement
         $sql = "UPDATE assignments SET score=? WHERE id=?";
          
@@ -37,7 +24,7 @@ if(isset($_POST["add-score"])){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Records updated successfully. Redirect to landing page
-                header("location: index.php");
+                header("location: /");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
