@@ -154,16 +154,16 @@ if(!isset($_SESSION['username'])){
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
             $id=$row['id'];
-            $title=$row['title'];
-            $course_id=$row['course_id']
-            $due_date = $row['due_date'];
+            $atitle=$row['title'];
+            $acourse_id=$row['course_id']
+            $adue_date = $row['due_date'];
             //$due_time = $row['due_time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
-            <td><?php echo $title; ?></td>
-            <td><?php echo $course_id; ?></td>
-            <td><?php echo $due_date; ?></td>
+            <td><?php echo $atitle; ?></td>
+            <td><?php echo $acourse_id; ?></td>
+            <td><?php echo $adue_date; ?></td>
             <!-- <td><?php //echo $due_time; ?></td> -->
             </tr>
          <?php }
