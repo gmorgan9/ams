@@ -29,7 +29,7 @@ if(isset($_POST["add-score"])){
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
-        }
+        
          
         // Close statement
         mysqli_stmt_close($stmt);
