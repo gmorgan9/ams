@@ -250,7 +250,7 @@ if(!isset($_SESSION['username'])){
                     <input name="score" class="form-control" placeholder="Score" type="number" value="0">
                   </div>
               </div> <!-- form-group// -->
-              </form>
+            
       </div>
       <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
