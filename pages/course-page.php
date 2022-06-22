@@ -17,6 +17,7 @@ if(!isset($_SESSION['username'])){
   if($result) {
       // echo "Deleted Successfully";
       $cid = $_GET['cid'];
+      $sql = "SELECT * FROM course where course_id=$cid";
       header('location: '. BASE_URL .'/pages/course-page.php?cid='. $cid);
   } else {
       die(mysqli_error($conn));
