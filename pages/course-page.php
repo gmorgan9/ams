@@ -1,6 +1,7 @@
 <?php 
 include("../path.php");
 include("../database/connection.php");
+include("../database/functions.php");
 session_start();
 
 if(!isset($_SESSION['username'])){
