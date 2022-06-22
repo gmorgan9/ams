@@ -211,7 +211,7 @@ if(!isset($_SESSION['username'])){
         <div class="modal-body">
         <a class="back-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-left"></i> Back</a>
 <div class="d-flex justify-content-center">
-<form action="add-assignment.php" class="log-form" method="post">
+<form action="course-page.php" class="log-form" method="post">
 
 <div class="form-header d-flex justify-content-center">
     <div class="bg-circle">
