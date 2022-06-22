@@ -143,8 +143,8 @@ if(!isset($_SESSION['username'])){
         }
       ?>
 
-      <!-- assignments -->
-      <br>
+       <!-- assignments -->
+       <br>
       <h3 class="page_title">Upcoming Assignments</h3>
 
 </div> <!-- end main -->
