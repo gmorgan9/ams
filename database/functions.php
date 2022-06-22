@@ -194,3 +194,69 @@ if (empty($section)) {
       header('location: '. BASE_URL .'/pages/courses.php');
   }
 }
+
+
+// Add Assignment
+if (isset($_POST['add_assignment'])) {
+  // receive all input values from the form
+  $title = mysqli_real_escape_string($conn, $_POST['title']);
+  $due_date = mysqli_real_escape_string($conn, $_POST['due_date']);
+  $due_time = mysqli_real_escape_string($conn, $_POST['due_time']);
+  $file_submit = mysqli_real_escape_string($conn, $_POST['file_submit']);
+  $score = mysqli_real_escape_string($conn, $_POST['score']);
+  $possible_points = mysqli_real_escape_string($conn, $_POST['possible_points']);
+  $percent = mysqli_real_escape_string($conn, $_POST['percent']);
+  $assign_group = mysqli_real_escape_string($conn, $_POST['assign_group']);
+  $course_id = mysqli_real_escape_string($conn, $_POST['course_id']);
+
+  // form validation: ensure that the form is correctly filled ...
+  // by adding (array_push()) corresponding error unto $errors array
+  if (empty($title)) { 
+      array_push($errors, "Title is required"); 
+  }
+  if (empty($due_date)) { 
+      array_push($errors, "Due Date is required"); 
+  }
+  if (empty($due_time)) {
+      array_push($errors, "Due Time is required");
+  }
+  // if (empty($file_submit)) { 
+  //     array_push($errors, "Time is required"); 
+  // }
+  // if (empty($score)) { 
+  //     array_push($errors, "Location is required"); 
+  // }
+  if (empty($possible_points)) { 
+      array_push($errors, "Possible Points is required"); 
+  }
+  if (empty($percent)) {
+    array_push($errors, "Percent is required");
+  }
+  if (empty($assign_group)) { 
+    array_push($errors, "Assignment Group is required"); 
+}
+if (empty($course_id)) {
+    array_push($errors, "Course_id is required");
+}
+
+  // first check the database to make sure 
+  // a course does not already exist with the same course_id
+  $assign_check_query = "SELECT * FROM assignments WHERE id='$id' LIMIT 1";
+  $result = mysqli_query($conn, $assign_check_query);
+  $assign_data = mysqli_fetch_assoc($result);
+  
+  if ($assign_data) { // if course exists
+    if ($assign_data['title'] === $title) {
+      array_push($errors, "Course already exists");
+    }
+  }
+
+  // Finally, add course if there are no errors in the form
+  if (count($errors) == 0) {
+
+      $query = "INSERT INTO assignments (title, due_date, due_time, file_submit, score, possible_points, percent, assign_group, course_id) 
+                VALUES('$title', '$due_date', '$due_time', '$file_submit', '$score', '$possible_points', '$percent', '$assign_group', '$course_id')";
+      mysqli_query($conn, $query);
+      header('location: '. BASE_URL .'/pages/courses.php');
+  }
+}
