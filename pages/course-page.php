@@ -15,10 +15,10 @@ if(!isset($_SESSION['username'])){
   // sql to delete a record
 $sql = "DELETE FROM assignments WHERE id=$cid";
 
-if ($conn->query($sql) === TRUE) {
+if (mysqli_query($conn, $sql)) {
   echo "Record deleted successfully";
 } else {
-  echo "Error deleting record: " . $conn->error;
+  echo "Error deleting record: " . mysqli_error($conn);
 }
 }
 
