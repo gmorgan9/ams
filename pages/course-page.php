@@ -181,13 +181,13 @@ if(!isset($_SESSION['username'])){
             $apossible_points=$row['possible_points'];
             $aassign_group=$row['assign_group'];
             $fullDate = date("M d, Y", strtotime($adue_date));
-            // $fullTime = date("M d, Y", strtotime($adue_date));
+            $fullTime = date("'h:i:s a", strtotime($adue_time));
             ?>
             <tr>
             <td><?php echo $atitle; ?></td>
             <td><?php echo $acourse_id; ?></td>
             <td><?php echo $fullDate; ?></td>
-            <td><?php echo date_format($adue_time, 'G:ia'); ?></td>
+            <td><?php echo $fullTime; ?></td>
             <?php 
             if($row['score'] == 0){
               echo "<td> - </td>";
