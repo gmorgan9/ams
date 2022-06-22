@@ -12,7 +12,7 @@ if(!isset($_SESSION['username'])){
  if(isset($_GET['cid'])) {
   $cid = $_GET['cid'];
 
-  $sql = "DELETE FROM incidents WHERE id=$cid";
+  $sql = "DELETE FROM assignments WHERE id=$cid";
   $result = mysqli_query($conn, $sql);
   if($result) {
       // echo "Deleted Successfully";
