@@ -36,7 +36,7 @@ if(!isset($_SESSION['username'])){
 <div class="main">
 <!-- Assignments -->
 <br>
-      <h3 class="page_title">Course Assignments</h3>
+      <h3 class="page_title">Assignments</h3>
 
       <div class="col d-flex justify-content-center">
         <div class="card" style="width: 75rem;">
@@ -54,8 +54,8 @@ if(!isset($_SESSION['username'])){
   <tbody>
 
       <?php
-      $cid = $_GET['cid'];
-      $sql = "SELECT * FROM assignments where course_id=$cid";
+      //$cid = $_GET['cid'];
+      $sql = "SELECT * FROM assignments";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
