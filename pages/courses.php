@@ -91,7 +91,7 @@ if(!isset($_SESSION['username'])){
         $result = mysqli_query($conn, $sql);
           if($result) {
             while ($row = mysqli_fetch_assoc($result)) {
-              $id=$row['id'];
+              $course_id=$row['course_id'];
               $course=$row['course'];
               $title = $row['title'];
             ?>
@@ -101,7 +101,7 @@ if(!isset($_SESSION['username'])){
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
                   <p class="card-text text-center"><?php echo $course; ?></p>
                   <div class="d-flex justify-content-center">
-                  <a href="course-page.php?cid=<?php echo $id; ?>" class="btn btn-secondary btn-sm">See Course</a>
+                  <a href="course-page.php?cid=<?php echo $course_id; ?>" class="btn btn-secondary btn-sm">See Course</a>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@ if(!isset($_SESSION['username'])){
         $result = mysqli_query($conn, $sql);
           if($result) {
             while ($row = mysqli_fetch_assoc($result)) {
-              $id=$row['id'];
+              $course_id=$row['course_id'];
               $course=$row['course'];
               $title = $row['title'];
         ?>
@@ -130,7 +130,7 @@ if(!isset($_SESSION['username'])){
                   <h5 class="card-title text-center" style=><?php echo $title; ?></h5>
                   <p class="card-text text-center"><?php echo $course; ?></p>
                   <div class="d-flex justify-content-center">
-                    <a href="course-page.php?cid=<?php echo $id; ?>" class="btn btn-secondary btn-sm">See Course</a>
+                    <a href="course-page.php?cid=<?php echo $course_id; ?>" class="btn btn-secondary btn-sm">See Course</a>
                   </div>
                 </div>
               </div>
@@ -169,12 +169,14 @@ if(!isset($_SESSION['username'])){
           while ($row = mysqli_fetch_assoc($result)) {
             $id=$row['id'];
             $title=$row['title'];
+            $course_id=$row['course_id'];
             // $date = $row['date'];
             // $time = $row['time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
+            <td><?php echo $course_id; ?></td>
             <!-- <td><?php //echo $date; ?></td>
             <td><?php //echo $time; ?></td> -->
             <!-- <td><a href="update-incident.php?updateid=<?php //echo $id; ?>"><i class="fa-solid fa-pen-to-square" style="color:#005382;"></a></i></td> -->

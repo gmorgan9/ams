@@ -57,11 +57,11 @@ if(!isset($_SESSION['username'])){
 
     <?php
       $id = $_GET['cid'];
-      $sql = "SELECT * FROM course where id=$id";
+      $sql = "SELECT * FROM course where course_id=$id";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
-            $id = $row['id'];
+            $course_id = $row['course_id'];
             $title = $row['title'];
             $course = $row['course'];
             $taken = $row['taken'];
@@ -82,7 +82,7 @@ if(!isset($_SESSION['username'])){
 
 <?php include(ROOT_PATH . "/includes/header.php"); ?>
 <?php //include(ROOT_PATH . "/includes/sidebar.php"); ?>
-<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
+<a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Edit Course</a>
 
     <div class="d-flex justify-content-center">
         <div class="card" style="width: 35rem;">
@@ -131,7 +131,7 @@ if(!isset($_SESSION['username'])){
 
     <!-- Assignments -->
     <br>
-    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
+    <a class="edit-btn me-3 me-lg-0" href="../action/courses/update-course.php?updateid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
