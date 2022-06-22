@@ -51,6 +51,18 @@ if(!isset($_SESSION['username'])){
       .header-line {
         border-bottom: 3px rgb(128, 128, 128) solid;
       }
+      .back-btn {
+        float: right; 
+        margin-right: 10px; 
+        margin-left: -70px; 
+        color: #5C5B5B; 
+        font-size: 12px; 
+        text-decoration: none;
+      }
+      .back-btn:hover {
+        color: #5C5B5B; 
+        text-decoration: none;
+      }
     </style>
 </head>
 
