@@ -163,6 +163,7 @@ if(!isset($_SESSION['username'])){
       <th scope="col">Due Time</th>
       <th scope="col">Score</th>
       <th scope="col">Percent</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -195,7 +196,6 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $ascore; ?></td>
             <?php } ?>
             <td><?php echo $apercent; ?></td>
-            <td><a class="edit-btn me-3 me-lg-0" href="/pages/assignment-update.php?updateid=<?php echo $aid; ?>"><i class="fas fa-pencil"></i> </a></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
