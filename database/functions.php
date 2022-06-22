@@ -221,7 +221,7 @@ if (isset($_POST['add_assignment'])) {
       array_push($errors, "Due Time is required");
   }
   // if (empty($score)) { 
-  //     array_push($errors, "Location is required"); 
+  //     array_push($errors, "Score is required"); 
   // }
   if (empty($possible_points)) { 
       array_push($errors, "Possible Points is required"); 
