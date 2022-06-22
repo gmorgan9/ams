@@ -197,7 +197,7 @@ if(!isset($_SESSION['username'])){
             <?php } ?>
             <td><?php echo $apercent; ?></td>
             <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $cid; ?>"><i class="fas fa-pencil"></i> </a></td>
-            <td><a href="/assignment-delete.php?cid=<?php echo $cid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
+            <td><a href="/pages/assignment-delete.php?cid=<?php echo $cid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
       }
