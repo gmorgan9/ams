@@ -210,7 +210,7 @@ if(!isset($_SESSION['username'])){
         </div>
         <div class="modal-body">
           <div class="d-flex justify-content-center">
-            <form action="course-page.php" class="log-form" method="post">
+            <form action="course-page.php?cid=<?php echo $cid; ?>" class="log-form" method="post">
               <div class="form-header d-flex justify-content-center">
                 <div class="bg-circle">
                   <div class="sm-circle">
