@@ -181,7 +181,7 @@ if(!isset($_SESSION['username'])){
             $apossible_points=$row['possible_points'];
             $aassign_group=$row['assign_group'];
             $fullDate = date("M d, Y", strtotime($adue_date));
-            $fullTime = date("'h:i:s a", strtotime($adue_time));
+            $fullTime = date("h:i a", strtotime($adue_time));
             ?>
             <tr>
             <td><?php echo $atitle; ?></td>
