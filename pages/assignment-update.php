@@ -252,10 +252,6 @@ if(isset($_POST["update_course"])){
             <input name="course_title" class="form-control" placeholder="Course ID" type="text" value="<?php echo $course_title; ?>" readonly>
         </div>
     </div> <!-- form-group// -->
-    <?php }
-                }
-          
-          ?>
 
 
 
