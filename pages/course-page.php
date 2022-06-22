@@ -141,10 +141,8 @@ if(!isset($_SESSION['username'])){
       <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Course ID</th>
-      <!-- <th scope="col">Assignment Group</th> -->
-      <!-- <th scope="col">KB Article</th> -->
-      <!-- <th scope="col">Date</th>
-      <th scope="col">Time</th> -->
+      <th scope="col">Date</th>
+      <th scope="col">Time</th>
     </tr>
   </thead>
   <tbody>
@@ -158,17 +156,15 @@ if(!isset($_SESSION['username'])){
             $id=$row['id'];
             $title=$row['title'];
             $course_id=$row['course_id']
-            // $date = $row['date'];
-            // $time = $row['time'];
+            $date = $row['date'];
+            $time = $row['time'];
             ?>
             <tr>
             <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
             <td><?php echo $course_id; ?></td>
-            <!-- <td><?php //echo $date; ?></td>
-            <td><?php //echo $time; ?></td> -->
-            <!-- <td><a href="update-incident.php?updateid=<?php //echo $id; ?>"><i class="fa-solid fa-pen-to-square" style="color:#005382;"></a></i></td> -->
-            <!-- <td><a href="all-incidents.php?id=<?php //echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td> -->
+            <td><?php echo $date; ?></td>
+            <td><?php echo $time; ?></td>
             </tr>
          <?php }
       }
