@@ -151,7 +151,7 @@ if(!isset($_SESSION['username'])){
 
       <?php
       // $cid = $_GET['id'];
-      $sql = "SELECT * FROM courseAssign";
+      $sql = "SELECT * FROM course_assignments";
       $result = mysqli_query($conn, $sql);
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
