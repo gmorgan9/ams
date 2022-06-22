@@ -206,7 +206,7 @@ if(!isset($_SESSION['username'])){
 
 
   <!-- ADD Modal -->
-  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
