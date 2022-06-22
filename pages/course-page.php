@@ -249,7 +249,6 @@ if(!isset($_SESSION['username'])){
             <input name="due_time" class="form-control" placeholder="Time" type="time">
         </div>
     </div> <!-- form-group// -->
-    <div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -266,7 +265,6 @@ if(!isset($_SESSION['username'])){
             <input name="possible_points" class="form-control" placeholder="Possible Points" type="number">
         </div>
     </div> <!-- form-group// -->
-    </div>
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
