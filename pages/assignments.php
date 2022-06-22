@@ -34,7 +34,44 @@ if(!isset($_SESSION['username'])){
 <?php include(ROOT_PATH . "/includes/sidebar.php"); ?>
 
 <div class="main">
-    <h3 class="page_title">Assignments</h3>
+<h3 class="page_title">Assignments</h3>
+
+<div class="col d-flex justify-content-center">
+<table class="table table-hover table-light">
+<thead>
+<tr class="header-line">
+<th scope="col">#</th>
+<th scope="col">Title</th>
+</tr>
+</thead>
+<tbody> 
+
+<?php
+
+$sql = "SELECT * FROM assignments";
+$result = mysqli_query($conn, $sql);
+if($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      $id=$row['id'];
+      $title=$row['title'];
+      $course_id=$row['course_id'];
+      ?>
+      <tr>
+      <th scope="row"><?php echo $id; ?></th>
+      <td><?php echo $title; ?></td>
+      <td><?php echo $course_id; ?></td>
+      </tr>
+   <?php }
+}
+
+?>
+</tbody>
+</table>
+</div>
+
+
+
+
 </div>
 
 </body>
