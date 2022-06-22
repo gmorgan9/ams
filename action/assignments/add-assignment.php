@@ -132,6 +132,14 @@ session_start();
             <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text">
         </div>
     </div> <!-- form-group// -->
+    <div class="d-flex justify-content-center">
+        <div class="form-group input-group w-75">
+    	    <div class="input-group-prepend">
+		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
+		    </div>
+            <input name="course_id" class="form-control" placeholder="Assignment Group" type="text" value="<?php echo $course_id; ?>">
+        </div>
+    </div> <!-- form-group// -->
 
 
 
