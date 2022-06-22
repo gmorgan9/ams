@@ -360,7 +360,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
 		                </div>
-                    <input name="due_date" class="form-control" placeholder="Date" type="date">
+                    <input name="due_date" class="form-control" placeholder="Date" type="date" value="<?php echo $adue_date; ?>">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
@@ -368,7 +368,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		                </div>
-                    <input name="due_time" class="form-control" placeholder="Time" type="time">
+                    <input name="due_time" class="form-control" placeholder="Time" type="time" value="<?php echo $adue_time; ?>">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
@@ -376,7 +376,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		                </div>
-                    <input name="score" class="form-control" placeholder="Score" type="number" value="0">
+                    <input name="score" class="form-control" placeholder="Score" type="number" value="<?php echo $ascore; ?>">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
@@ -384,7 +384,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		                </div>
-                    <input name="possible_points" class="form-control" placeholder="Possible Points" type="number">
+                    <input name="possible_points" class="form-control" placeholder="Possible Points" type="number"  value="<?php echo $apossible_points; ?>">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
@@ -392,7 +392,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-percent"></i> </span>
 		                </div>
-                    <input name="percent" class="form-control" placeholder="% of Grade" type="percent">
+                    <input name="percent" class="form-control" placeholder="% of Grade" type="percent" value="<?php echo $apercent; ?>">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
@@ -400,7 +400,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		                </div>
-                    <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text">
+                    <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text" value="<?php echo $aassign_group; ?>">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
