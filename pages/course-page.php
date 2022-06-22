@@ -210,7 +210,7 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">Launch demo modal</button>
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#score">Launch demo modal</button>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -224,7 +224,7 @@ if(!isset($_SESSION['username'])){
 
 
 <!-- Add Score Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="score" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
