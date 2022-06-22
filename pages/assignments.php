@@ -122,6 +122,11 @@ if(!isset($_SESSION['username'])){
 
 </div>
 
+<script>
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
 </body>
 </html>
 
