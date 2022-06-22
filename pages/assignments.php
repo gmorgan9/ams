@@ -92,9 +92,7 @@ if(!isset($_SESSION['username'])){
     </div>
 <br><br>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="mymodal" data-target="#myModal">
-  Launch demo modal
-</button>
+    <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -123,9 +121,7 @@ if(!isset($_SESSION['username'])){
 
 
 <script>
-  $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+ $('#myModal').modal(show)
 </script>
 </body>
 </html>
