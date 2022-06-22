@@ -195,7 +195,12 @@ if(!isset($_SESSION['username'])){
             } else { ?>
             <td><?php echo $ascore; ?></td>
             <?php } ?>
-            <td><?php echo $apercent; ?></td>
+            <?php
+            function percent($number){
+              return $number * 100 . '%';
+            }
+            ?>
+            <td><?php echo percent($apercent); ?></td>
             <td><a href="/pages/assignment-delete.php?did=<?php echo $aid; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
