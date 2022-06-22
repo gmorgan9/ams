@@ -1,6 +1,6 @@
 <?php 
 include("../path.php");
-include("../database/functions.php");
+//include("../database/functions.php");
 session_start();
 
 
@@ -134,7 +134,7 @@ if(isset($_POST["update_assignment"])){
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Add Course - AMS</title>
+    <title>Update Assignment - AMS</title>
     <style>
         .log-form {
             margin-top: -25px;
@@ -256,7 +256,7 @@ if(isset($_POST["update_assignment"])){
 
   
     <div class="d-flex justify-content-center">                                
-        <button type="submit" name="update_assignment" class="btn btn-primary text-center reg-log">Add Course</button>  
+        <button type="submit" name="update_assignment" class="btn btn-primary text-center reg-log">Update Course</button>  
     </div>                                                             
 </form>
     
