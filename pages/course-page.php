@@ -159,7 +159,7 @@ if(!isset($_SESSION['username'])){
       if($result) {
           while ($row = mysqli_fetch_assoc($result)) {
             $id=$row['id'];
-            $a=$row['title'];
+            $title=$row['title'];
             $course_id=$row['course_id'];
             $due_date = $row['due_date'];
             $due_time = $row['due_time'];
