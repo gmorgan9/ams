@@ -8,8 +8,8 @@ session_start();
 
 
 // Define variables and initialize with empty values
-$course = "";
-$course_err = "";
+$title = "";
+$title_err = "";
 
 // Processing form data when form is submitted
 if(isset($_POST["update_course"])){
@@ -18,25 +18,25 @@ if(isset($_POST["update_course"])){
  //$status = isset($_POST['status']) ? 1 : 0;
  
  // Validate address address
- $input_course = trim($_POST["course"]);
- if(empty($input_course)){
-     $course_err = "Please enter a course.";     
+ $input_title = trim($_POST["title"]);
+ if(empty($input_title)){
+     $title_err = "Please enter a title.";     
  } else{
-     $course = $input_course;
+     $title = $input_title;
  }
  
  
  // Check input errors before inserting in database
- if(empty($course_err)){
+ if(empty($title_err)){
      // Prepare an update statement
-     $sql = "UPDATE course SET course=? WHERE id=?";
+     $sql = "UPDATE course SET title=? WHERE id=?";
       
      if($stmt = mysqli_prepare($conn, $sql)){
          // Bind variables to the prepared statement as parameters
-         mysqli_stmt_bind_param($stmt, "si", $param_course, $param_id);
+         mysqli_stmt_bind_param($stmt, "si", $param_title, $param_id);
          
          // Set parameters
-         $param_course = $course;
+         $param_title = $title;
          $param_id = $id;
          
          // Attempt to execute the prepared statement
@@ -57,13 +57,13 @@ if(isset($_POST["update_course"])){
  mysqli_close($conn);
 } else{
  // Check existence of id parameter before processing further
- if(isset($_GET["cid"]) && !empty(trim($_GET["cid"]))){
+ if(isset($_GET["updateid"]) && !empty(trim($_GET["updateid"]))){
      // Get URL parameter
-     $id =  trim($_GET["cid"]);
+     $id =  trim($_GET["updateid"]);
      
      // Prepare a select statement
-     $sql = "SELECT * FROM course WHERE id = ?";
-     if($stmt = mysqli_prepare($conn, $sql)){
+     $sql = "SELECT * FROM incidents WHERE id = ?";
+     if($stmt = mysqli_prepare($con, $sql)){
          // Bind variables to the prepared statement as parameters
          mysqli_stmt_bind_param($stmt, "i", $param_id);
          
@@ -80,7 +80,14 @@ if(isset($_POST["update_course"])){
                  $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                  
                  // Retrieve individual field value
-                 $course = $row['course'];
+                 $status = $row['status'];
+                 $inc_num = $row["inc_num"];
+                 $priority = $row["priority"];
+                 $description = $row["description"];
+                 $assign_group = $row["assign_group"];
+                 $kb_article = $row["kb_article"];
+                 $date = $row["date"];
+                 $time = $row["time"];
              } else{
                  // URL doesn't contain valid id. Redirect to error page
                  header("location: die-page.php");
@@ -96,7 +103,7 @@ if(isset($_POST["update_course"])){
      mysqli_stmt_close($stmt);
      
      // Close connection
-     mysqli_close($conn);
+     mysqli_close($con);
  }  else{
      // URL doesn't contain id parameter. Redirect to error page
      header("location: die-page2.php");
