@@ -4,12 +4,10 @@ include("../database/functions.php");
 session_start();
 
 
-// Define variables and initialize with empty values
-$name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
  
 // Processing form data when form is submitted
 if(isset($_POST["add-score"])){
+
         // Prepare an update statement
         $sql = "UPDATE assignments SET score=? WHERE id=?";
          
@@ -41,7 +39,7 @@ if(isset($_POST["add-score"])){
     // Check existence of id parameter before processing further
     if(isset($_GET["uid"])){
         // Get URL parameter
-        $id =  trim($_GET["uid"]);
+        $id =  $_GET["uid"];
         
         // Prepare a select statement
         $sql = "SELECT * FROM assignments WHERE id = ?";
