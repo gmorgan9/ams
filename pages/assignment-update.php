@@ -23,7 +23,7 @@ if(isset($_POST["update_assignment"])){
  // Check input errors before inserting in database
  if(empty($title_err)){
      // Prepare an update statement
-     $sql = "UPDATE course SET title=? WHERE id=?";
+     $sql = "UPDATE assignments SET title=? WHERE id=?";
       
      if($stmt = mysqli_prepare($conn, $sql)){
          // Bind variables to the prepared statement as parameters
@@ -56,8 +56,8 @@ if(isset($_POST["update_assignment"])){
      $id =  trim($_GET["uid"]);
      
      // Prepare a select statement
-     $sql = "SELECT * FROM incidents WHERE id = ?";
-     if($stmt = mysqli_prepare($con, $sql)){
+     $sql = "SELECT * FROM assignments WHERE id = ?";
+     if($stmt = mysqli_prepare($conn, $sql)){
          // Bind variables to the prepared statement as parameters
          mysqli_stmt_bind_param($stmt, "i", $param_id);
          
@@ -74,14 +74,7 @@ if(isset($_POST["update_assignment"])){
                  $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                  
                  // Retrieve individual field value
-                 $status = $row['status'];
-                 $inc_num = $row["inc_num"];
-                 $priority = $row["priority"];
-                 $description = $row["description"];
-                 $assign_group = $row["assign_group"];
-                 $kb_article = $row["kb_article"];
-                 $date = $row["date"];
-                 $time = $row["time"];
+                 $title = $row['title'];
              } else{
                  // URL doesn't contain valid id. Redirect to error page
                  header("location: die-page.php");
@@ -97,7 +90,7 @@ if(isset($_POST["update_assignment"])){
      mysqli_stmt_close($stmt);
      
      // Close connection
-     mysqli_close($con);
+     mysqli_close($conn);
  }  else{
      // URL doesn't contain id parameter. Redirect to error page
      header("location: die-page2.php");
