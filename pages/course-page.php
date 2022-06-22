@@ -186,7 +186,12 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $course_id; ?></td>
             <td><?php echo $due_date; ?></td>
             <td><?php echo $due_time; ?></td>
+            <?php 
+            if($score === 0){
+              echo "<td> - </td>"
+            } else { ?>
             <td><?php echo $score; ?></td>
+            <?php } ?>
             <td><?php echo $percent; ?></td>
             </tr>
          <?php }
@@ -251,7 +256,7 @@ if(!isset($_SESSION['username'])){
               	    <div class="input-group-prepend">
 		                  <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		                </div>
-                    <input name="score" class="form-control" placeholder="Score" type="text" value="-">
+                    <input name="score" class="form-control" placeholder="Score" type="number" value="0">
                   </div>
               </div> <!-- form-group// -->
               <div class="d-flex justify-content-center">
