@@ -7,25 +7,20 @@ session_start();
 if(!isset($_SESSION['username'])){
     header("Location: ". BASE_URL . "/action/login.php");
  }
- if($conn === false){
-  die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
+ 
  // DELETE
  if(isset($_GET['cid'])) {
   $cid = $_GET['cid'];
 
-  
- 
-// Attempt delete query execution
-$sql = "DELETE FROM assignments WHERE id=$cid";
-if(mysqli_query($conn, $sql)){
-    echo "Records were deleted successfully.";
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-}
- 
-// Close connection
-mysqli_close($conn);
+  $sql = "DELETE FROM assignments WHERE id=$cid";
+  $result = mysqli_query($conn, $sql);
+  if($result) {
+      // echo "Deleted Successfully";
+      header('location: /'); // returns back to same page
+  } else {
+      die(mysqli_error($conn));
+  }
 }
 
 ?>
