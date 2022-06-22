@@ -103,6 +103,7 @@ if(!isset($_SESSION['username'])){
                 </div>
                 </div>
                 <div class="d-flex justify-content-center">
+                    <br>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
