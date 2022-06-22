@@ -173,7 +173,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-heading"></i> </span>
 		    </div>
-            <input name="title" class="form-control" placeholder="Title" type="text">
+            <input name="title" class="form-control" placeholder="Title" type="text" value="<?php echo $title; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
