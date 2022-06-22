@@ -36,7 +36,6 @@ if(!isset($_SESSION['username'])){
 <div class="main">
 <!-- Assignments -->
 <br>
-    <a class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-pencil"></i> Add Assignment</a>
       <h3 class="page_title">Course Assignments</h3>
 
       <div class="col d-flex justify-content-center">
