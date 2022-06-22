@@ -67,7 +67,7 @@ session_start();
 
 
     <div class="d-flex justify-content-center">
-        <div class="form-group input-group w-50">
+        <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clipboard"></i> </span>
 		    </div>
@@ -82,8 +82,6 @@ session_start();
             <input name="due_date" class="form-control" placeholder="Date" type="date">
         </div>
     </div> <!-- form-group// -->
-
-<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -100,9 +98,6 @@ session_start();
             <input name="file_submit" class="form-control" placeholder="File Submission" type="file">
         </div>
     </div> <!-- form-group// -->
-</div>
-
-<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
@@ -119,9 +114,6 @@ session_start();
             <input name="possible_points" class="form-control" placeholder="Possible Points" type="number">
         </div>
     </div> <!-- form-group// -->
-</div>
-
-<div class="row">
     <div class="d-flex justify-content-center">
         <div class="form-group input-group w-75">
     	    <div class="input-group-prepend">
