@@ -78,7 +78,12 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $course_title; ?></td>
             <td><?php echo $due_date; ?></td>
             <td><?php echo $due_time; ?></td>
+            <?php 
+            if($row['score'] == 0){
+              echo "<td> - </td>";
+            } else { ?>
             <td><?php echo $score; ?></td>
+            <?php } ?>
             <td><?php echo $percent; ?></td>
             </tr>
          <?php }
