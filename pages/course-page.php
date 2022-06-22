@@ -138,7 +138,6 @@ if(!isset($_SESSION['username'])){
 <table class="table table-hover table-light">
   <thead>
     <tr class="header-line">
-      <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Course ID</th>
       <th scope="col">Due Date</th>
@@ -164,7 +163,6 @@ if(!isset($_SESSION['username'])){
             $percent = $row['percent'];
             ?>
             <tr>
-            <th scope="row"><?php echo $id; ?></th>
             <td><?php echo $title; ?></td>
             <td><?php echo $course_id; ?></td>
             <td><?php echo $due_date; ?></td>
