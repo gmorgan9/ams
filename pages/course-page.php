@@ -196,8 +196,8 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $ascore; ?></td>
             <?php } ?>
             <?php
-            function percent($number){
-              return $number * 100 . '%';
+            function percent($apercent){
+              return $apercent * 100 . '%';
             }
             ?>
             <td><?php echo percent($apercent); ?></td>
