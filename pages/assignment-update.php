@@ -181,7 +181,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
 		    </div>
-            <input name="due_date" class="form-control" placeholder="Date" type="date">
+            <input name="due_date" class="form-control" placeholder="Date" type="date" value="<?php echo $date; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -189,7 +189,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
 		    </div>
-            <input name="due_time" class="form-control" placeholder="Time" type="time">
+            <input name="due_time" class="form-control" placeholder="Time" type="time" value="<?php echo $time; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="row">
@@ -198,7 +198,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		    </div>
-            <input name="score" class="form-control" placeholder="Score" type="number">
+            <input name="score" class="form-control" placeholder="Score" type="number" value="<?php echo $score; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -206,7 +206,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-hashtag"></i> </span>
 		    </div>
-            <input name="possible_points" class="form-control" placeholder="Possible Points" type="number">
+            <input name="possible_points" class="form-control" placeholder="Possible Points" type="number" value="<?php echo $possible_points; ?>">
         </div>
     </div> <!-- form-group// -->
     </div>
@@ -215,7 +215,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-percent"></i> </span>
 		    </div>
-            <input name="percent" class="form-control" placeholder="% of Grade" type="percent">
+            <input name="percent" class="form-control" placeholder="% of Grade" type="percent" value="<?php echo $percent; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -223,7 +223,7 @@ if(isset($_POST["update_course"])){
     	    <div class="input-group-prepend">
 		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		    </div>
-            <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text">
+            <input name="assign_group" class="form-control" placeholder="Assignment Group" type="text" value="<?php echo $assign_group; ?>">
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -232,9 +232,9 @@ if(isset($_POST["update_course"])){
 		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		    </div>
             <?php 
-                $cid = $_GET['cid'];
+                $aid = $_GET['uid'];
             ?>
-            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $cid; ?>" readonly>
+            <input name="course_id" class="form-control" placeholder="Course ID" type="text" value="<?php echo $aid; ?>" readonly>
         </div>
     </div> <!-- form-group// -->
     <div class="d-flex justify-content-center">
@@ -243,7 +243,7 @@ if(isset($_POST["update_course"])){
 		        <span class="input-group-text"> <i class="fa fa-user-group"></i> </span>
 		    </div>
             <?php 
-                $sql = "SELECT * FROM course where course_id=$cid";
+                $sql = "SELECT * FROM assignments where id=$aid";
                 $result = mysqli_query($conn, $sql);
                 if($result) {
                     while ($row = mysqli_fetch_assoc($result)) {
