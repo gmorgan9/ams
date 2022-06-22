@@ -200,7 +200,7 @@ if(!isset($_SESSION['username'])){
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -212,7 +212,6 @@ if(!isset($_SESSION['username'])){
         <a class="back-btn me-3 me-lg-0"href="../../pages/courses.php"><i class="fas fa-arrow-left"></i> Back</a>
 <div class="d-flex justify-content-center">
 <form action="add-assignment.php" class="log-form" method="post">
-<?php //include('errors.php'); ?>
 
 <div class="form-header d-flex justify-content-center">
     <div class="bg-circle">
