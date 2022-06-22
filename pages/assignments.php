@@ -85,7 +85,7 @@ if(!isset($_SESSION['username'])){
             <td><?php echo $score; ?></td>
             <?php } ?>
             <td><?php echo $percent; ?></td>
-            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href=".php?cid=<?php echo $id; ?>"><i class="fa-solid fa-pen-to-square" style="color:#005382;"></a></i></td>
+            <td><a data-toggle="modal" data-target="#updateModal" class="edit-btn me-3 me-lg-0" href="../action/assignments/add-assignment.php?cid=<?php echo $course_id; ?>"><i class="fas fa-plus"></i> Add Assignment</a></td>
             <td><a href="all-incidents.php?id=<?php echo $id; ?>" class="delete"><i class="fa-solid fa-trash-can" style="color:#941515;"></i></a></td>
             </tr>
          <?php }
@@ -238,8 +238,8 @@ if(!isset($_SESSION['username'])){
 <!--modal-->
 <script>
   $(document).ready(function() {
-     $("#updateModal").modal();
-     $('#updateModal').on('shown.bs.modal', function() {
+     $("#myModal").modal();
+     $('#myModal').on('shown.bs.modal', function() {
         $('#myInput').focus();
      });
   });
