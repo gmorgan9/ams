@@ -88,6 +88,7 @@ if(!isset($_SESSION['username'])){
         <div class="card" style="width: 35rem;">
             <div class="card-body">
                 <h3 class="card-title text-center"><?php echo $title; ?></h3>
+                <div class="row">
                 <div class="col">
                     <p class="card-text text-center"><b>Course Number:</b> <?php echo $course; ?></p>
                     <p class="card-text text-center"><b>Course Days:</b> <?php echo $day; ?></p>
@@ -99,6 +100,7 @@ if(!isset($_SESSION['username'])){
                     <p class="card-text text-center"><b>Lab Days:</b> <?php echo $lab_day; ?></p>
                     <p class="card-text text-center"><b>Lab Times:</b> <?php echo $lab_time; ?></p>
                     <p class="card-text text-center"><b>Lab Location:</b> <?php echo $lab_location; ?></p>
+                </div>
                 </div>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
