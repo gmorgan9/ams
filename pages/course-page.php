@@ -12,14 +12,20 @@ if(!isset($_SESSION['username'])){
  if(isset($_GET['cid'])) {
   $cid = $_GET['cid'];
 
-  // sql to delete a record
-$sql = "DELETE FROM assignments WHERE id=$cid";
-
-if (mysqli_query($conn, $sql)) {
-  echo "Record deleted successfully";
-} else {
-  echo "Error deleting record: " . mysqli_error($conn);
+  if($conn === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
+ 
+// Attempt delete query execution
+$sql = "DELETE FROM assignments WHERE id=$cid";
+if(mysqli_query($conn, $sql)){
+    echo "Records were deleted successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+}
+ 
+// Close connection
+mysqli_close($conn);
 }
 
 ?>
